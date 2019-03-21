@@ -1,0 +1,111 @@
+### 是否是变位词，两个字符串包含的字符是否完全相同
+242 Valid Anagram - Easy
+```text
+s = "anagram", t = "nagaram", return true.
+s = "rat", t = "car", return false.
+```
+这道题字符串只有小写字母，键的范围很小，一个方法是可以用HashMap来映射字符与出现次数；另一个办法是使用长度为26的整型数组对字符串出现的字符进行统计，然后比较两个字符串出现的字符数量是否相同。
+```java
+class Solution {
+    public boolean isAnagram(String s, String t) {				
+    	if (s.length() != t.length()) {
+    		return false;
+    	}
+    
+    	HashMap<Character, Integer> map = new HashMap<>();
+    	for (int i = 0; i < s.length(); i++) {
+    		//getOrDefault()
+    		int count1 = map.getOrDefault(s.charAt(i), 0) + 1;
+    		map.put(s.charAt(i), count1);
+    
+    		int count2 = map.getOrDefault(t.charAt(i), 0) - 1;
+    		map.put(t.charAt(i), count2);
+    	}
+    
+    	for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+    		if (entry.getValue() != 0) {
+    			return false;
+    		}
+    	}
+    	return true;
+    }
+}
+```
+```java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        int[] counts = new int[26];
+        for (char ch : s.toCharArray()) {
+            counts[ch - 'a']++;
+        }
+        for (char ch : t.toCharArray()) {
+            counts[ch - 'a']--;
+            //直接检测是否有字母小于0，这样无需第三个for循环，想象一下：如果两个字符串字母不相同，那么肯定t字符串肯定有某个字符比s多的（当然也肯定有字符比s少的）
+            if (counts[ch - 'a'] < 0) {
+                return false;
+            }
+        }
+        // for (int count : counts) {
+        //     if(count != 0) {
+        //         return false;
+        //     }
+        // }
+        return true;
+    }
+}
+```
+Follow up是说如果字符串中是unicode怎么办？（128位或256位）。Java中，Unicode可能占1 char(2 bits，BMP, Basic Multilingual Plane)或者2 char(4字节，high surrogate)，可以用codePoints()方法计算到底占了几位，用hashmap来统计次数，把char作为key。
+```java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        
+        Map<Integer, Integer> dict = new HashMap<>();
+        
+        s.codePoints().forEach(code -> dict.put(code, dict.getOrDefault(code, 0) + 1));
+        t.codePoints().forEach(code -> dict.put(code, dict.getOrDefault(code, 0) - 1));
+        
+        for (int count : dict.values()) {
+            if (count != 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+```
+
+### 计算一组字符可以组成的最大长度的回文字符串
+409 Longest Palindrome - Easy
+```text
+Input: "abccccdd"
+Output: 7
+Explanation: One longest palindrome that can be built is "dccaccd", whose length is 7.
+```
+使用一个256长度的数组来统计字符出现的次数，因为每两个字符可以组成一个回文，然后每个字符出现的次数（无论奇偶，地板除法）除以2再乘以2，就是偶数的最长回文，这时候再检查一下这个最长回文的长度是否等于原来的字符串，如果不等于（其实是小于，因为地板除法的缘故），说明有字符出现的次数被地板除法除掉了，可以拿一个字符回来放在回文串的正中。
+```java
+class Solution {
+    public int longestPalindrome(String s) {
+        int palindrome = 0;
+        if (s.isEmpty()) {
+            return palindrome;
+        }
+        int[] counts = new int[256];
+        for (char ch : s.toCharArray()) {
+            counts[ch]++;
+        }
+        for (int count : counts) {
+            palindrome += (count / 2) * 2;
+        }
+        if (palindrome < s.length()) {//这种情况下，一定有一个未使用的字符存在，可以放在回文串最中间
+            palindrome++;
+        }
+        return palindrome;
+    }
+}
+```
