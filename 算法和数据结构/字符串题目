@@ -109,3 +109,10 @@ class Solution {
     }
 }
 ```
+
+### 205 Isomorphic Strings - Easy
+```text
+Given "egg", "add", return true.
+Given "foo", "bar", return false.
+Given "paper", "title", return true.
+```
