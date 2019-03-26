@@ -116,3 +116,40 @@ Given "egg", "add", return true.
 Given "foo", "bar", return false.
 Given "paper", "title", return true.
 ```
+用两个256长度的数组来分别记录两个字符串中每一个字符上次出现的位置，如果两个字符串中的字符的记录位置一样，就说明是同构词。也可以把两个256长度的数组合成一个512的数组，前后两个部分（相差256的索引）比较。
+```java
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+        if (s.length() != t.length()) {
+            return false;
+        }
+        int[] preIndexOfS = new int[256];
+        int[] preIndexOfT = new int[256];
+        for (int i = 0; i < s.length(); i++) {
+            char sc = s.charAt(i);
+            char tc = t.charAt(i);
+            if (preIndexOfS[sc] != preIndexOfT[tc]) {
+                return false;
+            }
+            //这里的preIndexOfS[sc]和preIndexOfT[tc]只要不等于0就可以，以免遇到新的字符刚开始在数组中为0比较就相同了，比如ab和aa这种情况，第二个a和b
+            preIndexOfS[sc] = i + 1;
+            preIndexOfT[tc] = i + 1;
+        }
+        return true;
+    }
+}
+```
+```java
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+        int[] map = new int[512];//正常的ASCII是128位，扩展的ASCII是256位，但不是标准
+        for (int i = 0; i < s.length(); i++) {
+            if (map[s.charAt(i)] != map[t.charAt(i) + 256]) {//遇到之前存的记录，前后半截不相等
+                return false;
+            }
+            map[s.charAt(i)] = map[t.charAt(i) + 256] = i + 1;//两个字符串做相应的索引，存相同的整数
+        }
+        return true;
+    }
+}
+```
