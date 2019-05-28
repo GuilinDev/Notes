@@ -480,6 +480,37 @@ class Solution {
 ##### 1006 Clumsy Factorial
 先把乘法和除法做好，然后加法，作为一个整体；然后判断是否是第一次，如果是赋值给临时变量，不是第一次就将下一轮的乘法和除法作为一个整体，被上一轮的临时变量值（乘法除法加法一起）减掉，注意corner cases比如1，5，9，10这样的值。
 
+##### 1011 Capacity to Ship Packages Within D Days
 
+```java
+class Solution {
+    public int shipWithinDays(int[] weights, int D) {
+        int left = 0;
+        int right = 0;
+        for (int weight : weights) {
+            left = Math.max(left, weight);
+            right += weight;
+        }
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            int need = 1;
+            int cur = 0;
+            for (int weight : weights) {
+                if (cur + weight  > mid) {
+                    need += 1;
+                    cur = 0;
+                }
+                cur += weight;
+            }
+            if (need > D) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        return left;
+    }
+}
+```
 
 
