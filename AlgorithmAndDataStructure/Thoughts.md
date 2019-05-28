@@ -171,6 +171,8 @@ class Solution {
 
 corner case：第一遍找p坐标如果没找到（也就是说整个数组是降序），那说明该数组是最大的permutation，那就它的下一个排列就是最小的，直接reverse就行了。
 
+##### 50 Pow
+
 ##### 56 Merge Intervals
 先排序，然后根据第一个区间初始化start和end，然后遍历list，比较list中interval.start和刚才end的值，如果end >= interval.start，说明两个区间有重叠，这时将end更新为end和interval.end之间的较大值；如果end < interval.start，说明没有重叠区间，这时候将interval.start和interval.end直接实例化一个list加入到结果中。最后还要注意一下最后一个区间没有被遍历到，需要加入。
 
