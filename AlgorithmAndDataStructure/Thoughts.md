@@ -498,6 +498,33 @@ class Solution {
 
 ##### 703
 
+##### 887 Super Egg Drop
+使用 dp[k][step] 来表示在给定 k 个鸡蛋的前提下移动 step 步能确定的最大层数：
+
+* dp[0][1] = 0：0个鸡蛋经过一步最大只能确定0层，这是初始条件
+* dp[k][1] = 1：k个鸡蛋只移动一次只能确定1层，即在1层只需要放一次鸡蛋便知道当前的 F，碎了 F为0；没碎 F=1。
+* dp[1][i] = i：即一个鸡蛋必须从第一层开始一个个试，为了确定 F 得试 i 次。
+* 当前楼层情况dp[k][step]=dp[k-1][step-1]+dp[k][step-1]+1，即当前情况=丢下去碎了，消耗一步能确定的层数+丢下去没碎，消耗一步能确定的层数+当前这一层
+* N 层楼梯最多只需要进行 N 次便一定可以确定 F，即 F 最大只能是最高层 N
+```java
+class Solution {
+    public int superEggDrop(int K, int N) {
+        int[][] dp = new int[K + 1][N + 1];
+        for (int steps = 1; steps <= N; steps++) {
+            dp[0][steps] = 0;
+            for (int eggs = 1; eggs <= K; eggs++) {
+                //在某一层，当前情况=（丢下去碎了eggs-1，消耗一步能确定的层数steps-1 + 丢下去没碎eggs，消耗一步能确定的层数，steps - 1）+ 当前这一层1
+                dp[eggs][steps] = dp[eggs][steps - 1] + dp[eggs - 1][steps - 1] + 1;
+                if (dp[eggs][steps] >= N) {//N 层楼梯最多只需要进行 N 次便一定可以确定 F，即 F 最大只能是最高层 N
+                    return steps;
+                }
+            }
+        }
+        return N;
+    }
+}
+```
+
 ##### 904 Fruit into Brasket 
 用hashmap或者两个变量替换
 
