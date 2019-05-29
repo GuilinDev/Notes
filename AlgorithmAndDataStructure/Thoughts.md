@@ -179,6 +179,36 @@ corner case：第一遍找p坐标如果没找到（也就是说整个数组是�
 ##### 62 Unique Paths
 bottom up的办法，先初始化第一行和第一列为1，然后递推公式为dp[i][j] = dp[i-1][j] + dp[i][j-1]，计算所有的路径总数，返回dp[m-1][n-1]。
 
+##### 74 Search a 2D Matrix
+把矩阵当作一个长的一维数组，start为0，end为最后一个元素，取到mid的值再换算成相应的index的时候，行数为mid对总行数相除，列数为mid对总列数取余。
+```java
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return false;
+        }
+
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+
+        int start = 0;
+        int end = rows * cols - 1;
+
+        while (start <= end) {//注意右等于符号
+            int mid = start + (end - start) / 2;
+            int midValue = matrix[mid / rows][mid % cols];
+            if (target == midValue) {
+                return true;
+            } else if (target < midValue) {
+                end = mid - 1;//注意-1
+            } else {
+                start = mid + 1;//注意+1
+            }
+        }
+        return false;
+    }
+}
+```
 ##### 98 Validate Binary Search Tree
 1) 从root开始做一个中序遍历，记录前置结点，根据前置结点的值来检查遍历过程是否是”左根右“的升序，从而确定当前遍历到的结点是否合适；2）设定一个min，代表右子树里面的最小值，设定一个max，代表左子树里面的最大值，每次递归到当前结点为root时，判断当前结点是否在min和max之间。
 中序遍历
