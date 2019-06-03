@@ -510,8 +510,8 @@ class Solution {
 class Solution {
     public int superEggDrop(int K, int N) {
         int[][] dp = new int[K + 1][N + 1];
-        for (int steps = 1; steps <= N; steps++) {
-            dp[0][steps] = 0;
+        for (int steps = 1; steps <= N; steps++) { //每次消耗一步
+            dp[0][steps] = 0; // 0 个鸡蛋
             for (int eggs = 1; eggs <= K; eggs++) {
                 //在某一层，当前情况=（丢下去碎了eggs-1，消耗一步能确定的层数steps-1 + 丢下去没碎eggs，消耗一步能确定的层数，steps - 1）+ 当前这一层1
                 dp[eggs][steps] = dp[eggs][steps - 1] + dp[eggs - 1][steps - 1] + 1;
