@@ -166,6 +166,33 @@ class Solution {
 ```
 ##### 21 Merge Two Sorted Lists
 
+##### 22 Generate Parentheses
+数学归纳法代码写起来复杂，所以还是用类似DFS的办法，朴素的DFS的办法就是有2n个格子，每个格子可以放左括号和右括号，然后检查每一个组合是否validate，这个时间复杂度为2^2n，改进的做法则是对DFS进行剪枝，如果在深度优先*搜索*的时候，添加左括号的时候发现左括号有剩余才可以继续进行搜索，添加右括号的时候发现右括号有剩余，并且右括号剩余比左括号多（不能等于，因为当前要添加的括号是右括号）的时候添加右括号。。其余的路径就被剪掉了。。最后当左括号和右括号都没剩的时候，说明合法，加入到结果。
+```java
+class Solution {
+    public List<String> generateParenthesis(int n) {
+        List<String> results = new ArrayList<>();
+        generateParenthesisOneByOne(results, n, n, "");
+        return results;
+    }
+    private void generateParenthesisOneByOne(List<String> results, int left, int right, String oneResult) {
+        //左右括号都没剩余的，已经组装完一个合法的括号组合，这时候才可以加入到结果中
+        if (left == 0 && right == 0) {
+            results.add(oneResult);
+            return;
+        }
+
+        if (left > 0) {//左括号还有剩余，可以继续加
+            generateParenthesisOneByOne(results, left - 1, right, oneResult + "(");
+        }
+
+        if (right > left) {//严格来说这里的条件是right > 0 && right > left，因为right个括号还有剩余并且不能更多地放在left个括号之前
+            generateParenthesisOneByOne(results, left, right - 1, oneResult + ")");
+        }
+    }
+}
+```
+
 ##### 31 Next Permutaion
 将数组从后先前看，找到的第一个降序的数字，记下它的坐标p；然后第二次再从后向前查找，找到第一个比p坐标位置的数大的数，二者swap；然后将swap后的p后面的所有的数reverse，得到的数组即为next permutation。
 
