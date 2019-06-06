@@ -314,6 +314,48 @@ class Solution {
     }
 }
 ```
+
+##### 131 Parlindrome Partitioning
+DFS的做法，检查从0到0的子串，剩余部分进入递归，并向右走一步，继续检查是否递归看能否加入到当前递归的结果中，如果最后走到了字符串最右，说明当次递归所有的字串都是合法的，加入到最终结果集。每个位置可能是回文也可能不是2^n，检查是否是回文n，所以时间复杂度为O(n * 2 ^ n)。
+```java
+class Solution {
+    public List<List<String>> partition(String s) {
+        if (s.isEmpty()) {
+            return new ArrayList<List<String>>();
+        }
+        List<List<String>> results = new ArrayList<>();
+        List<String> oneResult = new ArrayList<>();
+
+        partitionDFS(s, 0, results, oneResult);
+
+        return results;
+    }
+    private void partitionDFS(String s, int index, List<List<String>> results, List<String> oneResult) {
+        if (index == s.length()) {//dfs到字符串的最后位置都是回文，加入到结果集
+            results.add(new ArrayList<String>(oneResult));
+        } else {
+            for (int i = index; i < s.length(); i++) {
+                if (isPalindrome(s, index, i)) {//检查当次递归（index记录当次递归的起始点）到index的字串是否为回文，以备加入到当次递归(oneResult)中
+                    oneResult.add(s.substring(index, i + 1));
+                    partitionDFS(s, i + 1, results, oneResult);//DFS的下一层是当前位置i的下一步，在未到s最后一个位置时所有字串都加入到oneResult
+                    oneResult.remove(oneResult.size() - 1);
+                }
+            }
+        }
+    }
+    private boolean isPalindrome(String s, int left, int right) {
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+}
+```
+
 ##### 138 Copy List with Random Pointer
 比较常用的办法是用一个hashmap做两次遍历，第一次遍历将hashmap的key设为当前的node，hashmap的value设为以当前node的val的值新创建的一个node（这时候该node还没有设置next和random）；第二次遍历的时候，通过hashmap的get方法将前一次遍历时创建的新node（hashmap的value）的next指针和random指针通过hashmap的key来赋值。时空复杂度都是O(n)。
 
