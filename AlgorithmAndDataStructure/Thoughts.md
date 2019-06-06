@@ -334,11 +334,11 @@ class Solution {
         if (index == s.length()) {//dfs到字符串的最后位置都是回文，加入到结果集
             results.add(new ArrayList<String>(oneResult));
         } else {
-            for (int i = index; i < s.length(); i++) {
-                if (isPalindrome(s, index, i)) {//检查当次递归（index记录当次递归的起始点）到index的字串是否为回文，以备加入到当次递归(oneResult)中
+            for (int i = index; i < s.length(); i++) { //如果index还未到字符串最后，那它后面的每一个位置都需要检查是否从index到各个位置是否为回文，所以是for循环
+                if (isPalindrome(s, index, i)) {//检查从当前位置开始算，后面所有字符串是否是回文
                     oneResult.add(s.substring(index, i + 1));
                     partitionDFS(s, i + 1, results, oneResult);//DFS的下一层是当前位置i的下一步，在未到s最后一个位置时所有字串都加入到oneResult
-                    oneResult.remove(oneResult.size() - 1);
+                    oneResult.remove(oneResult.size() - 1);//从某个index位置回溯到root的时候需要删除该位置为起点的所有子串
                 }
             }
         }
