@@ -285,6 +285,10 @@ class Solution {
     }
 }
 ```
+
+##### 125 Valid Palindrome
+这道题使用Character.isLetterOrDigit()即可，注意如果对原始数据类型char转换大小写用Character.toLowerCase()，Character.toUpperCase()，与对象（比如string）直接调用的办法不同。
+
 ##### 138 Copy List with Random Pointer
 比较常用的办法是用一个hashmap做两次遍历，第一次遍历将hashmap的key设为当前的node，hashmap的value设为以当前node的val的值新创建的一个node（这时候该node还没有设置next和random）；第二次遍历的时候，通过hashmap的get方法将前一次遍历时创建的新node（hashmap的value）的next指针和random指针通过hashmap的key来赋值。时空复杂度都是O(n)。
 
