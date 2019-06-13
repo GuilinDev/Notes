@@ -361,6 +361,34 @@ class Solution {
 
 还有不用额外空间的办法：待续。
 
+##### 139 Word Break
+自顶向下的动态规划题目，建立一个一维数组results，results[i]表示从头到i-1索引的子字符串可以在字典中找到单词，另外针对每个位置i，他之前的索引j也都检查过来是否可以组成，找到i位置就直接break到i+1，直到末尾，返回results[len]表示存的最后一个字符。
+```java
+class Solution {
+    public boolean wordBreak(String s, List<String> wordDict) {
+        if (s.isEmpty()) {
+            return true;
+        }
+
+        int len = s.length();
+        boolean[] results = new boolean[len + 1];//results[i]表示从最初到i-1位置的子字符串是否可以又dict中组成，自顶向下
+        results[0] = true;//0个字符可以由wordDict组成
+
+        for (int i = 0; i < len; i++) {//每个位置可能性都是可能的单词组成,i表示的是多少个字符
+            for (int j = 0; j <= i; j++) {//j位置到当前i位置是否可以组成单词
+                String str = s.substring(j, i + 1);
+                if (results[j] && wordDict.contains(str)) {//j到i组成单词，并且j以前的子字符串也可以组成单词
+                    results[i + 1] = true;//自顶向下的记忆化存储
+                    break;//当前位置可以组成一个单词，剩下j到i的字符不用一一查了，直接跳到i+1的位置
+                }
+            }
+        }
+        return results[len];
+    }
+}
+```
+
+##### 140 Word Break II
 
 ##### 146 LRU cache
 为了保证O(1)，利用hashmap（取值） + double linked（存），put和get方法主要考虑已经存在或者不存在的两种情况
