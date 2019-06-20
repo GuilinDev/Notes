@@ -305,9 +305,7 @@ class Solution {
                     dp[i][j] = 0;//设为从当前点到终点的路径数为0
                 } else {
                     if (i == rows - 1 && j == cols - 1) {//在右下角的终点处，一条路
-                        dp[i][j] = 1;
-                        
-                        //为了看清楚 将以下两个else if 分开写
+                        dp[i][j] = 1; 
                     } else if (i == rows - 1) {//最后一列除了最右下角的格子
                         if (dp[i][j + 1] == 0) {//最后一列如果下面的路被堵住了，上面的格子均为0条路径
                             dp[i][j] = 0;
@@ -329,6 +327,41 @@ class Solution {
         return dp[0][0];
     }
 }
+```
+JavaScript
+```text
+/**
+ * @param {number[][]} obstacleGrid
+ * @return {number}
+ */
+var uniquePathsWithObstacles = function(obstacleGrid) {
+    let rows = obstacleGrid.length, cols = obstacleGrid[0].length;
+    let dp = new Array(rows).fill(0).map(_item => new Array(cols).fill(0)); 
+    for (let i = rows - 1; i >= 0; --i) {
+        for (let j = cols - 1; j >= 0; --j) {
+            if (obstacleGrid[i][j] === 1) { // 障碍物
+                dp[i][j] = 0;
+            } else if (i === rows - 1 && j === cols - 1) { // 终点
+                dp[i][j] = 1;
+            } else if (i === rows - 1) { // 右边缘
+                if (dp[i][j + 1] === 0) {
+                    dp[i][j] = 0;
+                } else {
+                    dp[i][j] = 1;
+                }
+            } else if (j === cols - 1) {// 下边缘
+                if (dp[i + 1][j] === 0) {
+                    dp[i][j] = 0;
+                } else {
+                    dp[i][j] = 1;
+                }
+            } else {
+                dp[i][j] = dp[i + 1][j] + dp[i][j + 1]; // 递推
+            }
+        }
+    }
+    return dp[0][0];
+};
 ```
 
 ##### 74 Search a 2D Matrix
