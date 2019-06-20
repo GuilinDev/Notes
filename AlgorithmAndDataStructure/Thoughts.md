@@ -262,7 +262,7 @@ class Solution {
         }
         memo = new int[m][n];
         for (int[] row : memo) {
-            Arrays.fill(row, 0);
+            Arrays.fill(row, -1);
         }
         
         memo[0][0] = 1;//达到最底下就返回做初始化
@@ -277,11 +277,56 @@ class Solution {
             return memo[0][0];
         }
         
-        if (memo[x][y] > 0) {//有记录，不用重新算 - 初始值为0
+        if (memo[x][y] != -1) {//有记录，不用重新算 - 初始值为0
             return memo[x][y];
         } else {
             return memo[x][y] = topdown(x - 1, y) + topdown(x, y - 1);
         }
+    }
+}
+```
+
+##### 63 Unique Paths II
+用自底向上，每次先判断一下格子是否是障碍物，是的话先设为0，然后同上，每个格子只跟它的右边和下面的两个格子相关，另外特殊处理最右边一列，最下面一行和最右下角的格子.
+```java
+class Solution {
+    public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+        if (obstacleGrid == null || obstacleGrid.length == 0 || obstacleGrid[0].length == 0) {
+            return 1;//原地踏步算一条
+        }
+        int rows = obstacleGrid.length;
+        int cols = obstacleGrid[0].length;
+
+        int[][] dp = new int[rows][cols];
+
+        for (int i = rows - 1; i >= 0; i--) {
+            for (int j = cols - 1; j >= 0; j--) {
+                if (obstacleGrid[i][j] == 1) {//有障碍物，注意这个条件要先检查
+                    dp[i][j] = 0;//设为从当前点到终点的路径数为0
+                } else {
+                    if (i == rows - 1 && j == cols - 1) {//在右下角的终点处，一条路
+                        dp[i][j] = 1;
+                        
+                        //为了看清楚 将以下两个else if 分开写
+                    } else if (i == rows - 1) {//最后一列除了最右下角的格子
+                        if (dp[i][j + 1] == 0) {//最后一列如果下面的路被堵住了，上面的格子均为0条路径
+                            dp[i][j] = 0;
+                        } else {
+                            dp[i][j] = 1;
+                        }
+                    } else if(j == cols - 1) {//最后一行除了最右下角的格子
+                        if (dp[i + 1][j] == 0) {//最后一行如果右面的路被堵住了，左面的格子均为0条路径
+                            dp[i][j] = 0;
+                        } else {
+                            dp[i][j] = 1;
+                        }
+                    } else{
+                        dp[i][j] = dp[i + 1][j] + dp[i][j + 1];
+                    }
+                }
+            }
+        }
+        return dp[0][0];
     }
 }
 ```
