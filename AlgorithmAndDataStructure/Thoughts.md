@@ -364,6 +364,66 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
 };
 ```
 
+##### 70 Climb Stairs
+就是斐波那契的解法，状态dp[i]表示到第i步台阶有多少种走法
+```java
+class Solution {
+    public int climbStairs(int n) {
+        if (n <= 2) {
+            return n;
+        }
+        int[] dp = new int[n];
+        dp[0] = 1;
+        dp[1] = 2;
+        for (int i = 2; i < n; i++) {
+          //递推
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        return dp[n - 1];
+    }
+}
+```
+优化下空间为O(1)，只存前面两步的状态就行了，不用整个记下来:
+```java
+class Solution {
+    public int climbStairs(int n) {
+        if (n <= 2) {
+            return n;
+        }
+        int oneStepBefore = 1;
+        int twoStepsBefore = 2;
+        int result = 0;
+        for (int i = 2; i < n; i++) {
+          //递推
+            result = oneStepBefore + twoStepsBefore;
+            oneStepBefore = twoStepsBefore;
+            twoStepsBefore = result;
+        }
+        return result;
+    }
+}
+```
+备忘录的记忆化搜索,总是在递归的基础上进行改进
+```java
+class Solution {
+    public int climbStairs(int n) {
+        int[] memo = new int[n];
+        return climbStairsRecur(n, memo);
+    }
+    private int climbStairsRecur(int x, int[] memo) {
+        if (x <= 2) {
+            return x;
+        }
+        if (memo[x - 1] > 0) {//x - 1，个数与下标
+            return memo[x - 1];
+        } else {
+            memo[x - 1] = climbStairsRecur(x - 1, memo) + climbStairsRecur(x - 2, memo);
+            return memo[x - 1];
+        }
+    }
+}
+```
+
 ##### 74 Search a 2D Matrix
 把矩阵当作一个长的一维数组，start为0，end为最后一个元素，取到mid的值再换算成相应的index的时候，行数为mid对总行数相除，列数为mid对总列数取余。
 ```java
