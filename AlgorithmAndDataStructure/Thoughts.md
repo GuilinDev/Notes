@@ -304,7 +304,7 @@ class Solution {
                 if (obstacleGrid[i][j] == 1) {//有障碍物，注意这个条件要先检查
                     dp[i][j] = 0;//设为从当前点到终点的路径数为0
                 } else {
-                    if (i == rows - 1 && j == cols - 1) {//在右下角的终点处，一条路
+                    if (i == rows - 1 && j == cols - 1) {//在右下角的终点处，自己到自己，一条路
                         dp[i][j] = 1; 
                     } else if (i == rows - 1) {//最后一列除了最右下角的格子
                         if (dp[i][j + 1] == 0) {//最后一列如果下面的路被堵住了，上面的格子均为0条路径
@@ -319,7 +319,7 @@ class Solution {
                             dp[i][j] = 1;
                         }
                     } else{
-                        dp[i][j] = dp[i + 1][j] + dp[i][j + 1];
+                        dp[i][j] = dp[i + 1][j] + dp[i][j + 1];//正常的递推式
                     }
                 }
             }
@@ -339,24 +339,24 @@ var uniquePathsWithObstacles = function(obstacleGrid) {
     let dp = new Array(rows).fill(0).map(_item => new Array(cols).fill(0)); 
     for (let i = rows - 1; i >= 0; --i) {
         for (let j = cols - 1; j >= 0; --j) {
-            if (obstacleGrid[i][j] === 1) { // 障碍物
+            if (obstacleGrid[i][j] === 1) { 
                 dp[i][j] = 0;
             } else if (i === rows - 1 && j === cols - 1) { // 终点
                 dp[i][j] = 1;
-            } else if (i === rows - 1) { // 右边缘
+            } else if (i === rows - 1) { 
                 if (dp[i][j + 1] === 0) {
                     dp[i][j] = 0;
                 } else {
                     dp[i][j] = 1;
                 }
-            } else if (j === cols - 1) {// 下边缘
+            } else if (j === cols - 1) {
                 if (dp[i + 1][j] === 0) {
                     dp[i][j] = 0;
                 } else {
                     dp[i][j] = 1;
                 }
             } else {
-                dp[i][j] = dp[i + 1][j] + dp[i][j + 1]; // 递推
+                dp[i][j] = dp[i + 1][j] + dp[i][j + 1]; 
             }
         }
     }
