@@ -454,6 +454,33 @@ class Solution {
     }
 }
 ```
+
+##### 88 Merge Sorted Array
+从nums1的右边（m + n - 1的位置）开始存放两个数组右侧(分别是m - 1和n - 1的位置)的较大者，注意需要考虑m == 0的情况，说明nums1中只有空间没有元素。
+```java
+class Solution {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        if (nums1 == null || nums1.length == 0 || nums2 == null || nums2.length == 0) {
+            return;
+        }
+        int index = m + n - 1;
+        int index1 = m - 1;
+        int index2 = n - 1;
+        
+        while (index2 >= 0) {
+            if (index1 >= 0 && nums1[index1] > nums2[index2]) {
+                nums1[index] = nums1[index1];
+                index1--;
+            } else {
+                nums1[index] = nums2[index2];
+                index2--;
+            }
+            index--;
+        }
+    }
+}
+```
+
 ##### 98 Validate Binary Search Tree
 1) 从root开始做一个中序遍历，记录前置结点，根据前置结点的值来检查遍历过程是否是”左根右“的升序，从而确定当前遍历到的结点是否合适；2）设定一个min，代表右子树里面的最小值，设定一个max，代表左子树里面的最大值，每次递归到当前结点为root时，判断当前结点是否在min和max之间。
 中序遍历
