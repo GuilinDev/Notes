@@ -763,6 +763,32 @@ class Solution {
 }
 ```
 
+##### 240 Search a 2D Matrix II
+从右上或者左下开始，比如从右上开始，对比target和右上角的数字，如果target等于右上角数字，找到了直接返回；如果target大于右上角的数，舍弃最上面整个一行，row++；如果target小于右上角的数，舍弃最右边的一列，col--。
+```java
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+            return false;
+        }
+        
+        int row = 0;
+        int col = matrix[0].length - 1;
+        
+        while (row <= matrix.length - 1 && col >= 0) {
+            if (target == matrix[row][col]) {
+                return true;
+            } else if (target > matrix[row][col]) {
+                row++;
+            } else {
+                col--;
+            }
+        }
+        return false;
+    }
+}
+```
+
 ##### 242 Valid Anagram
 排序后比较是否相同比较费时；用一个26大小的数组来统计字符出现的次数，counts[ch - 'a']，第一个循环++，第二个循环--，第三次循环counts看是否有不等于0的字符，小优化是省掉第三个循环，在第二个循环的时候直接判断是否有字符出现的次数小于0，有的话直接返回false。用HashMap来统计也可以，同样的做法，如果follow up是unicode需要用到codePoints()方法来计算是占几个位置。
 
