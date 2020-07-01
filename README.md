@@ -34,13 +34,13 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
+|  1  | 简单 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Two Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/ksum#1-2sum)                                                             |    ✅     |
+|  146  | 中等 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | [LRU Cache](https://app.gitbook.com/@guilindev/s/interview/leetcode/gao-ji-de-shu-ju-jie-gou-he-suan-fa#146-lru-cache) |    ✅     |
+|  2  | 中等 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)           | [Add Two Numbers](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#2-add-two-numbers) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
 | 周二 |  |  |  |  |
 |  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
+|  5  | 中等 | [删除排序数组中重复项](https://leetcode.com/problems/longest-palindromic-substring/) | [remove Duplicates from sorted array](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#5-longest-palindromic-substring) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
 | 周三 |  |  |  |  |
@@ -89,6 +89,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第三周
 
@@ -119,6 +120,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第四周
 
@@ -149,6 +151,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第五周
 
@@ -179,6 +182,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第六周
 
@@ -209,6 +213,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第七周
 
@@ -239,6 +244,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第八周
 
@@ -269,6 +275,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第九周
 
@@ -299,6 +306,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第十周
 
@@ -329,7 +337,7 @@
 |  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
 |  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
 |  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
-
+| 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 ## 经典话题
 
