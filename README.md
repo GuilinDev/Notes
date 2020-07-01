@@ -139,18 +139,18 @@
 | 周三 |  |  |  |  |
 |  244  | 中等 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) | [Shortest Word Distance II]() |         |
 |  230  | 中等 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST]() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  36  | 中等 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku]() |         |
+|  272  | 困难 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Closest Binary Search Tree Value II]() |         |
 | 周四 |  |  |  |  |
 |  28  | 简单 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Implement strStr()]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  611  | 中等 | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Valid Triangle Number]() |         |
+|  366  | 中等 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [Find Leaves of Binary Tree]() |         |
 |    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  346  | 简单 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [Moving Average from Data Stream]() |         |
+|  209  | 中等 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Minimum Size Subarray Sum]() |         |
+|  240  | 中等 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Search a 2D Matrix II]() |         |
+|  123  | 困难 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [Best Time to Buy and Sell Stock III]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第五周
@@ -158,30 +158,30 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  339  | 简单 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [Nested List Weight Sum]() |         |
+|  116  | 中等 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [Populating Next Right Pointers in Each Node]() |         |
+|  114  | 中等 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [Flatten Binary Tree to Linked List]() |         |
+|  407  | 困难 | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [Trapping Rain Water II]() |         |
 | 周二 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  463  | 简单 | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | [Island Perimeter]() |         |
+|  284  | 中等 | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) | [Peeking Iterator]() |         |
+|  142  | 中等 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II]() |         |
+|  109  | 中等 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Convert Sorted List to Binary Search Tree]() |         |
 | 周三 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  252  | 简单 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Meeting Rooms]() |         |
+|  130  | 中等 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [Surrounded Regions]() |         |
+|  285  | 中等 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [Inorder Successor in BST]() |         |
+|  450  | 中等 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Delete Node in a BST]() |         |
 | 周四 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  104  | 简单 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Maximum Depth of Binary Tree]() |         |
+|  235  | 简单 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree]() |         |
+|  1008  | 中等 | [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | [Construct Binary Search Tree from Preorder Traversal]() |         |
+|  223  | 中等 | [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | [Rectangle Area]() |         |
 | 周五 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  110  | 简单 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Balanced Binary Tree]() |         |
+|  704  | 简单 | [Binary Search](https://leetcode.com/problems/binary-search/) | [Binary Search]() |         |
+|  100  | 简单 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Same Tree]() |         |
+|  654  | 中等 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [Maximum Binary Tree]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第六周
@@ -189,14 +189,14 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element]() |         |
+|  605  | 简单 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Can Place Flowers]() |         |
+|  1026  | 中等 | [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) | [Maximum Difference Between Node and Ancestor]() |         |
+|  305  | 困难 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [Number of Islands II]() |         |
 | 周二 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  290  | 简单 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Word Pattern]() |         |
+|  303  | 简单 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Range Sum Query - Immutable]() |         |
+|  307  | 中等 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Range Sum Query - Mutable]() |         |
 |    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
 |    | 简单 | []() | []() |         |
