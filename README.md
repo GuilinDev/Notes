@@ -20,7 +20,7 @@
 
 
 
-| &emsp;&emsp;贪心&emsp;&emsp;  | &emsp;&emsp;分治&emsp;&emsp;  | &emsp;&emsp;回溯&emsp;&ensp;  | &emsp;动态规划&emsp; | &emsp;&emsp;[**递归**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E9%80%92%E5%BD%92.md)&emsp;&emsp;  | &emsp;复杂度分析&emsp; |
+| &emsp;&emsp;贪心&emsp;&emsp;  | &emsp;&emsp;分治&emsp;&emsp;  | &emsp;&emsp;回溯&emsp;&ensp;  | &emsp;[**动态规划**](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)&emsp; | &emsp;&emsp;[**递归**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E9%80%92%E5%BD%92.md)&emsp;&emsp;  | &emsp;复杂度分析&emsp; |
 | :---: | :---: | :---: | :------: | :---: | :--------: |
 | ️⭐⭐⭐  | ⭐⭐⭐  | ⭐⭐⭐  |  ️⭐⭐⭐    | ️⭐⭐⭐ |⭐⭐⭐|
          
@@ -344,7 +344,32 @@
 [01背包问题](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E8%83%8C%E5%8C%85/backpack.md)
 当被问到背包的时候，你第一个想到的是什么？点击查看回溯 + 动态规划两种方式解决背包问题
 
+[LRU](https://mp.weixin.qq.com/s/DhLCNAcenjn7-BcoQ3wUOw) LRU主要考察你什么？
+
 ## 系统设计
+#### Metrics System
+1. [新手也能看懂的监控报警系统架构设计](https://dbaplus.cn/news-141-2038-1.html)
+2. [中小型运维团队如何设计运维自动化平台](https://zhuanlan.zhihu.com/p/31285905)
+
+#### Distributed Transaction
+
+#### DB 
+
+#### Log System
+
+#### Microservice
+
+#### Message Queue
+
+#### Chat Apps
+
+#### Rate Limiter
+
+#### Payment Systems
+
+#### Cache
+
+#### Compiler
 
 
 
