@@ -35,29 +35,29 @@
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
 |  1  | 简单 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Two Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/ksum#1-2sum)                                                             |    ✅     |
-|  146  | 中等 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | [LRU Cache](https://app.gitbook.com/@guilindev/s/interview/leetcode/gao-ji-de-shu-ju-jie-gou-he-suan-fa#146-lru-cache) |    ✅     |
-|  2  | 中等 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)           | [Add Two Numbers](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#2-add-two-numbers) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  146  | 中等 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | [LRU Cache](https://app.gitbook.com/@guilindev/s/interview/leetcode/gao-ji-de-shu-ju-jie-gou-he-suan-fa#146-lru-cache) |         |
+|  2  | 中等 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)           | [Add Two Numbers](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#2-add-two-numbers) |         |
+|  4  | 困难 | [Median of Two Sorted Arrays](https://leetcode-cn.com/problems/climbing-stairs/)  | [Median of Two Sorted Arrays](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#4-median-of-two-sorted-arrays) |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  5  | 中等 | [删除排序数组中重复项](https://leetcode.com/problems/longest-palindromic-substring/) | [remove Duplicates from sorted array](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#5-longest-palindromic-substring) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  3  | 中等 | [Longest Substring Without Repeating Characters ](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Longest Substring Without Repeating Characters ]()                                                             |         |
+|  5  | 中等 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Longest Palindromic Substring](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#5-longest-palindromic-substring) |         |
+|  973  | 中等 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)           | [K Closest Points to Origin]() |         |
+|  42  | 困难 | [Trapping Rain Water](https://leetcode.com/problems/median-of-two-sorted-arrays/)  | [Trapping Rain Water](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#42-trapping-rain-water) |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  53  | 简单 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Maximum Subarray](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#53-maximum-subarray)                                                             |         |
+|  200  | 中等 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#200-number-of-islands) |         |
+|  56  | 中等 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)           | [Merge Intervals]() |         |
+|  23  | 困难 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [Merge k Sorted Lists]() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  20  | 简单 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Valid Parentheses]()                                                             |         |
+|  253  | 中等 | [Meeting Rooms II]() | [Meeting Rooms II]() |         |
+|  33  | 中等 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)           | [Search in Rotated Sorted Array]() |         |
+|  301  | 困难 | [Remove Invalid Parentheses ](https://leetcode.com/problems/remove-invalid-parentheses/)  | [Remove Invalid Parentheses ]() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  322  | 中等 | [Coin Change](https://leetcode.com/problems/coin-change/) | [Coin Change]()                                                             |         |
+|  138  | 中等 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Copy List with Random Pointer]() |         |
+|  449  | 中等 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)           | [Serialize and Deserialize BST]() |         |
+|  297  | 困难 | [Serialize and Deserialize Binary Tree ](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | [Serialize and Deserialize Binary Tree ]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第二周
@@ -65,30 +65,30 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  79  | 中等 | [Word Search](https://leetcode.com/problems/word-search/) | [Word Search]() |         |
+|  560  | 中等 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [Subarray Sum Equals K]() |         |
+|  46  | 中等 | [Permutations](https://leetcode.com/problems/permutations/) | [Permutations]() |         |
+|  103  | 中等 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Binary Tree Zigzag Level Order Traversal]() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  215  | 中等 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Kth Largest Element in an Array]() |         |
+|  49  | 中等 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams]() |         |
+|  31  | 中等 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | [Next Permutation]() |         |
+|  10  | 困难 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Regular Expression Matching]() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  91  | 中等 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Decode Ways]() |         |
+|  127  | 中等 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Word Ladder]() |         |
+|  139  | 中等 | [Word Break](https://leetcode.com/problems/word-break/) | [Word Break]() |         |
+|  295  | 困难 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream]() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  621  | 中等 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler]() |         |
+|  98  | 中等 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree]() |         |
+|    | 中等 | []() | []() |         |
+|  642  | 困难 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Design Search Autocomplete System]() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  283  | 简单 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes]() |         |
+|  986  | 中等 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections]() |         |
+|  39  | 中等 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Combination Sum]() |         |
+|  85  | 困难 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Maximal Rectangle]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第三周
@@ -96,30 +96,30 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  207  | 中等 | [Course Schedule ](https://leetcode.com/problems/course-schedule/) | [Course Schedule ]() |         |
+|  227  | 中等 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | [Basic Calculator II]() |         |
+|  34  | 中等 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find First and Last Position of Element in Sorted Array]() |         |
+|  124  | 困难 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Binary Tree Maximum Path Sum]() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  341  | 中等 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Flatten Nested List Iterator]() |         |
+|  133  | 中等 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Clone Graph]() |         |
+|  695  | 中等 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Max Area of Island]() |         |
+|  239  | 困难 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [Sliding Window Maximum]() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  426  | 中等 | [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) | [Convert Binary Search Tree to Sorted Doubly Linked List]() |         |
+|  300  | 中等 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Longest Increasing Subsequence]() |         |
+|  50  | 中等 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Pow(x, n)]() |         |
+|  45  | 困难 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Jump Game II]() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  173  | 中等 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator]() |         |
+|  210  | 中等 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II]() |         |
+|  199  | 中等 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Binary Tree Right Side View]() |         |
+|  212  | 困难 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [Word Search II]() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  105  | 中等 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Construct Binary Tree from Preorder and Inorder Traversal]() |         |
+|  277  | 中等 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Find the Celebrity]() |         |
+|  211  | 中等 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [Add and Search Word - Data structure design]() |         |
+|  329  | 困难 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [Longest Increasing Path in a Matrix]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第四周
@@ -127,30 +127,30 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  198  | 简单 | [House Robber](https://leetcode.com/problems/house-robber/) | [House Robber]() |         |
+|  545  | 中等 | [Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/) | [Boundary of Binary Tree]() |         |
+|  547  | 中等 | [Friend Circles](https://leetcode.com/problems/friend-circles/) | [Friend Circles]() |         |
+|  128  | 困难 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence]() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  150  | 中等 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Evaluate Reverse Polish Notation]() |         |
+|  208  | 中等 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)]() |         |
+|  165  | 中等 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [Compare Version Numbers]() |         |
+|  84  | 困难 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Largest Rectangle in Histogram]() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  244  | 中等 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) | [Shortest Word Distance II]() |         |
+|  230  | 中等 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST]() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|  28  | 简单 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Implement strStr()]() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第五周
@@ -158,30 +158,30 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第六周
@@ -189,61 +189,62 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
+
 
 > 第七周
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第八周
@@ -251,61 +252,60 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
-
 > 第九周
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第十周
@@ -313,30 +313,30 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 是否完成 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|  11  | 简单 | [盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/) | [container with most water](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_11/ContainerWithMostWater.java)                                                             |    ✅     |
-|  26  | 中等 | [删除排序数组中重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) | [remove Duplicates from sorted array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_26/RemoveDuplicatesFromSortedArray.java) |    ✅     |
-|  66  | 中等 | [加一](https://leetcode-cn.com/problems/plus-one/)           | [plus one](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_66/PlusOne.java) |    ✅     |
-|  70  | 困难 | [爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)  | [climbing stairs](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/highFrequencyLeetcode/leetcode_70/ClimbingStairs.java) |    ✅     |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 ## 经典话题
