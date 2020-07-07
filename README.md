@@ -41,7 +41,7 @@
 | 周二 |  |  |  |  |
 |  3  | 中等 | [Longest Substring Without Repeating Characters ](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Longest Substring Without Repeating Characters ]()                                                             |         |
 |  5  | 中等 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Longest Palindromic Substring](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#5-longest-palindromic-substring) |         |
-|  973  | 中等 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)           | [K Closest Points to Origin]() |         |
+|  973  | 中等 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)           | [K Closest Points to Origin](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer-1#973-k-closest-points-from-origin) |         |
 |  42  | 困难 | [Trapping Rain Water](https://leetcode.com/problems/median-of-two-sorted-arrays/)  | [Trapping Rain Water](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#42-trapping-rain-water) |         |
 | 周三 |  |  |  |  |
 |  53  | 简单 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Maximum Subarray](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#53-maximum-subarray)                                                             |         |
