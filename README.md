@@ -35,9 +35,9 @@
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
 |  1  | 简单 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Two Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/ksum#1-2sum)                                                             |    Hashmap     |
-|  146  | 中等 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | [LRU Cache](https://app.gitbook.com/@guilindev/s/interview/leetcode/gao-ji-de-shu-ju-jie-gou-he-suan-fa#146-lru-cache) |    1. Hashmap + Double Linkedlist <br>2. LinkedHashMap     |
+|  146  | 中等 | [LRU Cache](https://leetcode.com/problems/lru-cache/) | [LRU Cache](https://app.gitbook.com/@guilindev/s/interview/leetcode/gao-ji-de-shu-ju-jie-gou-he-suan-fa#146-lru-cache) |    1. Hashmap + Double Linkedlist <br> 2. LinkedHashMap     |
 |  2  | 中等 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)           | [Add Two Numbers](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#2-add-two-numbers) |    注意carry，这道题的II从后往前加则用stack或者递归     |
-|  4  | 困难 | [Median of Two Sorted Arrays](https://leetcode-cn.com/problems/climbing-stairs/)  | [Median of Two Sorted Arrays](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#4-median-of-two-sorted-arrays) |         |
+|  4  | 困难 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)  | [Median of Two Sorted Arrays](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#4-median-of-two-sorted-arrays) |    1. Kth element <br> 2. [Partition + Binary Searth](https://www.youtube.com/watch?v=LPFhl65R7ww)     |
 | 周二 |  |  |  |  |
 |  3  | 中等 | [Longest Substring Without Repeating Characters ](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | [Longest Substring Without Repeating Characters ]()                                                             |         |
 |  5  | 中等 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Longest Palindromic Substring](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#5-longest-palindromic-substring) |         |
