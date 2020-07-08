@@ -43,10 +43,10 @@
 |  5  | 中等 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | [Longest Palindromic Substring](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#5-longest-palindromic-substring) |    1. 分奇偶 <br> 2. DP <br> 3. 了解Manacher's     |
 |  973  | 中等 | [K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin/)           | [K Closest Points to Origin](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer-1#973-k-closest-points-from-origin) |    topK     |
 |  42  | 困难 | [Trapping Rain Water](https://leetcode.com/problems/median-of-two-sorted-arrays/)  | [Trapping Rain Water](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#42-trapping-rain-water) |    1. DP <br> 2. Stack     |
-| 周三 |  |  |  |  |
-|  53  | 简单 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Maximum Subarray](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#53-maximum-subarray)                                                             |         |
-|  200  | 中等 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#200-number-of-islands) |         |
-|  56  | 中等 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)           | [Merge Intervals]() |         |
+| 周三 |  |  |  | ✅ |
+|  53  | 简单 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Maximum Subarray](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#53-maximum-subarray)                                                             |    前面所有sum为负舍弃问题，与152乘积子数组一起练习     |
+|  200  | 中等 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#200-number-of-islands) |    DFS     |
+|  56  | 中等 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)           | [Merge Intervals]() |    按头排序，比较尾巴     |
 |  23  | 困难 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [Merge k Sorted Lists]() |         |
 | 周四 |  |  |  |  |
 |  20  | 简单 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Valid Parentheses]()                                                             |         |
