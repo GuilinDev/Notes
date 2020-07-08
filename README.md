@@ -50,7 +50,7 @@
 |  23  | 困难 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [Merge k Sorted Lists](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#23-merge-k-sorted-lists) |    1. Merge Sort <br> 2. minHeap     |
 | 周四 |  |  |  |  |
 |  20  | 简单 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Valid Parentheses]()                                                             |         |
-|  253  | 中等 | [Meeting Rooms II]() | [Meeting Rooms II]() |         |
+|  253  | 中等 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [Meeting Rooms II]() |         |
 |  33  | 中等 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)           | [Search in Rotated Sorted Array]() |         |
 |  301  | 困难 | [Remove Invalid Parentheses ](https://leetcode.com/problems/remove-invalid-parentheses/)  | [Remove Invalid Parentheses ]() |         |
 | 周五 |  |  |  |  |
