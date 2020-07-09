@@ -45,7 +45,7 @@
 |  42  | 困难 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)  | [Trapping Rain Water](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#42-trapping-rain-water) |    1. DP <br> 2. Stack     |
 | 周三 |  |  |  | ✅ |
 |  53  | 简单 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [Maximum Subarray](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#53-maximum-subarray)                                                             |    前面所有sum为负舍弃问题，与152乘积子数组一起练习     |
-|  200  | 中等 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#200-number-of-islands) |    DFS     |
+|  200  | 中等 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [Number of Islands](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#200-number-of-islands) |    1. DFS <br> 2. BFS <br> 3. Union Find     |
 |  56  | 中等 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/)           | [Merge Intervals](https://app.gitbook.com/@guilindev/s/interview/leetcode/hui-wen-jie-gou#56-merge-intervals) |    按头排序，比较尾巴     |
 |  23  | 困难 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)  | [Merge k Sorted Lists](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#23-merge-k-sorted-lists) |    1. Merge Sort <br> 2. minHeap     |
 | 周四 |  |  |  |  |
