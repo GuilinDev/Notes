@@ -56,8 +56,8 @@
 | 周五 |  |  |  |  |
 |  322  | 中等 | [Coin Change](https://leetcode.com/problems/coin-change/) | [Coin Change](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#322-coin-change)                                                             |     DP - Bottom up    |
 |  138  | 中等 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Copy List with Random Pointer](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#138-copy-list-with-random-pointer) |     1. HashMap <br> 2. 遍历三次    |
-|  449  | 中等 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)           | [Serialize and Deserialize BST]() |         |
-|  297  | 困难 | [Serialize and Deserialize Binary Tree ](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | [Serialize and Deserialize Binary Tree ]() |         |
+|  449  | 中等 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)           | [Serialize and Deserialize BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#449-serialize-and-deserialize-bst) |    DFS前序遍历，二分优化     |
+|  297  | 困难 | [Serialize and Deserialize Binary Tree ](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | [Serialize and Deserialize Binary Tree ](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#297-serialize-and-deserialize-binary-tree) |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第二周
