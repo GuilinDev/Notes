@@ -53,11 +53,11 @@
 |  253  | 中等 | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) | [Meeting Rooms II](https://app.gitbook.com/@guilindev/s/interview/leetcode/hui-wen-jie-gou#253-meeting-rooms-ii) |    1. Sort <br> 2. TreeMap <br> 3. minHeap     |
 |  33  | 中等 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/)           | [Search in Rotated Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#33-search-in-rotated-sorted-array) |    BST，先确定左右两边哪边有序     |
 |  301  | 困难 | [Remove Invalid Parentheses ](https://leetcode.com/problems/remove-invalid-parentheses/)  | [Remove Invalid Parentheses ](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-3#301-remove-invalid-parentheses) |    1. BFS <br> 2. DFS     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  322  | 中等 | [Coin Change](https://leetcode.com/problems/coin-change/) | [Coin Change](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#322-coin-change)                                                             |     DP - Bottom up    |
 |  138  | 中等 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | [Copy List with Random Pointer](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#138-copy-list-with-random-pointer) |     1. HashMap <br> 2. 遍历三次    |
 |  449  | 中等 | [Serialize and Deserialize BST](https://leetcode.com/problems/serialize-and-deserialize-bst/)           | [Serialize and Deserialize BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#449-serialize-and-deserialize-bst) |    DFS前序遍历，二分优化     |
-|  297  | 困难 | [Serialize and Deserialize Binary Tree ](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | [Serialize and Deserialize Binary Tree ](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#297-serialize-and-deserialize-binary-tree) |         |
+|  297  | 困难 | [Serialize and Deserialize Binary Tree ](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)  | [Serialize and Deserialize Binary Tree ](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#297-serialize-and-deserialize-binary-tree) |    1. DFS前序遍历 <br> 2. BFS层序遍历    |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第二周
