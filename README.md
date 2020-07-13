@@ -65,8 +65,8 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  79  | 中等 | [Word Search](https://leetcode.com/problems/word-search/) | [Word Search](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#79-word-search) |    Backtracking(visited + 优化空间)     |
-|  560  | 中等 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [Subarray Sum Equals K](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#560-subarray-sum-equals-k) |         |
+|  79  | 中等 | [Word Search](https://leetcode.com/problems/word-search/) | [Word Search](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#79-word-search) |    Backtracking<br>(visited + 优化空间)     |
+|  560  | 中等 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | [Subarray Sum Equals K](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#560-subarray-sum-equals-k) |    preSum + HashMap     |
 |  46  | 中等 | [Permutations](https://leetcode.com/problems/permutations/) | [Permutations]() |         |
 |  103  | 中等 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Binary Tree Zigzag Level Order Traversal]() |         |
 | 周二 |  |  |  |  |
