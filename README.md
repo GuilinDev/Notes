@@ -71,8 +71,8 @@
 |  103  | 中等 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [Binary Tree Zigzag Level Order Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#103-binary-tree-zigzag-level-order-traversal) |    1. BFS标记<br>2. DFS 递归栈记录     |
 | 周二 |  |  |  |  |
 |  215  | 中等 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | [Kth Largest Element in an Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer-1#215-kth-largest-element-in-an-array) |    掌握两种<br>1. 堆<br>2. 快速选择）     |
-|  49  | 中等 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams]() |         |
-|  31  | 中等 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | [Next Permutation]() |         |
+|  49  | 中等 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#49-group-anagrams) |    HashMap，确定key     |
+|  31  | 中等 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | [Next Permutation](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#31-next-permutation) |    1. 从后向前找到一个非增长的元素，位置p<br>2. 再次从后向前找到第一个比刚才位置p元素大的元素，位置q，交换p，q<br>3. p位置后面的数组元素翻转     |
 |  10  | 困难 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Regular Expression Matching]() |         |
 | 周三 |  |  |  |  |
 |  91  | 中等 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Decode Ways]() |         |
