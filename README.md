@@ -74,15 +74,15 @@
 |  49  | 中等 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | [Group Anagrams](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#49-group-anagrams) |    HashMap，确定key     |
 |  31  | 中等 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | [Next Permutation](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#31-next-permutation) |    1. 从后向前找一个非增长的元素，位置p<br>2. 再次从后向前找到第一个比刚才位置p元素大的元素，位置q，交换p，q<br>3. p位置后面的数组元素翻转     |
 |  10  | 困难 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Regular Expression Matching](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#10-regular-expression-matching) |    DP     |
-| 周三 |  |  |  |  |
+| 周三 |  |  |  | ✅ |
 |  91  | 中等 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Decode Ways](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#91-decode-ways) |    1.递归<br>2.DP     |
 |  127  | 中等 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Word Ladder](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-3#127-word-ladder) |    无向图BFS     |
-|  139  | 中等 | [Word Break](https://leetcode.com/problems/word-break/) | [Word Break]() |         |
+|  139  | 中等 | [Word Break](https://leetcode.com/problems/word-break/) | [Word Break](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#139-word-break) |    DP，第二个循环往左，Trie解法不要求     |
 |  295  | 困难 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream]() |         |
 | 周四 |  |  |  |  |
-|  621  | 中等 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler]() |         |
+|  100  | 简单 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Same Tree]() |         |
 |  98  | 中等 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree]() |         |
-|    | 中等 | []() | []() |         |
+|  621  | 中等 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler]() |         |
 |  642  | 困难 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Design Search Autocomplete System]() |         |
 | 周五 |  |  |  |  |
 |  283  | 简单 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes]() |         |
@@ -180,7 +180,7 @@
 | 周五 |  |  |  |  |
 |  110  | 简单 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Balanced Binary Tree]() |         |
 |  704  | 简单 | [Binary Search](https://leetcode.com/problems/binary-search/) | [Binary Search]() |         |
-|  100  | 简单 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Same Tree]() |         |
+|    | 中等 | []() | []() |         |
 |  654  | 中等 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [Maximum Binary Tree]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
