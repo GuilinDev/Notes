@@ -75,7 +75,7 @@
 |  31  | 中等 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | [Next Permutation](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#31-next-permutation) |    1. 从后向前找一个非增长的元素，位置p<br>2. 再次从后向前找到第一个比刚才位置p元素大的元素，位置q，交换p，q<br>3. p位置后面的数组元素翻转     |
 |  10  | 困难 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | [Regular Expression Matching](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#10-regular-expression-matching) |    DP     |
 | 周三 |  |  |  |  |
-|  91  | 中等 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Decode Ways]() |         |
+|  91  | 中等 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Decode Ways](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#91-decode-ways) |    1.递归<br>2.DP     |
 |  127  | 中等 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Word Ladder]() |         |
 |  139  | 中等 | [Word Break](https://leetcode.com/problems/word-break/) | [Word Break]() |         |
 |  295  | 困难 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream]() |         |
