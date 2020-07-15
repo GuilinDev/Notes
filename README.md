@@ -78,7 +78,7 @@
 |  91  | 中等 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Decode Ways](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#91-decode-ways) |    1.递归<br>2.DP     |
 |  127  | 中等 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Word Ladder](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-3#127-word-ladder) |    无向图BFS     |
 |  139  | 中等 | [Word Break](https://leetcode.com/problems/word-break/) | [Word Break](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#139-word-break) |    DP，第二个循环往左，Trie解法不要求     |
-|  295  | 困难 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream]() |         |
+|  295  | 困难 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream](https://app.gitbook.com/@guilindev/s/interview/leetcode/heap#295-find-median-from-data-stream) |    1大顶堆 + 1小顶堆     |
 | 周四 |  |  |  |  |
 |  100  | 简单 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Same Tree]() |         |
 |  98  | 中等 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree]() |         |
