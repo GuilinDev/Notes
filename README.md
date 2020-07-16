@@ -79,11 +79,11 @@
 |  127  | 中等 | [Word Ladder](https://leetcode.com/problems/word-ladder/) | [Word Ladder](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-3#127-word-ladder) |    无向图BFS     |
 |  139  | 中等 | [Word Break](https://leetcode.com/problems/word-break/) | [Word Break](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#139-word-break) |    DP，第二个循环往左，Trie解法不要求     |
 |  295  | 困难 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream](https://app.gitbook.com/@guilindev/s/interview/leetcode/heap#295-find-median-from-data-stream) |    1大顶堆 + 1小顶堆     |
-| 周四 |  |  |  |  |
+| 周四 |  |  |  | ✅ |
 |  100  | 简单 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Same Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#100-same-tree) |     递归，BFS    |
 |  98  | 中等 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#98-validate-binary-search-tree) |    前序，中序     |
 |  621  | 中等 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler](https://app.gitbook.com/@guilindev/s/interview/leetcode/queue#621-task-scheduler) |    Greedy排序     |
-|  642  | 困难 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Design Search Autocomplete System]() |         |
+|  642  | 困难 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Design Search Autocomplete System](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#642-design-search-autocomplete-system) |    Coding: Trie <br> [System Design](https://www.youtube.com/watch?v=us0qySiUsGU)     |
 | 周五 |  |  |  |  |
 |  283  | 简单 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes]() |         |
 |  986  | 中等 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections]() |         |
