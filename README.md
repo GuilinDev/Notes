@@ -81,7 +81,7 @@
 |  295  | 困难 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | [Find Median from Data Stream](https://app.gitbook.com/@guilindev/s/interview/leetcode/heap#295-find-median-from-data-stream) |    1大顶堆 + 1小顶堆     |
 | 周四 |  |  |  |  |
 |  100  | 简单 | [Same Tree](https://leetcode.com/problems/same-tree/) | [Same Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#100-same-tree) |     递归，BFS    |
-|  98  | 中等 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree]() |         |
+|  98  | 中等 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#98-validate-binary-search-tree) |    前序，中序     |
 |  621  | 中等 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler]() |         |
 |  642  | 困难 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Design Search Autocomplete System]() |         |
 | 周五 |  |  |  |  |
