@@ -87,7 +87,7 @@
 | 周五 |  |  |  |  |
 |  283  | 简单 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#283-move-zeroes) |    Two Pointers     |
 |  986  | 中等 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-2#986-interval-list-intersections) |    Two Pointers     |
-|  39  | 中等 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Combination Sum]() |         |
+|  39  | 中等 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Combination Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#39-combination-sum) |    backtracking     |
 |  85  | 困难 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Maximal Rectangle]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
