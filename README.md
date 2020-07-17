@@ -85,8 +85,8 @@
 |  621  | 中等 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler](https://app.gitbook.com/@guilindev/s/interview/leetcode/queue#621-task-scheduler) |    Greedy排序     |
 |  642  | 困难 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Design Search Autocomplete System](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#642-design-search-autocomplete-system) |    Coding: Trie <br> [System Design](https://www.youtube.com/watch?v=us0qySiUsGU)     |
 | 周五 |  |  |  |  |
-|  283  | 简单 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#283-move-zeroes) |    两个指针     |
-|  986  | 中等 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections]() |         |
+|  283  | 简单 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#283-move-zeroes) |    Two Pointers     |
+|  986  | 中等 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-2#986-interval-list-intersections) |    Two Pointers     |
 |  39  | 中等 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Combination Sum]() |         |
 |  85  | 困难 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Maximal Rectangle]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
