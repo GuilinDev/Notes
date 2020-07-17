@@ -84,11 +84,11 @@
 |  98  | 中等 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | [Validate Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#98-validate-binary-search-tree) |    前序，中序     |
 |  621  | 中等 | [Task Scheduler](https://leetcode.com/problems/task-scheduler/) | [Task Scheduler](https://app.gitbook.com/@guilindev/s/interview/leetcode/queue#621-task-scheduler) |    Greedy排序     |
 |  642  | 困难 | [Design Search Autocomplete System](https://leetcode.com/problems/design-search-autocomplete-system/) | [Design Search Autocomplete System](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#642-design-search-autocomplete-system) |    Coding: Trie <br> [System Design](https://www.youtube.com/watch?v=us0qySiUsGU)     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  283  | 简单 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | [Move Zeroes](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#283-move-zeroes) |    Two Pointers     |
 |  986  | 中等 | [Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/) | [Interval List Intersections](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-2#986-interval-list-intersections) |    Two Pointers     |
 |  39  | 中等 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Combination Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#39-combination-sum) |    [回溯模板](https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning))     |
-|  85  | 困难 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Maximal Rectangle]() |         |
+|  85  | 困难 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/) | [Maximal Rectangle](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/array-zhong-de-shu-zi-zu-cheng-san-jiao-xing#85-maximum-rectangle) |    1.Stack<br>2.DP     |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第三周
