@@ -98,7 +98,7 @@
 | 周一 |  |  |  |  |
 |  207  | 中等 | [Course Schedule ](https://leetcode.com/problems/course-schedule/) | [Course Schedule ](https://app.gitbook.com/@guilindev/s/interview/leetcode/graph#207-course-schedule) |    DAG的BFS和DFS     |
 |  227  | 中等 | [Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii/) | [Basic Calculator II](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#227-basic-calculator-ii) |    Stack压入数字，乘除弹出数字进行运算，加减最后运算     |
-|  34  | 中等 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find First and Last Position of Element in Sorted Array]() |         |
+|  34  | 中等 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find First and Last Position of Element in Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#34-find-first-and-last-position-of-element-in-sorted-array-search-for-a-range) |    两次Binary Search<br>[二分法模板](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/er-fen-cha-zhao-xiang-jie)     |
 |  124  | 困难 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Binary Tree Maximum Path Sum]() |         |
 | 周二 |  |  |  |  |
 |  341  | 中等 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Flatten Nested List Iterator]() |         |
