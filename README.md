@@ -101,7 +101,7 @@
 |  34  | 中等 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Find First and Last Position of Element in Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#34-find-first-and-last-position-of-element-in-sorted-array-search-for-a-range) |    两次Binary Search<br>[二分法模板](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/er-fen-cha-zhao-xiang-jie)     |
 |  124  | 困难 | [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [Binary Tree Maximum Path Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#124-binary-tree-maximum-path-sum) |    DFS后序遍历     |
 | 周二 |  |  |  |  |
-|  341  | 中等 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Flatten Nested List Iterator]() |         |
+|  341  | 中等 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Flatten Nested List Iterator](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#341-flatten-nested-list-iterator) |    stack从后向前存     |
 |  133  | 中等 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Clone Graph]() |         |
 |  695  | 中等 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Max Area of Island]() |         |
 |  239  | 困难 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [Sliding Window Maximum]() |         |
