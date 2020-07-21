@@ -103,7 +103,7 @@
 | 周二 |  |  |  | ✅ |
 |  341  | 中等 | [Flatten Nested List Iterator](https://leetcode.com/problems/flatten-nested-list-iterator/) | [Flatten Nested List Iterator](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#341-flatten-nested-list-iterator) |    stack从后向前存     |
 |  133  | 中等 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | [Clone Graph](https://app.gitbook.com/@guilindev/s/interview/leetcode/graph#133-clone-graph) |    图的DFS和BFS     |
-|  695  | 中等 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Max Area of Island]() |         |
+|  695  | 中等 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [Max Area of Island](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#695-max-area-of-islands) |    同200，DFS/BFS/UnionFind     |
 |  239  | 困难 | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | [Sliding Window Maximum]() |         |
 | 周三 |  |  |  |  |
 |  426  | 中等 | [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) | [Convert Binary Search Tree to Sorted Doubly Linked List]() |         |
