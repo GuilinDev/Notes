@@ -109,7 +109,7 @@
 |  426  | 中等 | [Convert Binary Search Tree to Sorted Doubly Linked List](https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/) | [Convert Binary Search Tree to Sorted Doubly Linked List]() |         |
 |  300  | 中等 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Longest Increasing Subsequence]() |    1. DP<br>2. Greedy + Binary Search     |
 |  50  | 中等 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Pow(x, n)](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#50-power-x-n) |    二分+递归     |
-|  45  | 困难 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Jump Game II]() |         |
+|  45  | 困难 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Jump Game II]() |    Greedy(BFS)     |
 | 周四 |  |  |  |  |
 |  173  | 中等 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator]() |         |
 |  210  | 中等 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II]() |         |
