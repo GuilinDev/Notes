@@ -198,7 +198,7 @@
 |  303  | 简单 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Range Sum Query - Immutable]() |         |
 |  307  | 中等 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Range Sum Query - Mutable]() |         |
 |  946  | 中等 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Validate Stack Sequences]() |         |
-|    | 中等 | []() | []() |         |
+|  236  | 中等 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Lowest Common Ancestor of a Binary Tree]() |         |
 | 周三 |  |  |  |  |
 |  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | []() |         |
 |  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | []() |         |
@@ -212,8 +212,8 @@
 | 周五 |  |  |  |  |
 |  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element]() |         |
 |  78  | 中等 | [Subsets](https://leetcode.com/problems/subsets/) | [Subsets]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  187  | 中等 | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | [Repeated DNA Sequences]() |         |
+|  120  | 中等 | [Triangle](https://leetcode.com/problems/triangle/) | [Triangle]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 
@@ -223,7 +223,7 @@
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
 |  160  | 简单 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Intersection of Two Linked Lists]() |         |
-|    | 中等 | []() | []() |         |
+|  1197  | 中等 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Minimum Knight Moves]() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
@@ -253,22 +253,22 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  108  | 简单 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Convert Sorted Array to Binary Search Tree]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  538  | 简单 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Convert BST to Greater Tree]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  409  | 简单 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
