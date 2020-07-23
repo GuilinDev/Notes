@@ -111,7 +111,7 @@
 |  50  | 中等 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Pow(x, n)](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#50-power-x-n) |    二分+递归     |
 |  45  | 困难 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Jump Game II]() |    Greedy(BFS)     |
 | 周四 |  |  |  |  |
-|  173  | 中等 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator]() |         |
+|  173  | 中等 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#173-binary-search-tree-iterator) |    Stack模拟中序遍历     |
 |  210  | 中等 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II]() |         |
 |  199  | 中等 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Binary Tree Right Side View]() |         |
 |  212  | 困难 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [Word Search II]() |         |
