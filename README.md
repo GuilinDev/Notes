@@ -113,7 +113,7 @@
 | 周四 |  |  |  |  |
 |  173  | 中等 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#173-binary-search-tree-iterator) |    Stack模拟中序遍历     |
 |  210  | 中等 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](https://app.gitbook.com/@guilindev/s/interview/leetcode/graph#210-course-schedule-ii) |    1.BFS<br>2.DFS     |
-|  199  | 中等 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Binary Tree Right Side View]() |         |
+|  199  | 中等 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Binary Tree Right Side View](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-3#199-binary-tree-right-side-view) |    1.树的BFS<br>2.树的DFS-根右左     |
 |  212  | 困难 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [Word Search II]() |         |
 | 周五 |  |  |  |  |
 |  105  | 中等 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Construct Binary Tree from Preorder and Inorder Traversal]() |         |
