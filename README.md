@@ -199,9 +199,9 @@
 |  307  | 中等 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Range Sum Query - Mutable]() |         |
 |    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  206  | 简单 | []() | []() |         |
 |  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | []() |         |
-|    | 中等 | []() | []() |         |
+|  160  | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
 |    | 简单 | []() | []() |         |
