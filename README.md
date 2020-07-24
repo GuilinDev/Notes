@@ -110,11 +110,11 @@
 |  300  | 中等 | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) | [Longest Increasing Subsequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#300-longest-increasing-subsequence) |    1. DP<br>2. Greedy + Binary Search     |
 |  50  | 中等 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | [Pow(x, n)](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#50-power-x-n) |    二分+递归     |
 |  45  | 困难 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | [Jump Game II](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#45-jump-game-ii) |    Greedy(BFS)     |
-| 周四 |  |  |  |  |
+| 周四 |  |  |  | ✅ |
 |  173  | 中等 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/) | [Binary Search Tree Iterator](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#173-binary-search-tree-iterator) |    Stack模拟中序遍历     |
 |  210  | 中等 | [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | [Course Schedule II](https://app.gitbook.com/@guilindev/s/interview/leetcode/graph#210-course-schedule-ii) |    1.BFS<br>2.DFS     |
 |  199  | 中等 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | [Binary Tree Right Side View](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-3#199-binary-tree-right-side-view) |    1.树的BFS<br>2.树的DFS-根右左     |
-|  212  | 困难 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [Word Search II]() |         |
+|  212  | 困难 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [Word Search II](https://app.gitbook.com/@guilindev/s/interview/leetcode/trie-qian-zhui-shu#212-word-search-ii) |    Trie+Backtracking     |
 | 周五 |  |  |  |  |
 |  105  | 中等 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Construct Binary Tree from Preorder and Inorder Traversal]() |         |
 |  277  | 中等 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Find the Celebrity]() |         |
