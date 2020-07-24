@@ -117,7 +117,7 @@
 |  212  | 困难 | [Word Search II](https://leetcode.com/problems/word-search-ii/) | [Word Search II](https://app.gitbook.com/@guilindev/s/interview/leetcode/trie-qian-zhui-shu#212-word-search-ii) |    Trie+Backtracking     |
 | 周五 |  |  |  |  |
 |  105  | 中等 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Construct Binary Tree from Preorder and Inorder Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#105-construct-binary-tree-from-preorder-and-inorder-traversal) |    1.递归，需要搞清楚递归的参数 <br>2.迭代，用Stack    |
-|  277  | 中等 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Find the Celebrity]() |         |
+|  277  | 中等 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Find the Celebrity](https://app.gitbook.com/@guilindev/s/interview/leetcode/graph#277-find-the-celebrity) |    出度为0     |
 |  211  | 中等 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [Add and Search Word - Data structure design]() |         |
 |  329  | 困难 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [Longest Increasing Path in a Matrix]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
@@ -215,7 +215,6 @@
 |  120  | 中等 | [Triangle](https://leetcode.com/problems/triangle/) | [Triangle]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
-
 > 第七周
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
@@ -224,7 +223,7 @@
 |  160  | 简单 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Intersection of Two Linked Lists]() |         |
 |  1197  | 中等 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Minimum Knight Moves]() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  727  | 困难 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [Minimum Window Subsequence]() |         |
 | 周二 |  |  |  |  |
 |  21  | 简单 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists]() |         |
 |    | 中等 | []() | []() |         |
