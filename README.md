@@ -118,7 +118,7 @@
 | 周五 |  |  |  |  |
 |  105  | 中等 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Construct Binary Tree from Preorder and Inorder Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#105-construct-binary-tree-from-preorder-and-inorder-traversal) |    1.递归，需要搞清楚递归的参数 <br>2.迭代，用Stack    |
 |  277  | 中等 | [Find the Celebrity](https://leetcode.com/problems/find-the-celebrity/) | [Find the Celebrity](https://app.gitbook.com/@guilindev/s/interview/leetcode/graph#277-find-the-celebrity) |    出度为0     |
-|  211  | 中等 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [Add and Search Word - Data structure design]() |         |
+|  211  | 中等 | [Add and Search Word - Data structure design](https://leetcode.com/problems/add-and-search-word-data-structure-design/) | [Add and Search Word - Data structure design](https://app.gitbook.com/@guilindev/s/interview/leetcode/trie-qian-zhui-shu#211-add-and-search-word-data-structure-design) |    Trie     |
 |  329  | 困难 | [Longest Increasing Path in a Matrix](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/) | [Longest Increasing Path in a Matrix]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
