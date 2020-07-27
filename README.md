@@ -355,6 +355,7 @@
 2. [中小型运维团队如何设计运维自动化平台](https://zhuanlan.zhihu.com/p/31285905)
 
 #### Distributed Transaction
+1. [Distributed Transactions with MicroServices](https://www.youtube.com/watch?v=S4FnmSeRpAY)
 
 #### DB 
 
@@ -369,6 +370,11 @@
 #### Rate Limiter
 
 #### Payment Systems
+1. [被问到“设计一个支付系统”的思考角度](https://medium.com/get-ally/how-to-architect-online-payment-processing-system-for-an-online-store-6dc84350a39)
+2. [支付平台架构设计的一些思考](http://objcoding.com/2019/06/04/payment-platform/)
+3. [Avoiding Double Payments in a Distributed Payments System](https://medium.com/airbnb-engineering/avoiding-double-payments-in-a-distributed-payments-system-2981f6b070bb)
+4. [Paymeng System和API Server如何互相验证1](https://en.wikipedia.org/wiki/Payment_gateway), [Paymeng System和API Server如何互相验证2](https://www.youtube.com/watch?v=GUurzvS3DlY)
+5. [Uber支付系统案例](https://www.youtube.com/watch?v=MJABqwzBkHs)
 
 #### Cache
 
