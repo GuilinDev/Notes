@@ -222,11 +222,11 @@
 | 周一 |  |  |  |  |
 |  160  | 简单 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Intersection of Two Linked Lists]() |         |
 |  1197  | 中等 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Minimum Knight Moves]() |         |
-|    | 中等 | []() | []() |         |
+|  1248  | 中等 | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [Count Number of Nice Subarrays]() |         |
 |  727  | 困难 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [Minimum Window Subsequence]() |         |
 | 周二 |  |  |  |  |
 |  21  | 简单 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists]() |         |
-|    | 中等 | []() | []() |         |
+|  1371  | 中等 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [Find the Longest Substring Containing Vowels in Even Counts]() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
@@ -254,7 +254,7 @@
 |  108  | 简单 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Convert Sorted Array to Binary Search Tree]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  887  | 困难 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [Super Egg Drop]() |         |
 | 周二 |  |  |  |  |
 |  538  | 简单 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Convert BST to Greater Tree]() |         |
 |    | 中等 | []() | []() |         |
@@ -271,7 +271,7 @@
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  136  | 简单 | [Single Number](https://leetcode.com/problems/single-number/) | [Single Number]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
@@ -282,7 +282,7 @@
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  88  | 简单 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Merge Sorted Array]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
