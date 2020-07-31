@@ -374,9 +374,15 @@
 
 ## 系统设计
 #### General
+0. Designing Data Intensive Application [中文版](https://github.com/Vonng/ddia)
+
 1. [General互联网产品的设计](https://medium.com/better-programming/how-to-design-a-web-application-software-architecture-101-df568b88da76)
 
-2. [Tech Dummies系统设计](https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA)
+2. [Tushar Roy算法和系统设计](https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw)
+
+3. [Tech Dummies系统设计](https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA)
+
+4. [Gaurav Sen系统设计](https://www.youtube.com/channel/UCRPMAqdtSgd0Ipeef7iFsKw)
 
 #### Metrics System
 1. [新手也能看懂的监控报警系统架构设计](https://dbaplus.cn/news-141-2038-1.html)
