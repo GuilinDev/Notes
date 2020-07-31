@@ -1,17 +1,8 @@
 # Notes
 ## Summary
-这个repo是关于面试资源的
-
-
-
+这个repo是关于面试准备的。
 
 <div align="center"><img src="/images/logo.png" height="180" width="215" ></div>
-
-掌握数据结构和算法直接的好处就是能写出性能更优的代码。算法是一种解决问题的思路和方法，从长期来看，大脑思考能力是个人最重要的核心竞争力，而算法是为数不多的能够训练大脑思考能力的途径之一。
-
-关于要不要学数据结构和算法以及算法有没有用这种问题不想再多做解释，只能说志同道合者共行，如果你也感兴趣，可以和我一起学习数据结构和算法题。
-
-🍭 学习路线加强巩固数据结构基础知识，通过 leetcode 算法题加深对数据结构的理解。
 
 ## 互联网公司面试准备思维导图
 
@@ -19,9 +10,23 @@
 
 ## 数据结构和算法理论基础
 
+掌握数据结构和算法直接的好处就是能写出性能更优的代码。算法是一种解决问题的思路和方法，从长期来看，大脑思考能力是个人最重要的核心竞争力，而算法是为数不多的能够训练大脑思考能力的途径之一。
+
+🍭 学习路线加强巩固数据结构基础知识，主要通过 leetcode 算法题加深对数据结构的理解。在刷Leetcode之前和同时，看Cracking the Coding Interview (CTCI)和在[Hackerrank](https://www.hackerrank.com/)/[GeeksForGeeks](https://www.geeksforgeeks.org/category/interview-experiences/)上练习一些基础会很有帮助。下面的技巧至少练习三遍到滚瓜烂熟：
+* 从scratch实现一个ArrayList
+* 翻转链表
+* 用Array实现Stack和Queue
+* 用简单的Hashing function实现一个hashmap
+* 用Adjacency Matrix和Adjacency List来实现Graph，然后在此基础上进行BFS和DFS
+* Binary Search的迭代和递归
+* Merge Sort，Quick Sort，Counting Sort
+* 二叉树的DFS（前序，中序，后序的递归写法和迭代写法），BFS（层序）
+* [时间空间复杂度分析](https://www.bigocheatsheet.com/)
+* 
+
 可以明确的是，面试时候的算法题目在难度上（尤其是代码难度上）不会吹毛求疵，会倾向于靠擦一些基础的数据结构和算法，对于高级算法和奇技淫巧一般不作考察。
 
-代码题主要考察编程语言的应用是否熟练，基础是否扎实，比如让面试者写出代码完成简单的需求，大约下面的这些内容需要打好基础：
+代码题主要考察编程语言的应用是否熟练，基础是否扎实，比如让面试者写出代码完成简单的需求，大约下面的这些内容打好基础就足够了：
 
 **Data Structures**
 1. 数组与链表：单/双链表，跳表
@@ -38,7 +43,7 @@
 4. 动态规划：背包问题，最长子序列，计数问题
 5. 基础技巧：分治，倍增，二分，贪心
 
-| &emsp;&emsp;[数组](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1.%E6%95%B0%E7%BB%84.md)&emsp;&emsp; | &emsp;&emsp;[**链表**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2.%E9%93%BE%E8%A1%A8.md)&emsp;&emsp;  |  &emsp;&ensp;&ensp;[**栈**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3.%E6%A0%88.md)&emsp;&ensp;&emsp; | &emsp;&emsp;[**跳表**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/4.%E8%B7%B3%E8%A1%A8.md)&emsp;&emsp; | &emsp;[**散列表**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/5.%E6%95%A3%E5%88%97%E8%A1%A8.md)&emsp;&emsp; | &emsp;&emsp;二叉树&emsp;&emsp; |
+| &emsp;&emsp;[Array/Dynamic Array](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1.%E6%95%B0%E7%BB%84.md)&emsp;&emsp; | &emsp;&emsp;[**LinkedList**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/2.%E9%93%BE%E8%A1%A8.md)&emsp;&emsp;  |  &emsp;&ensp;&ensp;[**Stack & Queue**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/3.%E6%A0%88.md)&emsp;&ensp;&emsp; | &emsp;&emsp;[**跳表**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/4.%E8%B7%B3%E8%A1%A8.md)&emsp;&emsp; | &emsp;[**Hashtable**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/5.%E6%95%A3%E5%88%97%E8%A1%A8.md)&emsp;&emsp; | &emsp;&emsp;二叉树&emsp;&emsp; |
 | :---: | :---: | :---: | :------: | :---: | :--------: |
 | ️⭐⭐⭐ | ⭐⭐⭐ | ⭐ | ️⭐  |  ️⭐⭐  | ️⭐⭐⭐   |
 
@@ -47,6 +52,37 @@
 | &emsp;&emsp;贪心&emsp;&emsp;  | &emsp;&emsp;分治&emsp;&emsp;  | &emsp;&emsp;回溯&emsp;&ensp;  | &emsp;[**动态规划**](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns)&emsp; | &emsp;&emsp;[**递归**](https://github.com/gaoshengnan/LeetCode/blob/master/src/main/java/theoreticalBasis/%E9%80%92%E5%BD%92.md)&emsp;&emsp;  | &emsp;复杂度分析&emsp; |
 | :---: | :---: | :---: | :------: | :---: | :--------: |
 | ️⭐⭐⭐  | ⭐⭐⭐  | ⭐⭐⭐  |  ️⭐⭐⭐    | ️⭐⭐⭐ |⭐⭐⭐|
+
+Data Structures
+* Dynamic Array
+* Linked List
+* Stack & Queue
+* Hash Tables
+* Binary Search Tree
+* Binary Heaps & Priority Queue
+* Graphs
+* Trie
+Algorithms
+* Bit Manipulation & Numbers — difference btw Unsigned vs signed numbers
+* Stability in Sorting
+* Mergesort
+* Quicksort
+* Heapsort — Sort it in-place to get O(1) space
+* Binary Search
+* Selections — Kth Smallest Elements (Sort, QuickSelect, Mediums of Mediums) — Implement all three ways
+* Permutations
+* Subsets
+* BFS Graph
+* DFS Graph
+* Dijkstra’s Algorithm (just learn the idea — no need to implement)
+* Tree Traversals — BFS, DFS (in-order, pre-order, post-order): Implement Recursive and Iterative
+* External Sort — No implementation; Just know the concept.
+* NP-Complete (Video) — Just know the concept
+* Topological Sort
+* Detect cycle in an undirected graph
+* Detect a cycle in a directed graph
+* Count connected components in a graph
+* Find strongly connected components in a graph
          
          
 ## 面试常考算法题
