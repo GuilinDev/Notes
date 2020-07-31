@@ -374,6 +374,7 @@
 
 ## 系统设计
 [General互联网产品的设计](https://medium.com/better-programming/how-to-design-a-web-application-software-architecture-101-df568b88da76)
+[Tech Dummies系统设计](https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA)
 #### Metrics System
 1. [新手也能看懂的监控报警系统架构设计](https://dbaplus.cn/news-141-2038-1.html)
 2. [中小型运维团队如何设计运维自动化平台](https://zhuanlan.zhihu.com/p/31285905)
