@@ -429,6 +429,7 @@ Algorithms
 
 #### Distributed Transaction
 1. [Distributed Transactions with MicroServices](https://www.youtube.com/watch?v=S4FnmSeRpAY)
+2. [分布式文件系统](https://cloud.tencent.com/developer/article/1645680)
 
 #### DB 
 
@@ -454,6 +455,8 @@ Algorithms
 #### Compiler
 
 ## Behavioral Questions
-[100个行为问题与答案](https://collegegrad.com/tough-interview-questions)
+1. [100个General BQ与答案](https://collegegrad.com/tough-interview-questions)
+2. [Amazon 14条行为准则]()
+3. [Netflix文化手册]()
 
 
