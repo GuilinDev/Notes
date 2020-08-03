@@ -291,22 +291,22 @@ Algorithms
 |  21  | 简单 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists]() |         |
 |  1371  | 中等 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [Find the Longest Substring Containing Vowels in Even Counts]() |         |
 | 863   | 中等 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [All Nodes Distance K in Binary Tree]() |         |
-|    | 中等 | []() | []() |         |
+|  6  | 中等 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [ZigZag Conversion]() |         |
 | 周三 |  |  |  |  |
 |  232  | 简单 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  8  | 中等 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [String to Integer (atoi)]() |         |
+|  62  | 中等 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Unique Paths]() |         |
+|  63  | 中等 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II]() |         |
 | 周四 |  |  |  |  |
 |  155  | 简单 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Min Stack]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  102  | 中等 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal]() |         |
+|  153  | 中等 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Find Minimum in Rotated Sorted Array]() |         |
+|  213  | 中等 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [House Robber II]() |         |
 | 周五 |  |  |  |  |
 |  455  | 简单 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [Assign Cookies]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  323  | 中等 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Number of Connected Components in an Undirected Graph]() |         |
+|  347  | 中等 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements]() |         |
+|  373  | 中等 | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Find K Pairs with Smallest Sums]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第八周
@@ -315,29 +315,29 @@ Algorithms
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
 |  108  | 简单 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Convert Sorted Array to Binary Search Tree]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  929  | 简单 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [Unique Email Addresses]() |         |
+|  1011  | 中等 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [Capacity To Ship Packages Within D Days]() |         |
 |  887  | 困难 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [Super Egg Drop]() |         |
 | 周二 |  |  |  |  |
 |  538  | 简单 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Convert BST to Greater Tree]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  703  | 简单 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Kth Largest Element in a Stream]() |         |
+|  776  | 中等 | [Split BST](https://leetcode.com/problems/split-bst/) | [Split BST]() |         |
+|  779  | 中等 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/) | [K-th Symbol in Grammar]() |         |
 | 周三 |  |  |  |  |
 |  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|    | 中等 | []() | []() |         |
 | 周四 |  |  |  |  |
 |  409  | 简单 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|    | 中等 | []() | []() |         |
 | 周五 |  |  |  |  |
 |  136  | 简单 | [Single Number](https://leetcode.com/problems/single-number/) | [Single Number]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|    | 中等 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第九周
@@ -350,23 +350,23 @@ Algorithms
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List]() |         |
+|  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II]() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  111  | 简单 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  112  | 简单 | [Path Sum](https://leetcode.com/problems/path-sum/) | [Path Sum]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  121  | 简单 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock]() |         |
+|  122  | 简单 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Best Time to Buy and Sell Stock II]() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
@@ -376,27 +376,27 @@ Algorithms
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  141  | 简单 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Linked List Cycle]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周二 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  276  | 简单 | [Paint Fence](https://leetcode.com/problems/paint-fence/) | [Paint Fence]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周三 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  349  | 简单 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Intersection of Two Arrays]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周四 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  387  | 简单 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [First Unique Character in a String]() |         |
+|  392  | 简单 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence]() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
 | 周五 |  |  |  |  |
-|    | 简单 | []() | []() |         |
+|  617  | 简单 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [Merge Two Binary Trees]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
 |    | 困难 | []() | []() |         |
