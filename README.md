@@ -190,7 +190,7 @@ Algorithms
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  198  | 简单 | [House Robber](https://leetcode.com/problems/house-robber/) | [House Robber]() |         |
+|  198  | 简单 | [House Robber](https://leetcode.com/problems/house-robber/) | [House Robber](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#198-house-robber) |    好好练习DP     |
 |  545  | 中等 | [Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/) | [Boundary of Binary Tree]() |         |
 |  547  | 中等 | [Friend Circles](https://leetcode.com/problems/friend-circles/) | [Friend Circles]() |         |
 |  128  | 困难 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence]() |         |
