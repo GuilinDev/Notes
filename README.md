@@ -194,11 +194,11 @@ Algorithms
 |  545  | 中等 | [Boundary of Binary Tree](https://leetcode.com/problems/boundary-of-binary-tree/) | [Boundary of Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#545-boundary-of-binary-tree) |    1. 分成三部分 <br> 2. 先序     |
 |  547  | 中等 | [Friend Circles](https://leetcode.com/problems/friend-circles/) | [Friend Circles](https://app.gitbook.com/@guilindev/s/interview/leetcode/gao-ji-de-shu-ju-jie-gou-he-suan-fa#547-friend-circles) |    1. DFS<br>2. BFS<br>3. Union Find     |
 |  128  | 困难 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#128-longest-consecutive-sequence) |    1.HashSet<br>2.HashMap + DP<br>3. Union Find     |
-| 周二 |  |  |  |  |
+| 周二 |  |  |  | ✅ |
 |  235  | 简单 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#235-lowest-common-ancestor-of-a-binary-search-tree) |    BST特性     |
 |  208  | 中等 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](https://app.gitbook.com/@guilindev/s/interview/leetcode/trie-qian-zhui-shu#208-implement-trie-prefix-tree) |    挨个处理传入参数的字符即可     |
 |  165  | 中等 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [Compare Version Numbers](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#165-compare-version-number) |    逐个比较每个小版本号     |
-|  84  | 困难 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Largest Rectangle in Histogram]() |         |
+|  84  | 困难 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Largest Rectangle in Histogram](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/array-zhong-de-shu-zi-zu-cheng-san-jiao-xing#84-largest-rectangle-in-histogram) |    1. 要知道暴力法，两边扩散<br>2. Stack + 哨兵，与85对比     |
 | 周三 |  |  |  |  |
 |  110  | 简单 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Balanced Binary Tree]() |         |
 |  230  | 中等 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST]() |         |
