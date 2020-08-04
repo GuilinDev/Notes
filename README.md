@@ -325,8 +325,8 @@ Algorithms
 |  779  | 中等 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/) | [K-th Symbol in Grammar]() |         |
 | 周三 |  |  |  |  |
 |  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  674  | 中等 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [Longest Continuous Increasing Subsequence]() |         |
+|  1143  | 中等 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Longest Common Subsequence]() |         |
 |    | 中等 | []() | []() |         |
 | 周四 |  |  |  |  |
 |  409  | 简单 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome]() |         |
