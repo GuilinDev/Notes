@@ -196,7 +196,7 @@ Algorithms
 |  128  | 困难 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#128-longest-consecutive-sequence) |    1.HashSet<br>2.HashMap + DP<br>3. Union Find     |
 | 周二 |  |  |  |  |
 |  235  | 简单 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#235-lowest-common-ancestor-of-a-binary-search-tree) |    BST特性     |
-|  208  | 中等 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)]() |         |
+|  208  | 中等 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](https://app.gitbook.com/@guilindev/s/interview/leetcode/trie-qian-zhui-shu#208-implement-trie-prefix-tree) |    挨个处理传入参数的字符即可     |
 |  165  | 中等 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [Compare Version Numbers]() |         |
 |  84  | 困难 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Largest Rectangle in Histogram]() |         |
 | 周三 |  |  |  |  |
