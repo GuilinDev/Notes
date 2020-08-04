@@ -195,7 +195,7 @@ Algorithms
 |  547  | 中等 | [Friend Circles](https://leetcode.com/problems/friend-circles/) | [Friend Circles](https://app.gitbook.com/@guilindev/s/interview/leetcode/gao-ji-de-shu-ju-jie-gou-he-suan-fa#547-friend-circles) |    1. DFS<br>2. BFS<br>3. Union Find     |
 |  128  | 困难 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | [Longest Consecutive Sequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#128-longest-consecutive-sequence) |    1.HashSet<br>2.HashMap + DP<br>3. Union Find     |
 | 周二 |  |  |  |  |
-|  235  | 简单 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree]() |         |
+|  235  | 简单 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Lowest Common Ancestor of a Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#235-lowest-common-ancestor-of-a-binary-search-tree) |    BST特性     |
 |  208  | 中等 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)]() |         |
 |  165  | 中等 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [Compare Version Numbers]() |         |
 |  84  | 困难 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Largest Rectangle in Histogram]() |         |
@@ -260,7 +260,7 @@ Algorithms
 |  303  | 简单 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Range Sum Query - Immutable]() |         |
 |  307  | 中等 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Range Sum Query - Mutable]() |         |
 |  946  | 中等 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Validate Stack Sequences]() |         |
-|  236  | 中等 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Lowest Common Ancestor of a Binary Tree]() |         |
+|  236  | 中等 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Lowest Common Ancestor of a Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#236-lowest-common-ancestor-of-binary-tree) |         |
 | 周三 |  |  |  |  |
 |  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | []() |         |
 |  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | []() |         |
