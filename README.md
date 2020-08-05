@@ -202,7 +202,7 @@ Algorithms
 | 周三 |  |  |  |  |
 |  110  | 简单 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Balanced Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#110-balanced-binary-tree) |    求深度然后比较是否大于1     |
 |  230  | 中等 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#230-kth-smallest-element-in-bst) |    InOrder     |
-|  36  | 中等 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku]() |         |
+|  36  | 中等 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#36-valid-sudoku) |    3 hashsets分別查row col cube     |
 |  272  | 困难 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Closest Binary Search Tree Value II]() |         |
 | 周四 |  |  |  |  |
 |  28  | 简单 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Implement strStr()]() |         |
