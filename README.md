@@ -205,8 +205,8 @@ Algorithms
 |  36  | 中等 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#36-valid-sudoku) |    three hashsets分別查row col cube     |
 |  272  | 困难 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Closest Binary Search Tree Value II](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#272-closest-binary-search-tree-value-ii) |    InOrder, LinkedList     |
 | 周四 |  |  |  |  |
-|  28  | 简单 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Implement strStr()](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#28-implement-substr) |    常规解法<br>KMP要了解     |
-|  611  | 中等 | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Valid Triangle Number]() |         |
+|  28  | 简单 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Implement strStr()](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#28-implement-substr) |    常规暴力解法<br>KMP要了解一下     |
+|  611  | 中等 | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Valid Triangle Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/array-zhong-de-shu-zi-zu-cheng-san-jiao-xing#611-valid-triangle-number) |    固定最大边，双指针两条较小的边，类似3Sum     |
 |  366  | 中等 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [Find Leaves of Binary Tree]() |         |
 |  123  | 困难 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [Best Time to Buy and Sell Stock III]() |         |
 | 周五 |  |  |  |  |
