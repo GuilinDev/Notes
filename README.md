@@ -199,11 +199,11 @@ Algorithms
 |  208  | 中等 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [Implement Trie (Prefix Tree)](https://app.gitbook.com/@guilindev/s/interview/leetcode/trie-qian-zhui-shu#208-implement-trie-prefix-tree) |    挨个处理传入参数的字符即可     |
 |  165  | 中等 | [Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers/) | [Compare Version Numbers](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#165-compare-version-number) |    逐个比较每个小版本号     |
 |  84  | 困难 | [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | [Largest Rectangle in Histogram](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/array-zhong-de-shu-zi-zu-cheng-san-jiao-xing#84-largest-rectangle-in-histogram) |    1. 要知道暴力法，两边扩散<br>2. Stack + 哨兵，与85对比     |
-| 周三 |  |  |  |  |
+| 周三 |  |  |  | ✅ |
 |  110  | 简单 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/) | [Balanced Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#110-balanced-binary-tree) |    求深度然后比较是否大于1     |
 |  230  | 中等 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#230-kth-smallest-element-in-bst) |    InOrder     |
-|  36  | 中等 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#36-valid-sudoku) |    3 hashsets分別查row col cube     |
-|  272  | 困难 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Closest Binary Search Tree Value II]() |         |
+|  36  | 中等 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#36-valid-sudoku) |    three hashsets分別查row col cube     |
+|  272  | 困难 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Closest Binary Search Tree Value II](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#272-closest-binary-search-tree-value-ii) |    InOrder, LinkedList     |
 | 周四 |  |  |  |  |
 |  28  | 简单 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Implement strStr()]() |         |
 |  611  | 中等 | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Valid Triangle Number]() |         |
