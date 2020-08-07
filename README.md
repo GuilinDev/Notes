@@ -204,11 +204,11 @@ Algorithms
 |  230  | 中等 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [Kth Smallest Element in a BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#230-kth-smallest-element-in-bst) |    InOrder     |
 |  36  | 中等 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [Valid Sudoku](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#36-valid-sudoku) |    three hashsets分別查row col cube     |
 |  272  | 困难 | [Closest Binary Search Tree Value II](https://leetcode.com/problems/closest-binary-search-tree-value-ii/) | [Closest Binary Search Tree Value II](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#272-closest-binary-search-tree-value-ii) |    InOrder, LinkedList     |
-| 周四 |  |  |  |  |
+| 周四 |  |  |  | ✅ |
 |  28  | 简单 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/) | [Implement strStr()](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#28-implement-substr) |    常规暴力解法<br>KMP要了解一下     |
 |  611  | 中等 | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Valid Triangle Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/array-zhong-de-shu-zi-zu-cheng-san-jiao-xing#611-valid-triangle-number) |    固定最大边，双指针两条较小的边，类似3Sum     |
 |  366  | 中等 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [Find Leaves of Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#366-find-leaves-of-binary-tree) |    DFS，其实是先序     |
-|  123  | 困难 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [Best Time to Buy and Sell Stock III]() |         |
+|  123  | 困难 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [Best Time to Buy and Sell Stock III](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#123-best-time-to-buy-and-sell-stock-iii) |    确定状态机的套路     |
 | 周五 |  |  |  |  |
 |  346  | 简单 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [Moving Average from Data Stream]() |         |
 |  209  | 中等 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Minimum Size Subarray Sum]() |         |
