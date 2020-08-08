@@ -212,7 +212,7 @@ Algorithms
 | 周五 |  |  |  |  |
 |  346  | 简单 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [Moving Average from Data Stream](https://app.gitbook.com/@guilindev/s/interview/leetcode/queue#346-moving-average-from-data-stream) |    LinkedList/Deque     |
 |  209  | 中等 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Minimum Size Subarray Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/hua-dong-chuang-kou#209-minimize-size-subarray-sum) |    双指针<br>二分法     |
-|  240  | 中等 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Search a 2D Matrix II]() |         |
+|  240  | 中等 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Search a 2D Matrix II](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#240-search-a-2d-matrix-ii) |    从右上或者左下开始查找，每次去掉一行或一列     |
 |  407  | 困难 | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [Trapping Rain Water II]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
