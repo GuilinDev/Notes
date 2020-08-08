@@ -209,11 +209,11 @@ Algorithms
 |  611  | 中等 | [Valid Triangle Number](https://leetcode.com/problems/valid-triangle-number/) | [Valid Triangle Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/array-zhong-de-shu-zi-zu-cheng-san-jiao-xing#611-valid-triangle-number) |    固定最大边，双指针两条较小的边，类似3Sum     |
 |  366  | 中等 | [Find Leaves of Binary Tree](https://leetcode.com/problems/find-leaves-of-binary-tree/) | [Find Leaves of Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#366-find-leaves-of-binary-tree) |    DFS，其实是先序     |
 |  123  | 困难 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | [Best Time to Buy and Sell Stock III](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#123-best-time-to-buy-and-sell-stock-iii) |    确定状态机的套路     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  346  | 简单 | [Moving Average from Data Stream](https://leetcode.com/problems/moving-average-from-data-stream/) | [Moving Average from Data Stream](https://app.gitbook.com/@guilindev/s/interview/leetcode/queue#346-moving-average-from-data-stream) |    LinkedList/Deque     |
 |  209  | 中等 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | [Minimum Size Subarray Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/hua-dong-chuang-kou#209-minimize-size-subarray-sum) |    双指针<br>二分法     |
 |  240  | 中等 | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/) | [Search a 2D Matrix II](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#240-search-a-2d-matrix-ii) |    从右上或者左下开始查找，每次去掉一行或一列     |
-|  407  | 困难 | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [Trapping Rain Water II]() |         |
+|  407  | 困难 | [Trapping Rain Water II](https://leetcode.com/problems/trapping-rain-water-ii/) | [Trapping Rain Water II](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#407-trapping-rain-water-ii) |    PQ + BFS     |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第五周
