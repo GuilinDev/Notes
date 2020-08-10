@@ -223,7 +223,7 @@ Algorithms
 | 周一 |  |  |  |  |
 |  339  | 简单 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [Nested List Weight Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#339-nested-list-weight-sum) |    递归DFS     |
 |  116  | 中等 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [Populating Next Right Pointers in Each Node](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#116-populating-next-right-pointers-in-each-node) |    遍历到当前节点式，处理左右子树，DFS或BFS     |
-|  114  | 中等 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [Flatten Binary Tree to Linked List]() |         |
+|  114  | 中等 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [Flatten Binary Tree to Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#114-flatten-binary-tree-to-linked-list) |    1. 先序迭代<br>2.后序遍历     |
 |  305  | 困难 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [Number of Islands II]() |         |
 | 周二 |  |  |  |  |
 |  463  | 简单 | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | [Island Perimeter]() |         |
