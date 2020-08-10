@@ -221,7 +221,7 @@ Algorithms
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  339  | 简单 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [Nested List Weight Sum]() |         |
+|  339  | 简单 | [Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum/) | [Nested List Weight Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#339-nested-list-weight-sum) |    递归DFS     |
 |  116  | 中等 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [Populating Next Right Pointers in Each Node]() |         |
 |  114  | 中等 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [Flatten Binary Tree to Linked List]() |         |
 |  305  | 困难 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [Number of Islands II]() |         |
