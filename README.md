@@ -228,7 +228,7 @@ Algorithms
 | 周二 |  |  |  |  |
 |  463  | 简单 | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | [Island Perimeter](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#463-island-perimeter) |    直接遍历，按照遍历顺序优化只用检查右边和下边的就行     |
 |  284  | 中等 | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) | [Peeking Iterator](https://app.gitbook.com/@guilindev/s/interview/leetcode/7.-design#284-peeking-iterator) |    在Implemented的迭代器基础上新增一个变量记录头部元素即可     |
-|  142  | 中等 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II]() |         |
+|  142  | 中等 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#142-linked-list-cycle-ii) |    先两步一步，再一步一步     |
 |  109  | 中等 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Convert Sorted List to Binary Search Tree]() |         |
 | 周三 |  |  |  |  |
 |  252  | 简单 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Meeting Rooms]() |         |
