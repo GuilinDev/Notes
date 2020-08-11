@@ -225,11 +225,11 @@ Algorithms
 |  116  | 中等 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [Populating Next Right Pointers in Each Node](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#116-populating-next-right-pointers-in-each-node) |    遍历到当前节点式，处理左右子树，DFS或BFS     |
 |  114  | 中等 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [Flatten Binary Tree to Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#114-flatten-binary-tree-to-linked-list) |    1. 先序迭代<br>2.后序遍历     |
 |  305  | 困难 | [Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) | [Number of Islands II](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#305-number-of-islands-ii) |    Union Find     |
-| 周二 |  |  |  |  |
+| 周二 |  |  |  | ✅ |
 |  463  | 简单 | [Island Perimeter](https://leetcode.com/problems/island-perimeter/) | [Island Perimeter](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#463-island-perimeter) |    直接遍历，按照遍历顺序优化只用检查右边和下边的就行     |
 |  284  | 中等 | [Peeking Iterator](https://leetcode.com/problems/peeking-iterator/) | [Peeking Iterator](https://app.gitbook.com/@guilindev/s/interview/leetcode/7.-design#284-peeking-iterator) |    在Implemented的迭代器基础上新增一个变量记录头部元素即可     |
 |  142  | 中等 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#142-linked-list-cycle-ii) |    先两步一步，再一步一步     |
-|  109  | 中等 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Convert Sorted List to Binary Search Tree]() |         |
+|  109  | 中等 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Convert Sorted List to Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#109-convert-sorted-list-to-binary-search-tree) |    快慢指针找中点，递归构建     |
 | 周三 |  |  |  |  |
 |  252  | 简单 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Meeting Rooms]() |         |
 |  130  | 中等 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [Surrounded Regions]() |         |
