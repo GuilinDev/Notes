@@ -231,7 +231,7 @@ Algorithms
 |  142  | 中等 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) | [Linked List Cycle II](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#142-linked-list-cycle-ii) |    先两步一步，再一步一步     |
 |  109  | 中等 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [Convert Sorted List to Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#109-convert-sorted-list-to-binary-search-tree) |    快慢指针找中点，递归构建     |
 | 周三 |  |  |  |  |
-|  252  | 简单 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Meeting Rooms]() |         |
+|  252  | 简单 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Meeting Rooms](https://app.gitbook.com/@guilindev/s/interview/leetcode/hui-wen-jie-gou#252-meeting-rooms) |    对会议开始时间进行排序，检查后一个会议的开始时间是否早于前一个会议的结束时间     |
 |  130  | 中等 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [Surrounded Regions]() |         |
 |  285  | 中等 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [Inorder Successor in BST]() |         |
 |  450  | 中等 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Delete Node in a BST]() |         |
