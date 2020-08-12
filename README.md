@@ -233,7 +233,7 @@ Algorithms
 | 周三 |  |  |  |  |
 |  252  | 简单 | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) | [Meeting Rooms](https://app.gitbook.com/@guilindev/s/interview/leetcode/hui-wen-jie-gou#252-meeting-rooms) |    对会议开始时间进行排序，检查后一个会议的开始时间是否早于前一个会议的结束时间     |
 |  130  | 中等 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [Surrounded Regions](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#130-surrounded-regions) |    1.DFS<br>2.BFS<br>3.Union Find     |
-|  285  | 中等 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [Inorder Successor in BST]() |         |
+|  285  | 中等 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [Inorder Successor in BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#285-inorder-successor-in-bst) |    中序遍历     |
 |  450  | 中等 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Delete Node in a BST]() |         |
 | 周四 |  |  |  |  |
 |  104  | 简单 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Maximum Depth of Binary Tree]() |         |
