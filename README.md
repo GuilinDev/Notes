@@ -237,7 +237,7 @@ Algorithms
 |  450  | 中等 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Delete Node in a BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#450-delete-node-in-a-bst) |    找到待删除节点后的处理情况     |
 | 周四 |  |  |  |  |
 |  104  | 简单 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Maximum Depth of Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#104-maximum-depth-of-binary-tree) |    DFS/BFS     |
-|  150  | 中等 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Evaluate Reverse Polish Notation]() |         |
+|  150  | 中等 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Evaluate Reverse Polish Notation](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#150-evaluate-reverse-polish-notation) |    1.Stack<br>2.递归     |
 |  1008  | 中等 | [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | [Construct Binary Search Tree from Preorder Traversal]() |         |
 |  223  | 中等 | [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | [Rectangle Area]() |         |
 | 周五 |  |  |  |  |
