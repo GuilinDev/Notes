@@ -235,7 +235,7 @@ Algorithms
 |  130  | 中等 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/) | [Surrounded Regions](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#130-surrounded-regions) |    1.DFS<br>2.BFS<br>3.Union Find     |
 |  285  | 中等 | [Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst/) | [Inorder Successor in BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#285-inorder-successor-in-bst) |    中序遍历     |
 |  450  | 中等 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | [Delete Node in a BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#450-delete-node-in-a-bst) |    找到待删除节点后的处理情况     |
-| 周四 |  |  |  |  |
+| 周四 |  |  |  | ✅ |
 |  104  | 简单 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [Maximum Depth of Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#104-maximum-depth-of-binary-tree) |    DFS/BFS     |
 |  150  | 中等 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Evaluate Reverse Polish Notation](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#150-evaluate-reverse-polish-notation) |    1.Stack<br>2.递归     |
 |  1008  | 中等 | [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | [Construct Binary Search Tree from Preorder Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#1008-construct-binary-search-tree-from-preorder-traversal) |    1. 递归<br>2.stack     |
