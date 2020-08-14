@@ -243,7 +243,7 @@ Algorithms
 | 周五 |  |  |  |  |
 |  704  | 简单 | [Binary Search](https://leetcode.com/problems/binary-search/) | [Binary Search](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#704-binary-search) |    模板     |
 |  244  | 中等 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) | [Shortest Word Distance II](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#244-shortest-word-distance-ii) |    HashMap     |
-|  113  | 中等 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | [Path Sum II]() |         |
+|  113  | 中等 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | [Path Sum II](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#113-path-sum-ii) |    DFS回溯     |
 |  654  | 中等 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [Maximum Binary Tree]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
