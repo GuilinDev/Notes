@@ -240,11 +240,11 @@ Algorithms
 |  150  | 中等 | [Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) | [Evaluate Reverse Polish Notation](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#150-evaluate-reverse-polish-notation) |    1.Stack<br>2.递归     |
 |  1008  | 中等 | [Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/) | [Construct Binary Search Tree from Preorder Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#1008-construct-binary-search-tree-from-preorder-traversal) |    1. 递归<br>2.stack     |
 |  223  | 中等 | [Rectangle Area](https://leetcode.com/problems/rectangle-area/) | [Rectangle Area](https://app.gitbook.com/@guilindev/s/interview/leetcode/math#223-rectangle-area) |    先求两矩形面积，再减去重叠区面积     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  704  | 简单 | [Binary Search](https://leetcode.com/problems/binary-search/) | [Binary Search](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#704-binary-search) |    模板     |
 |  244  | 中等 | [Shortest Word Distance II](https://leetcode.com/problems/shortest-word-distance-ii/) | [Shortest Word Distance II](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#244-shortest-word-distance-ii) |    HashMap     |
 |  113  | 中等 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/) | [Path Sum II](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#113-path-sum-ii) |    DFS回溯     |
-|  654  | 中等 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [Maximum Binary Tree]() |         |
+|  654  | 中等 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | [Maximum Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#654-maximum-binary-tree) |    递归     |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第六周
