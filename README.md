@@ -454,6 +454,18 @@ Algorithms
 
 #### Compiler
 
+#### 案例
+1. Design a Chat System (Facebook messenger, Whatsapp)
+2. Design a Video Streaming Service (YouTube, Netflix)
+3. Design a Key-value Store
+4. Design a URL shortener
+5. Design a Web Crawler
+6. Design a Shared Cloud Drive (Google Drive, Dropbox)
+7. Design a News feed System
+8. Design a Search Autocomplete System
+9. Design a Notification System
+10. Design a scalable system that supports millions of users
+
 ## Behavioral Questions
 1. [100个General BQ与答案](https://collegegrad.com/tough-interview-questions)
 2. [Amazon 14条行为准则]()
