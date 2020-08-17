@@ -253,7 +253,7 @@ Algorithms
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
-| 周一 |  |  |  |  |
+| 周一 |  |  |  | ✅ |
 |  605  | 简单 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Can Place Flowers](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#605-can-place-flowers) |    贪心     |
 |  1026  | 中等 | [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) | [Maximum Difference Between Node and Ancestor](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#1026-maximum-difference-between-node-and-ancestor) |    DFS找节点和其左右子树的最大值和最小值     |
 |  86  | 中等 | [Partition List](https://leetcode.com/problems/partition-list/) | [Partition List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#86-partition-list) |    双指针，交换指针的下一个元素     |
