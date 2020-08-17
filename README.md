@@ -252,7 +252,7 @@ Algorithms
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  605  | 简单 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Can Place Flowers]() |         |
+|  605  | 简单 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Can Place Flowers](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#605-can-place-flowers) |    贪心     |
 |  1026  | 中等 | [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) | [Maximum Difference Between Node and Ancestor]() |         |
 |  86  | 中等 | [Partition List](https://leetcode.com/problems/partition-list/) | [Partition List]() |         |
 |  51  | 困难 | [N-Queens](https://leetcode.com/problems/n-queens/) | [N-Queens]() |         |
