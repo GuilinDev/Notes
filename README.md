@@ -91,6 +91,8 @@ Algorithms
 ## 面试常考算法题
 
 以下列出面试高频出现，以及一些非常经典重要的算法题，[点击leetcode的细分类别一定要看](https://leetcode.com/discuss/general-discussion/665604/important-and-useful-links-from-all-over-the-leetcode)，如果想按照类别刷题，可以按照[leetcode的分类题目卡片](https://leetcode.com/explore/interview/card/top-interview-questions-easy/)。在线面试工具通常是类似[Hackerrank](https://www.hackerrank.com/)或者[codepad](https://coderpad.io/)或者公司自己的工具。
+
+每道题的[时间安排](https://medium.com/@alimirio/how-to-solve-problems-on-leetcode-to-prepare-for-technical-interviews-e74781b865d2)。
   
 > 第一周
 
