@@ -255,7 +255,7 @@ Algorithms
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
 |  605  | 简单 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Can Place Flowers](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#605-can-place-flowers) |    贪心     |
-|  1026  | 中等 | [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) | [Maximum Difference Between Node and Ancestor]() |         |
+|  1026  | 中等 | [Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) | [Maximum Difference Between Node and Ancestor](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#1026-maximum-difference-between-node-and-ancestor) |    DFS找节点和其左右子树的最大值和最小值     |
 |  86  | 中等 | [Partition List](https://leetcode.com/problems/partition-list/) | [Partition List]() |         |
 |  51  | 困难 | [N-Queens](https://leetcode.com/problems/n-queens/) | [N-Queens]() |         |
 | 周二 |  |  |  |  |
