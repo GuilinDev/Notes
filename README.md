@@ -261,7 +261,7 @@ Algorithms
 | 周二 |  |  |  |  |
 |  303  | 简单 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Range Sum Query - Immutable](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#303-range-sum-query-immutable) |    1.直接做<br>2.记忆化搜索     |
 |  307  | 中等 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Range Sum Query - Mutable](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#307-range-sum-query-mutable) |    1.直接做<br>2.线段树     |
-|  946  | 中等 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Validate Stack Sequences]() |         |
+|  946  | 中等 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Validate Stack Sequences](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#946-validate-stack-sequence) |    用栈模拟过程     |
 |  236  | 中等 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Lowest Common Ancestor of a Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#236-lowest-common-ancestor-of-binary-tree) |         |
 | 周三 |  |  |  |  |
 |  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List]() |         |
