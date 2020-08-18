@@ -259,13 +259,13 @@ Algorithms
 |  86  | 中等 | [Partition List](https://leetcode.com/problems/partition-list/) | [Partition List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#86-partition-list) |    双指针，交换指针的下一个元素     |
 |  51  | 困难 | [N-Queens](https://leetcode.com/problems/n-queens/) | [N-Queens](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#51-n-queens) |    Backtracking     |
 | 周二 |  |  |  |  |
-|  303  | 简单 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Range Sum Query - Immutable]() |         |
+|  303  | 简单 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | [Range Sum Query - Immutable](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#303-range-sum-query-immutable) |    记忆化     |
 |  307  | 中等 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Range Sum Query - Mutable]() |         |
 |  946  | 中等 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Validate Stack Sequences]() |         |
 |  236  | 中等 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Lowest Common Ancestor of a Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#236-lowest-common-ancestor-of-binary-tree) |         |
 | 周三 |  |  |  |  |
-|  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | []() |         |
-|  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | []() |         |
+|  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List]() |         |
+|  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | [3Sum]() |         |
 |  402  | 中等 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Remove K Digits]() |         |
 |  22  | 中等 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses]() |         |
 | 周四 |  |  |  |  |
