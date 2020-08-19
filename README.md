@@ -263,11 +263,11 @@ Algorithms
 |  307  | 中等 | [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/) | [Range Sum Query - Mutable](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#307-range-sum-query-mutable) |    1.直接做<br>2.线段树     |
 |  946  | 中等 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Validate Stack Sequences](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#946-validate-stack-sequence) |    用栈模拟过程     |
 |  236  | 中等 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Lowest Common Ancestor of a Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#236-lowest-common-ancestor-of-binary-tree) |    根据节点所处的位置进行递归     |
-| 周三 |  |  |  |  |
-|  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#206-reverse-linked-list) |    迭代和递归     |
+| 周三 |  |  |  | ✅ |
+|  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#206-reverse-linked-list) |    迭代和递归都掌握     |
 |  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | [3Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/ksum#15-3sum) |    双指针的扩展-三指针     |
 |  402  | 中等 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Remove K Digits](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#402-remove-k-digits) |    删除较大的左邻居     |
-|  22  | 中等 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses]() |         |
+|  22  | 中等 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#22-generate-parentheses) |     递归检查左右括号的剩余数量    |
 | 周四 |  |  |  |  |
 |  290  | 简单 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Word Pattern]() |         |
 |  452  | 中等 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [Minimum Number of Arrows to Burst Balloons]() |         |
