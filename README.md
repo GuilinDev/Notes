@@ -264,7 +264,7 @@ Algorithms
 |  946  | 中等 | [Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences/) | [Validate Stack Sequences](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#946-validate-stack-sequence) |    用栈模拟过程     |
 |  236  | 中等 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | [Lowest Common Ancestor of a Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#236-lowest-common-ancestor-of-binary-tree) |    根据节点所处的位置进行递归     |
 | 周三 |  |  |  |  |
-|  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List]() |         |
+|  206  | 简单 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Reverse Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#206-reverse-linked-list) |    迭代和递归     |
 |  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | [3Sum]() |         |
 |  402  | 中等 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Remove K Digits]() |         |
 |  22  | 中等 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses]() |         |
