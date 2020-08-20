@@ -271,7 +271,7 @@ Algorithms
 | 周四 |  |  |  |  |
 |  290  | 简单 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Word Pattern](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#290-word-pattern) |    HashMap 可用另外一个HashMap替代containsValue()     |
 |  452  | 中等 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [Minimum Number of Arrows to Burst Balloons](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#452-minimum-number-of-arrows-to-burst-balloons) |    贪心，注意按照左右边缘排序的区别     |
-|  55  | 中等 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Jump Game]() |         |
+|  55  | 中等 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Jump Game](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#55-jump-game) |    1.DP比较前一个元素和前一个状态<br>2.贪心     |
 |  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square]() |         |
 | 周五 |  |  |  |  |
 |  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element]() |         |
