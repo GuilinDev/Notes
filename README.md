@@ -270,7 +270,7 @@ Algorithms
 |  22  | 中等 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#22-generate-parentheses) |     递归检查左右括号的剩余数量    |
 | 周四 |  |  |  |  |
 |  290  | 简单 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Word Pattern](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#290-word-pattern) |    HashMap 可用另外一个HashMap替代containsValue()     |
-|  452  | 中等 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [Minimum Number of Arrows to Burst Balloons]() |         |
+|  452  | 中等 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [Minimum Number of Arrows to Burst Balloons](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#452-minimum-number-of-arrows-to-burst-balloons) |    贪心，注意按照左右边缘排序的区别     |
 |  55  | 中等 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Jump Game]() |         |
 |  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square]() |         |
 | 周五 |  |  |  |  |
