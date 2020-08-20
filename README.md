@@ -269,7 +269,7 @@ Algorithms
 |  402  | 中等 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Remove K Digits](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#402-remove-k-digits) |    删除较大的左邻居     |
 |  22  | 中等 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#22-generate-parentheses) |     递归检查左右括号的剩余数量    |
 | 周四 |  |  |  |  |
-|  290  | 简单 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Word Pattern]() |         |
+|  290  | 简单 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Word Pattern](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#290-word-pattern) |    HashMap 可用另外一个HashMap替代containsValue()     |
 |  452  | 中等 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [Minimum Number of Arrows to Burst Balloons]() |         |
 |  55  | 中等 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Jump Game]() |         |
 |  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square]() |         |
