@@ -273,11 +273,11 @@ Algorithms
 |  452  | 中等 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [Minimum Number of Arrows to Burst Balloons](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#452-minimum-number-of-arrows-to-burst-balloons) |    贪心，注意按照左右边缘排序的区别     |
 |  55  | 中等 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Jump Game](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#55-jump-game) |    1.DP比较前一个元素和前一个状态<br>2.贪心     |
 |  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#473-matchsticks-to-square) |    DFS并剪枝     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#169-majority-element) |    投票算法     |
 |  78  | 中等 | [Subsets](https://leetcode.com/problems/subsets/) | [Subsets](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#78-subsets) |    [回溯模板](https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning))     |
 |  187  | 中等 | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | [Repeated DNA Sequences](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled#187-repeated-dna-sequence) |    两个sets:<br>1.滑动窗口<br>2.位操作     |
-|  120  | 中等 | [Triangle](https://leetcode.com/problems/triangle/) | [Triangle]() |         |
+|  120  | 中等 | [Triangle](https://leetcode.com/problems/triangle/) | [Triangle](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#120-triangle) |   DP从最后一行开始递推      |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第七周
