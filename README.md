@@ -274,7 +274,7 @@ Algorithms
 |  55  | 中等 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Jump Game](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#55-jump-game) |    1.DP比较前一个元素和前一个状态<br>2.贪心     |
 |  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#473-matchsticks-to-square) |    DFS并剪枝     |
 | 周五 |  |  |  |  |
-|  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element]() |         |
+|  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#169-majority-element) |    投票算法     |
 |  78  | 中等 | [Subsets](https://leetcode.com/problems/subsets/) | [Subsets]() |         |
 |  187  | 中等 | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | [Repeated DNA Sequences]() |         |
 |  120  | 中等 | [Triangle](https://leetcode.com/problems/triangle/) | [Triangle]() |         |
