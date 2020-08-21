@@ -275,7 +275,7 @@ Algorithms
 |  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#473-matchsticks-to-square) |    DFS并剪枝     |
 | 周五 |  |  |  |  |
 |  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#169-majority-element) |    投票算法     |
-|  78  | 中等 | [Subsets](https://leetcode.com/problems/subsets/) | [Subsets](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#78-subsets) |    Backtracking     |
+|  78  | 中等 | [Subsets](https://leetcode.com/problems/subsets/) | [Subsets](https://app.gitbook.com/@guilindev/s/interview/leetcode/backtracking#78-subsets) |    [回溯模板](https://leetcode.com/problems/permutations/discuss/18239/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partioning))     |
 |  187  | 中等 | [Repeated DNA Sequences](https://leetcode.com/problems/repeated-dna-sequences/) | [Repeated DNA Sequences]() |         |
 |  120  | 中等 | [Triangle](https://leetcode.com/problems/triangle/) | [Triangle]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
