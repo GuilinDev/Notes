@@ -268,11 +268,11 @@ Algorithms
 |  15  | 中等 | [3Sum](https://leetcode.com/problems/3sum/) | [3Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/ksum#15-3sum) |    双指针的扩展-三指针     |
 |  402  | 中等 | [Remove K Digits](https://leetcode.com/problems/remove-k-digits/) | [Remove K Digits](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#402-remove-k-digits) |    删除较大的左邻居     |
 |  22  | 中等 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | [Generate Parentheses](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#22-generate-parentheses) |     递归检查左右括号的剩余数量    |
-| 周四 |  |  |  |  |
+| 周四 |  |  |  | ✅ |
 |  290  | 简单 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | [Word Pattern](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#290-word-pattern) |    HashMap 可用另外一个HashMap替代containsValue()     |
 |  452  | 中等 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [Minimum Number of Arrows to Burst Balloons](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#452-minimum-number-of-arrows-to-burst-balloons) |    贪心，注意按照左右边缘排序的区别     |
 |  55  | 中等 | [Jump Game](https://leetcode.com/problems/jump-game/) | [Jump Game](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#55-jump-game) |    1.DP比较前一个元素和前一个状态<br>2.贪心     |
-|  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square]() |         |
+|  473  | 中等 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Matchsticks to Square](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#473-matchsticks-to-square) |    DFS并剪枝     |
 | 周五 |  |  |  |  |
 |  169  | 简单 | [Majority Element](https://leetcode.com/problems/majority-element/) | [Majority Element]() |         |
 |  78  | 中等 | [Subsets](https://leetcode.com/problems/subsets/) | [Subsets]() |         |
