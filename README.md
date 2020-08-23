@@ -279,7 +279,7 @@ Algorithms
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  160  | 简单 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Intersection of Two Linked Lists](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#160-intersection-of-two-linked-lists) |    确保做相同长度的路     |
+|  160  | 简单 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Intersection of Two Linked Lists](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#160-intersection-of-two-linked-lists) |    确保两个指针走相同长度的路     |
 |  1197  | 中等 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Minimum Knight Moves]() |         |
 |  1248  | 中等 | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [Count Number of Nice Subarrays]() |         |
 |  727  | 困难 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [Minimum Window Subsequence]() |         |
