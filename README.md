@@ -281,7 +281,7 @@ Algorithms
 | 周一 |  |  |  |  |
 |  160  | 简单 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Intersection of Two Linked Lists](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#160-intersection-of-two-linked-lists) |    确保两个指针走相同长度的路     |
 |  1197  | 中等 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Minimum Knight Moves]() |         |
-|  1248  | 中等 | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [Count Number of Nice Subarrays]() |         |
+|  1248  | 中等 | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [Count Number of Nice Subarrays](https://app.gitbook.com/@guilindev/s/interview/leetcode/hua-dong-chuang-kou#1248-count-number-of-nice-subarrays) |    1.双指针<br>2.前缀和     |
 |  727  | 困难 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [Minimum Window Subsequence]() |         |
 | 周二 |  |  |  |  |
 |  21  | 简单 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists]() |         |
