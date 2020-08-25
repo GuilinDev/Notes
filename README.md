@@ -287,7 +287,7 @@ Algorithms
 |  21  | 简单 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#21-merge-two-sorted-lists) |    dummy迭代和递归都要掌握     |
 |  1371  | 中等 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [Find the Longest Substring Containing Vowels in Even Counts]() |         |
 | 863   | 中等 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [All Nodes Distance K in Binary Tree]() |         |
-|  6  | 中等 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [ZigZag Conversion]() |         |
+|  6  | 中等 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [ZigZag Conversion](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#6-zigzag-conversion) |    坐标转换     |
 | 周三 |  |  |  |  |
 |  232  | 简单 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks]() |         |
 |  8  | 中等 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [String to Integer (atoi)]() |         |
