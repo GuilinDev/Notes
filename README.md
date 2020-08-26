@@ -289,7 +289,7 @@ Algorithms
 | 863   | 中等 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [All Nodes Distance K in Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#863-all-nodes-distance-k-in-binary-tree) |    1.DFS<br>2.BFS当作图处理     |
 |  6  | 中等 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [ZigZag Conversion](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#6-zigzag-conversion) |    坐标转换     |
 | 周三 |  |  |  |  |
-|  232  | 简单 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks]() |         |
+|  232  | 简单 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#232-implement-queue-using-stacks) |    两个stacks     |
 |  8  | 中等 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [String to Integer (atoi)]() |         |
 |  62  | 中等 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Unique Paths]() |         |
 |  63  | 中等 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II]() |         |
