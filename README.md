@@ -283,7 +283,7 @@ Algorithms
 |  1197  | 中等 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Minimum Knight Moves](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-3#1197-minimum-knight-moves) |    BFS最短路径     |
 |  1248  | 中等 | [Count Number of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays/) | [Count Number of Nice Subarrays](https://app.gitbook.com/@guilindev/s/interview/leetcode/hua-dong-chuang-kou#1248-count-number-of-nice-subarrays) |    1.双指针<br>2.前缀和     |
 |  727  | 困难 | [Minimum Window Subsequence](https://leetcode.com/problems/minimum-window-subsequence/) | [Minimum Window Subsequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#727-minimum-window-subsequence) |    二维DP     |
-| 周二 |  |  |  |  |
+| 周二 |  |  |  | ✅ |
 |  21  | 简单 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Merge Two Sorted Lists](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#21-merge-two-sorted-lists) |    dummy迭代和递归都要掌握     |
 |  1371  | 中等 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [Find the Longest Substring Containing Vowels in Even Counts](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#1371-find-the-longest-substring-containing-vowels-in-even-counts) |    前缀和+状态压缩     |
 | 863   | 中等 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [All Nodes Distance K in Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#863-all-nodes-distance-k-in-binary-tree) |    1.DFS<br>2.BFS当作图处理     |
