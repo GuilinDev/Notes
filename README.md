@@ -288,11 +288,11 @@ Algorithms
 |  1371  | 中等 | [Find the Longest Substring Containing Vowels in Even Counts](https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/) | [Find the Longest Substring Containing Vowels in Even Counts](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#1371-find-the-longest-substring-containing-vowels-in-even-counts) |    前缀和+状态压缩     |
 | 863   | 中等 | [All Nodes Distance K in Binary Tree](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [All Nodes Distance K in Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#863-all-nodes-distance-k-in-binary-tree) |    1.DFS<br>2.BFS当作图处理     |
 |  6  | 中等 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/) | [ZigZag Conversion](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#6-zigzag-conversion) |    坐标转换     |
-| 周三 |  |  |  |  |
+| 周三 |  |  |  | ✅ |
 |  232  | 简单 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#232-implement-queue-using-stacks) |    两个stacks     |
 |  8  | 中等 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [String to Integer (atoi)](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#8-string-to-integer-atoi) |    空格/正负号/越界等corner cases     |
 |  62  | 中等 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Unique Paths](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#62-unique-paths) |    DP并考虑状态压缩     |
-|  63  | 中等 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II]() |         |
+|  63  | 中等 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#63-unique-path-ii) |    DP并考虑状态压缩，障碍物影响路径状态     |
 | 周四 |  |  |  |  |
 |  155  | 简单 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Min Stack]() |         |
 |  102  | 中等 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal]() |         |
