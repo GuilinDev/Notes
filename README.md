@@ -291,7 +291,7 @@ Algorithms
 | 周三 |  |  |  |  |
 |  232  | 简单 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Implement Queue using Stacks](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#232-implement-queue-using-stacks) |    两个stacks     |
 |  8  | 中等 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [String to Integer (atoi)](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#8-string-to-integer-atoi) |    空格/正负号/越界等corner cases     |
-|  62  | 中等 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Unique Paths]() |         |
+|  62  | 中等 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Unique Paths](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#62-unique-paths) |    DP并考虑状态压缩     |
 |  63  | 中等 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II]() |         |
 | 周四 |  |  |  |  |
 |  155  | 简单 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Min Stack]() |         |
