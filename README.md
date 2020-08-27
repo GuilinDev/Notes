@@ -296,7 +296,7 @@ Algorithms
 | 周四 |  |  |  |  |
 |  155  | 简单 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Min Stack](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#155-min-stack) |    1.两个stack<br>2.一个stack，最小值存在栈顶元素下     |
 |  102  | 中等 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#102-binary-tree-level-order-traversal) |    1. BFS<br>2. DFS了解     |
-|  153  | 中等 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Find Minimum in Rotated Sorted Array]() |         |
+|  153  | 中等 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Find Minimum in Rotated Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#153-find-minimum-in-rotated-sorted-array) |    按情况Binary Search     |
 |  213  | 中等 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [House Robber II]() |         |
 | 周五 |  |  |  |  |
 |  455  | 简单 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [Assign Cookies]() |         |
