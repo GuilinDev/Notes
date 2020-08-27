@@ -294,7 +294,7 @@ Algorithms
 |  62  | 中等 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Unique Paths](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#62-unique-paths) |    DP并考虑状态压缩     |
 |  63  | 中等 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#63-unique-path-ii) |    DP并考虑状态压缩，障碍物影响路径状态     |
 | 周四 |  |  |  |  |
-|  155  | 简单 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Min Stack]() |         |
+|  155  | 简单 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Min Stack](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#155-min-stack) |    1.两个stack<br>2.一个stack，最小值存在栈顶元素下     |
 |  102  | 中等 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal]() |         |
 |  153  | 中等 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Find Minimum in Rotated Sorted Array]() |         |
 |  213  | 中等 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [House Robber II]() |         |
