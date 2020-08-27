@@ -293,11 +293,11 @@ Algorithms
 |  8  | 中等 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | [String to Integer (atoi)](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#8-string-to-integer-atoi) |    空格/正负号/越界等corner cases     |
 |  62  | 中等 | [Unique Paths](https://leetcode.com/problems/unique-paths/) | [Unique Paths](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#62-unique-paths) |    DP并考虑状态压缩     |
 |  63  | 中等 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/) | [Unique Paths II](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#63-unique-path-ii) |    DP并考虑状态压缩，障碍物影响路径状态     |
-| 周四 |  |  |  |  |
+| 周四 |  |  |  | ✅ |
 |  155  | 简单 | [Min Stack](https://leetcode.com/problems/min-stack/) | [Min Stack](https://app.gitbook.com/@guilindev/s/interview/leetcode/stack#155-min-stack) |    1.两个stack<br>2.一个stack，最小值存在栈顶元素下     |
 |  102  | 中等 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#102-binary-tree-level-order-traversal) |    1. BFS<br>2. DFS了解     |
 |  153  | 中等 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Find Minimum in Rotated Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#153-find-minimum-in-rotated-sorted-array) |    按情况Binary Search     |
-|  213  | 中等 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [House Robber II]() |         |
+|  213  | 中等 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [House Robber II](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#213-house-robber-ii) |    分区间DP     |
 | 周五 |  |  |  |  |
 |  455  | 简单 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [Assign Cookies]() |         |
 |  323  | 中等 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Number of Connected Components in an Undirected Graph]() |         |
