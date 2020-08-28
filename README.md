@@ -299,7 +299,7 @@ Algorithms
 |  153  | 中等 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Find Minimum in Rotated Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#153-find-minimum-in-rotated-sorted-array) |    按情况Binary Search     |
 |  213  | 中等 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [House Robber II](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#213-house-robber-ii) |    分区间DP     |
 | 周五 |  |  |  |  |
-|  455  | 简单 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [Assign Cookies]() |         |
+|  455  | 简单 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [Assign Cookies](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#455-assign-cookies) |    排序+贪心     |
 |  323  | 中等 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Number of Connected Components in an Undirected Graph]() |         |
 |  347  | 中等 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements]() |         |
 |  373  | 中等 | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Find K Pairs with Smallest Sums]() |         |
