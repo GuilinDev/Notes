@@ -301,7 +301,7 @@ Algorithms
 | 周五 |  |  |  |  |
 |  455  | 简单 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [Assign Cookies](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#455-assign-cookies) |    排序+贪心     |
 |  323  | 中等 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Number of Connected Components in an Undirected Graph](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#323-number-of-connected-components-in-an-undirected-graph) |    1. DFS<br>2. BFS<br>3. Union Find     |
-|  347  | 中等 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements]() |         |
+|  347  | 中等 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#347-top-k-frequent-elements) |    1. HashMap + 最大堆<br>2. TreeMap<br>3. 桶排序     |
 |  373  | 中等 | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Find K Pairs with Smallest Sums]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
