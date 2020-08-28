@@ -298,11 +298,11 @@ Algorithms
 |  102  | 中等 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [Binary Tree Level Order Traversal](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#102-binary-tree-level-order-traversal) |    1. BFS<br>2. DFS了解     |
 |  153  | 中等 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | [Find Minimum in Rotated Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#153-find-minimum-in-rotated-sorted-array) |    按情况Binary Search     |
 |  213  | 中等 | [House Robber II](https://leetcode.com/problems/house-robber-ii/) | [House Robber II](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#213-house-robber-ii) |    分区间DP     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  455  | 简单 | [Assign Cookies](https://leetcode.com/problems/assign-cookies/) | [Assign Cookies](https://app.gitbook.com/@guilindev/s/interview/leetcode/greedy#455-assign-cookies) |    排序+贪心     |
 |  323  | 中等 | [Number of Connected Components in an Undirected Graph](https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/) | [Number of Connected Components in an Undirected Graph](https://app.gitbook.com/@guilindev/s/interview/leetcode/dfs#323-number-of-connected-components-in-an-undirected-graph) |    1. DFS<br>2. BFS<br>3. Union Find     |
 |  347  | 中等 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | [Top K Frequent Elements](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#347-top-k-frequent-elements) |    1. HashMap + 最大堆<br>2. TreeMap<br>3. 桶排序     |
-|  373  | 中等 | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Find K Pairs with Smallest Sums]() |         |
+|  373  | 中等 | [Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) | [Find K Pairs with Smallest Sums](https://app.gitbook.com/@guilindev/s/interview/leetcode/heap#373-find-k-pairs-with-smallest-sums) |    最小堆     |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第八周
