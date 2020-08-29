@@ -342,29 +342,29 @@ Algorithms
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
 |  88  | 简单 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Merge Sorted Array]() |         |
-|    | 中等 | []() | []() |         |
+|  380  | 中等 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [Insert Delete GetRandom O(1)]() |         |
 |    | 中等 | []() | []() |         |
 |  269  | 困难 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [Alien Dictionary]() |         |
 | 周二 |  |  |  |  |
 |  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List]() |         |
 |  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II]() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  348  | 中等 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [Design Tic-Tac-Toe]() |         |
+|  289  | 中等 | [Game of Life](https://leetcode.com/problems/game-of-life/) | [Game of Life]() |         |
 | 周三 |  |  |  |  |
 |  111  | 简单 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  234  | 简单 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List]() |         |
+|  48  | 中等 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Rotate Image]() |         |
+|  152  | 中等 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray]() |         |
 | 周四 |  |  |  |  |
 |  112  | 简单 | [Path Sum](https://leetcode.com/problems/path-sum/) | [Path Sum]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  202  | 简单 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Happy Number]() |         |
+|  179  | 中等 | [Largest Number](https://leetcode.com/problems/largest-number/) | [Largest Number](https://leetcode.com/problems/largest-number/) |         |
+|  75  | 中等 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Sort Colors]() |         |
 | 周五 |  |  |  |  |
 |  121  | 简单 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock]() |         |
 |  122  | 简单 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Best Time to Buy and Sell Stock II]() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  315  | 困难 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [Count of Smaller Numbers After Self]() |         |
+|  218  | 困难 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | [The Skyline Problem]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第十周
@@ -373,29 +373,29 @@ Algorithms
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
 |  141  | 简单 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Linked List Cycle]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  13  | 简单 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Roman to Integer]() |         |
+|  148  | 中等 | [Sort List](https://leetcode.com/problems/sort-list/) | [Sort List]() |         |
 |  76  | 困难 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring]() |         |
 | 周二 |  |  |  |  |
 |  276  | 简单 | [Paint Fence](https://leetcode.com/problems/paint-fence/) | [Paint Fence]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  14  | 简单 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Longest Common Prefix]() |         |
+|  131  | 中等 | [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/) | [Palindrome Partitioning]() |         |
+|  287  | 中等 | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) | [Find the Duplicate Number]() |         |
 | 周三 |  |  |  |  |
 |  349  | 简单 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | [Intersection of Two Arrays]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  166  | 中等 | [Fraction to Recurring Decimal](https://leetcode.com/problems/fraction-to-recurring-decimal/) | [Fraction to Recurring Decimal]() |         |
+|  279  | 中等 | [Perfect Squares](https://leetcode.com/problems/perfect-squares/) | [Perfect Squares]() |         |
+|  395  | 中等 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | [Longest Substring with At Least K Repeating Characters]() |         |
 | 周四 |  |  |  |  |
 |  387  | 简单 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [First Unique Character in a String]() |         |
 |  392  | 简单 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence]() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  149  | 困难 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Max Points on a Line]() |         |
 | 周五 |  |  |  |  |
 |  617  | 简单 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [Merge Two Binary Trees]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  204  | 简单 | [Count Primes](https://leetcode.com/problems/count-primes/) | [Count Primes]() |         |
+|  41  | 中等 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [First Missing Positive]() |         |
+|  340  | 困难 | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [Longest Substring with At Most K Distinct Characters]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 ## 经典话题
