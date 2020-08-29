@@ -323,17 +323,17 @@ Algorithms
 |  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | []() |         |
 |  674  | 中等 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [Longest Continuous Increasing Subsequence]() |         |
 |  1143  | 中等 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Longest Common Subsequence]() |         |
-|    | 中等 | []() | []() |         |
+|  11  | 中等 | [Container With Most Water ](https://leetcode.com/problems/container-with-most-water/) | [Container With Most Water ]() |         |
 | 周四 |  |  |  |  |
 |  409  | 简单 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome]() |         |
 |  54  | 中等 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [Spiral Matrix]() |         |
 |  59  | 中等 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Spiral Matrix II]() |         |
-|    | 中等 | []() | []() |         |
+|  17  | 中等 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Letter Combinations of a Phone Number]() |         |
 | 周五 |  |  |  |  |
 |  136  | 简单 | [Single Number](https://leetcode.com/problems/single-number/) | [Single Number]() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  7  | 简单 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Reverse Integer]() |         |
+|  19  | 中等 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Remove Nth Node From End of List]() |         |
+|  238  | 中等 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第九周
@@ -344,7 +344,7 @@ Algorithms
 |  88  | 简单 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Merge Sorted Array]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  269  | 困难 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [Alien Dictionary]() |         |
 | 周二 |  |  |  |  |
 |  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List]() |         |
 |  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II]() |         |
@@ -375,7 +375,7 @@ Algorithms
 |  141  | 简单 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Linked List Cycle]() |         |
 |    | 中等 | []() | []() |         |
 |    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  76  | 困难 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring]() |         |
 | 周二 |  |  |  |  |
 |  276  | 简单 | [Paint Fence](https://leetcode.com/problems/paint-fence/) | [Paint Fence]() |         |
 |    | 中等 | []() | []() |         |
