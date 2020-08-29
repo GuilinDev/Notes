@@ -343,7 +343,7 @@ Algorithms
 | 周一 |  |  |  |  |
 |  88  | 简单 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Merge Sorted Array]() |         |
 |  380  | 中等 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [Insert Delete GetRandom O(1)]() |         |
-|    | 中等 | []() | []() |         |
+|  378  | 中等 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | [Kth Smallest Element in a Sorted Matrix]() |         |
 |  269  | 困难 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [Alien Dictionary]() |         |
 | 周二 |  |  |  |  |
 |  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List]() |         |
@@ -416,16 +416,26 @@ Algorithms
 |  543  | 简单 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Diameter of Binary Tree]() |         |
 |  647  | 简单 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [Palindromic Substrings]() |         |
 |  739  | 中等 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [Daily Temperatures]() |         |
-|    | 中等 | []() | []() |         |
+|  162  | 中等 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | [Find Peak Element]() |         |
 | 周四 |  |  |  |  |
-|    | 简单 | []() | []() |         |
-|    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
-|    | 困难 | []() | []() |         |
+|  242  | 简单 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | [Valid Anagram]() |         |
+|  268  | 简单 | [Missing Number](https://leetcode.com/problems/missing-number/) | [Missing Number]() |         |
+|  73  | 中等 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | [Set Matrix Zeroes]() |         |
+|  29  | 中等 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | [Divide Two Integers]() |         |
 | 周五 |  |  |  |  |
+|  38  | 简单 | [Count and Say](https://leetcode.com/problems/count-and-say/) | [Count and Say]() |         |
+|  189  | 简单 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Rotate Array]() |         |
+|  384  | 中等 | [Shuffle an Array](https://leetcode.com/problems/shuffle-an-array/) | [Shuffle an Array]() |         |
+|  44  | 困难 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/) | [Wildcard Matching]() |         |
+| 周六 |  |  |  |  |
+|  101  | 简单 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | [Symmetric Tree]() |         |
+|  70  | 简单 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [Climbing Stairs]() |         |
+|  134  | 中等 | [Gas Station](https://leetcode.com/problems/gas-station/) | [Gas Station]() |         |
+|  140  | 困难 | [Word Break II](https://leetcode.com/problems/word-break-ii/) | [Word Break II]() |         |
+| 周日 |  |  |  |  |
 |    | 简单 | []() | []() |         |
 |    | 简单 | []() | []() |         |
-|    | 中等 | []() | []() |         |
+|  877  | 中等 | [Stone Game](https://leetcode.com/problems/stone-game/) | [Stone Game]() |         |
 |    | 困难 | []() | []() |         |
 
 ## 经典话题
