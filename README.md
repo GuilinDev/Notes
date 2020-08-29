@@ -389,7 +389,7 @@ Algorithms
 | 周四 |  |  |  |  |
 |  387  | 简单 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [First Unique Character in a String]() |         |
 |  392  | 简单 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence]() |         |
-|    | 中等 | []() | []() |         |
+|  221  | 中等 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | [Maximal Square]() |         |
 |  149  | 困难 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Max Points on a Line]() |         |
 | 周五 |  |  |  |  |
 |  617  | 简单 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | [Merge Two Binary Trees]() |         |
@@ -397,6 +397,36 @@ Algorithms
 |  41  | 中等 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | [First Missing Positive]() |         |
 |  340  | 困难 | [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) | [Longest Substring with At Most K Distinct Characters]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
+
+> extra
+
+| &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
+| :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
+| 周一 |  |  |  |  |
+|  448  | 简单 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | [Find All Numbers Disappeared in an Array]() |         |
+|  394  | 中等 | [Decode String](https://leetcode.com/problems/decode-string/) | [Decode String]() |         |
+|  338  | 中等 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | [Counting Bits]() |         |
+|  406  | 中等 | [Queue Reconstruction by Height](https://leetcode.com/problems/queue-reconstruction-by-height/) | [Queue Reconstruction by Height]() |         |
+| 周二 |  |  |  |  |
+|  438  | 中等 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Find All Anagrams in a String]() |         |
+|  416  | 中等 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | [Partition Equal Subset Sum]() |         |
+|  437  | 中等 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/) | [Path Sum III]() |         |
+|  494  | 中等 | [Target Sum](https://leetcode.com/problems/target-sum/) | [Target Sum]() |         |
+| 周三 |  |  |  |  |
+|  543  | 简单 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Diameter of Binary Tree]() |         |
+|  647  | 简单 | [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) | [Palindromic Substrings]() |         |
+|  739  | 中等 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [Daily Temperatures]() |         |
+|    | 中等 | []() | []() |         |
+| 周四 |  |  |  |  |
+|    | 简单 | []() | []() |         |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
+| 周五 |  |  |  |  |
+|    | 简单 | []() | []() |         |
+|    | 简单 | []() | []() |         |
+|    | 中等 | []() | []() |         |
+|    | 困难 | []() | []() |         |
 
 ## 经典话题
 
