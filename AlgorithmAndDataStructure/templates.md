@@ -224,7 +224,7 @@ boolean dfs(int maze[][], int x, int y) {
     }
 
     // 付出了所有的努力还是没能找到B，返回false
-    return false;
+    return false;
   
 }
 ```
