@@ -1,3 +1,55 @@
+#### 二分
+迭代
+```java
+int binarySearch(int[] nums, int target, int low, int high) {
+    // 在 while 循环里，判断搜索的区间范围是否有效
+    while (low <= high) {
+        // 计算正中间的数的下标
+        int middle = low + (high - low) / 2;
+    
+    // 判断正中间的那个数是不是要找的目标数 target。如果是，就返回下标 middle
+    if (nums[middle] == target) {
+        return middle;
+    }
+    
+    // 如果发现目标数在左边，调整搜索区间的终点为 middle - 1；否则，调整搜索区间的起点为 middle + 1
+    if (target < nums[middle]) {
+        high = middle - 1;
+      } else {
+        low = middle + 1;
+      }
+    }
+
+    // 如果超出了搜索区间，表明无法找到目标数，返回 -1  
+    return -1;
+}
+```
+递归
+```java
+// 二分搜索函数的定义里，除了要指定数组 nums 和目标查找数 target 之外，还要指定查找区间的起点和终点位置，分别用 low 和 high 去表示。
+int binarySearch(int[] nums, int target, int low, int high) {
+        // 为了避免无限循环，先判断，如果起点位置大于终点位置，表明这是一个非法的区间，已经尝试了所有的搜索区间还是没能找到结果，返回 -1。 
+
+if (low > high) { // 等于还可以查一下
+        return -1;
+    }
+    // 取正中间那个数的下标 middle。
+    int middle = low + (high - low) / 2;
+    
+    // 判断一下正中间的那个数是不是要找的目标数 target，是，就返回下标 middle。    
+    if (nums[middle] == target) {
+        return middle;
+    }
+    
+    // 如果发现目标数在左边，就递归地从左半边进行二分搜索。
+    if (target < nums[middle]) {
+        return binarySearch(nums, target, low, middle - 1);
+      } else {
+        return binarySearch(nums, target, middle + 1, high);
+    }//否则从右半边递归地进行二分搜索。
+}
+```
+
 #### 递归
 
 ```java
