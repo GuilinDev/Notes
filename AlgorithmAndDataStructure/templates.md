@@ -259,7 +259,7 @@ boolean dfs(int maze[][], int x, int y) {
             }
         }
     }
-    return false;
+    return false;
 }
 ```
 
