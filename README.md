@@ -310,7 +310,7 @@ Algorithms
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  108  | 简单 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Convert Sorted Array to Binary Search Tree]() |         |
+|  108  | 简单 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Convert Sorted Array to Binary Search Tree]() |    二分搜索父节点     |
 |  929  | 简单 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [Unique Email Addresses]() |         |
 |  1011  | 中等 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [Capacity To Ship Packages Within D Days]() |         |
 |  887  | 困难 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [Super Egg Drop]() |         |
