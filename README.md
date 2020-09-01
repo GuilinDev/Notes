@@ -317,7 +317,7 @@ Algorithms
 | 周二 |  |  |  |  |
 |  538  | 简单 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Convert BST to Greater Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#538-convert-bst-to-greater-tree) |    先右后左     |
 |  703  | 简单 | [Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/) | [Kth Largest Element in a Stream](https://app.gitbook.com/@guilindev/s/interview/leetcode/heap#703-kth-largest-element-in-a-stream) |    优先队列实现小顶堆     |
-|  776  | 中等 | [Split BST](https://leetcode.com/problems/split-bst/) | [Split BST]() |         |
+|  776  | 中等 | [Split BST](https://leetcode.com/problems/split-bst/) | [Split BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#776-split-bst) |    递归，根据当前root值，连接左子树的较大部分或右子树的较小部分     |
 |  779  | 中等 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/) | [K-th Symbol in Grammar]() |         |
 | 周三 |  |  |  |  |
 |  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | []() |         |
