@@ -312,7 +312,7 @@ Algorithms
 | 周一 |  |  |  |  |
 |  108  | 简单 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/) | [Convert Sorted Array to Binary Search Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#108-convert-sorted-array-to-binary-search-tree) |    二分搜索父节点     |
 |  929  | 简单 | [Unique Email Addresses](https://leetcode.com/problems/unique-email-addresses/) | [Unique Email Addresses](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#929-unique-email-address) |    直接思路，hashset除重     |
-|  1011  | 中等 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [Capacity To Ship Packages Within D Days]() |         |
+|  1011  | 中等 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | [Capacity To Ship Packages Within D Days](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#1011-capacity-to-ship-packages-within-d-days) |    二分搜索     |
 |  887  | 困难 | [Super Egg Drop](https://leetcode.com/problems/super-egg-drop/) | [Super Egg Drop]() |         |
 | 周二 |  |  |  |  |
 |  538  | 简单 | [Convert BST to Greater Tree](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Convert BST to Greater Tree]() |         |
