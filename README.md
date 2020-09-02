@@ -322,7 +322,7 @@ Algorithms
 | 周三 |  |  |  |  |
 |  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Search Insert Position](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#35-search-insertion-position) |    正常二分，注意left移动的位置     |
 |  674  | 简单 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [Longest Continuous Increasing Subsequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#674-longest-continuous-increasing-subsequence) |    DP思想的简化     |
-|  1143  | 中等 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Longest Common Subsequence]() |         |
+|  1143  | 中等 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Longest Common Subsequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#1143-longest-common-subsequence) |    二维DP     |
 |  11  | 中等 | [Container With Most Water ](https://leetcode.com/problems/container-with-most-water/) | [Container With Most Water ]() |         |
 | 周四 |  |  |  |  |
 |  409  | 简单 | [Longest Palindrome](https://leetcode.com/problems/longest-palindrome/) | [Longest Palindrome]() |         |
