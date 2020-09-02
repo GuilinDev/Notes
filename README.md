@@ -320,7 +320,7 @@ Algorithms
 |  776  | 中等 | [Split BST](https://leetcode.com/problems/split-bst/) | [Split BST](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#776-split-bst) |    递归，根据当前root值，连接左子树的较大部分或右子树的较小部分     |
 |  779  | 中等 | [K-th Symbol in Grammar](https://leetcode.com/problems/k-th-symbol-in-grammar/) | [K-th Symbol in Grammar](https://app.gitbook.com/@guilindev/s/interview/leetcode/di-gui#779-k-th-symbol-in-grammar) |    按规律递归     |
 | 周三 |  |  |  |  |
-|  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | []() |         |
+|  35  | 简单 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | [Search Insert Position](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zai-array-zhong-cha-xun-yuan-su#35-search-insertion-position) |    正常二分，注意left移动的位置     |
 |  674  | 中等 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | [Longest Continuous Increasing Subsequence]() |         |
 |  1143  | 中等 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | [Longest Common Subsequence]() |         |
 |  11  | 中等 | [Container With Most Water ](https://leetcode.com/problems/container-with-most-water/) | [Container With Most Water ]() |         |
