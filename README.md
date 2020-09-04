@@ -329,11 +329,11 @@ Algorithms
 |  54  | 中等 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | [Spiral Matrix](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#54-spiral-matrix) |    四个变量记录四边     |
 |  59  | 中等 | [Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/) | [Spiral Matrix II](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#59-spiral-matrix-ii) |    四个变量记录四边     |
 |  17  | 中等 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Letter Combinations of a Phone Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#17-letter-combinations-of-a-phone-number) |    1.DFS<br>2.BFS     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  136  | 简单 | [Single Number](https://leetcode.com/problems/single-number/) | [Single Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled#136-single-number) |    异或     |
 |  7  | 简单 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Reverse Integer](https://app.gitbook.com/@guilindev/s/interview/leetcode/math#7-reverse-integer) |     注意负数会多一个即可，正常判断或者除以10再乘以10判断是否想等数，可以不单独判断正负号    |
 |  19  | 中等 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Remove Nth Node From End of List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#19-remove-nth-node-from-end-of-list) |    双指针     |
-|  238  | 中等 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self]() |         |
+|  238  | 中等 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#238-product-of-array-except-self) |    1.额外两个数组<br>2.结果数组中先计算前缀乘积，再变量记录后缀乘积     |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第九周
