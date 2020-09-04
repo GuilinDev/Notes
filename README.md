@@ -331,7 +331,7 @@ Algorithms
 |  17  | 中等 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Letter Combinations of a Phone Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/string#17-letter-combinations-of-a-phone-number) |    1.DFS<br>2.BFS     |
 | 周五 |  |  |  |  |
 |  136  | 简单 | [Single Number](https://leetcode.com/problems/single-number/) | [Single Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled#136-single-number) |    异或     |
-|  7  | 简单 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Reverse Integer]() |         |
+|  7  | 简单 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | [Reverse Integer](https://app.gitbook.com/@guilindev/s/interview/leetcode/math#7-reverse-integer) |     注意负数会多一个即可，正常判断或者除以10再乘以10判断是否想等数，可以不单独判断正负号    |
 |  19  | 中等 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Remove Nth Node From End of List]() |         |
 |  238  | 中等 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [Product of Array Except Self]() |         |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
