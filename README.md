@@ -340,11 +340,11 @@ Algorithms
 
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
-| 周一 |  |  |  |  |
+| 周一 |  |  |  | ✅ |
 |  88  | 简单 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | [Merge Sorted Array](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/he-bing-you-xu-de-arrays#88-merge-sorted-array) |    从后向前，注意为空的corner cases     |
 |  380  | 中等 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [Insert Delete GetRandom O(1)](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#380-insert-delete-getrandom-o-1) |    HashMap + 动态数组     |
 |  378  | 中等 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | [Kth Smallest Element in a Sorted Matrix](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#378-kth-smallest-element-in-a-sorted-matrix) |    值的二分查找     |
-|  269  | 困难 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [Alien Dictionary]() |         |
+|  269  | 困难 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [Alien Dictionary]() |    1.图的DFS<br>2.图的DFS<br>3.拓扑排序     |
 | 周二 |  |  |  |  |
 |  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List]() |         |
 |  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II]() |         |
