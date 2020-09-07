@@ -346,8 +346,8 @@ Algorithms
 |  378  | 中等 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | [Kth Smallest Element in a Sorted Matrix](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#378-kth-smallest-element-in-a-sorted-matrix) |    值的二分查找     |
 |  269  | 困难 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [Alien Dictionary]() |    1.图的DFS<br>2.图的DFS<br>3.拓扑排序     |
 | 周二 |  |  |  |  |
-|  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List]() |         |
-|  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II]() |         |
+|  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#83-remove-duplicates-from-sorted-list) |    保留第一个，检查后面是否重复     |
+|  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#82-remove-duplicates-from-sorted-list-ii) |    1.双指针<br>2.递归     |
 |  348  | 中等 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [Design Tic-Tac-Toe]() |         |
 |  289  | 中等 | [Game of Life](https://leetcode.com/problems/game-of-life/) | [Game of Life]() |         |
 | 周三 |  |  |  |  |
