@@ -345,11 +345,11 @@ Algorithms
 |  380  | 中等 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | [Insert Delete GetRandom O(1)](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#380-insert-delete-getrandom-o-1) |    HashMap + 动态数组     |
 |  378  | 中等 | [Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) | [Kth Smallest Element in a Sorted Matrix](https://app.gitbook.com/@guilindev/s/interview/leetcode/er-fen-sou-suo#378-kth-smallest-element-in-a-sorted-matrix) |    值的二分查找     |
 |  269  | 困难 | [Alien Dictionary](https://leetcode.com/problems/alien-dictionary/) | [Alien Dictionary]() |    1.图的DFS<br>2.图的DFS<br>3.拓扑排序     |
-| 周二 |  |  |  |  |
+| 周二 |  |  |  | ✅ |
 |  83  | 简单 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | [Remove Duplicates from Sorted List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#83-remove-duplicates-from-sorted-list) |    保留第一个，检查后面是否重复     |
 |  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#82-remove-duplicates-from-sorted-list-ii) |    1.双指针<br>2.递归     |
 |  348  | 中等 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [Design Tic-Tac-Toe](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#348-design-tic-tac-toe) |    不用绘制棋盘，只需检查每条线上的棋子     |
-|  289  | 中等 | [Game of Life](https://leetcode.com/problems/game-of-life/) | [Game of Life]() |         |
+|  289  | 中等 | [Game of Life](https://leetcode.com/problems/game-of-life/) | [Game of Life](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#289-game-of-life) |    状态机     |
 | 周三 |  |  |  |  |
 |  111  | 简单 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree]() |         |
 |  234  | 简单 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List]() |         |
