@@ -352,7 +352,7 @@ Algorithms
 |  289  | 中等 | [Game of Life](https://leetcode.com/problems/game-of-life/) | [Game of Life](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#289-game-of-life) |    状态机     |
 | 周三 |  |  |  |  |
 |  111  | 简单 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#111-minimum-depth-of-binary-tree) |    1.递归<br>2.BFS     |
-|  234  | 简单 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List]() |         |
+|  234  | 简单 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#234-palindrome-linked-list) |    1.Stack记录<br>2.递归<br>3.翻转后半截双指针比较     |
 |  48  | 中等 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Rotate Image]() |         |
 |  152  | 中等 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray]() |         |
 | 周四 |  |  |  |  |
