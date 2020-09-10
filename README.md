@@ -350,21 +350,21 @@ Algorithms
 |  82  | 中等 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | [Remove Duplicates from Sorted List II](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#82-remove-duplicates-from-sorted-list-ii) |    1.双指针<br>2.递归     |
 |  348  | 中等 | [Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe/) | [Design Tic-Tac-Toe](https://app.gitbook.com/@guilindev/s/interview/leetcode/design#348-design-tic-tac-toe) |    不用绘制棋盘，只需检查每条线上的棋子     |
 |  289  | 中等 | [Game of Life](https://leetcode.com/problems/game-of-life/) | [Game of Life](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#289-game-of-life) |    状态机     |
-| 周三 |  |  |  |  |
+| 周三 |  |  |  | ✅ |
 |  111  | 简单 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/) | [Minimum Depth of Binary Tree](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#111-minimum-depth-of-binary-tree) |    1.递归<br>2.BFS     |
 |  234  | 简单 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#234-palindrome-linked-list) |    1.Stack记录<br>2.递归<br>3.翻转后半截双指针比较     |
 |  48  | 中等 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Rotate Image](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#48-rotate-image) |    第一步，转置矩阵（行列互换）；第二步，逐行交换头尾    |
-|  152  | 中等 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray]() |         |
+|  152  | 中等 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#152-maximum-product-subarray) |    DP或者直接滚动数组，记录一个最大值和最小值     |
 | 周四 |  |  |  |  |
-|  112  | 简单 | [Path Sum](https://leetcode.com/problems/path-sum/) | [Path Sum]() |         |
-|  202  | 简单 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Happy Number]() |         |
-|  179  | 中等 | [Largest Number](https://leetcode.com/problems/largest-number/) | [Largest Number](https://leetcode.com/problems/largest-number/) |         |
-|  75  | 中等 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Sort Colors]() |         |
+|  112  | 简单 | [Path Sum](https://leetcode.com/problems/path-sum/) | [Path Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#112-path-sum) |     递归    |
+|  202  | 简单 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Happy Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#202-happy-number) |    HashSet保存结果     |
+|  179  | 中等 | [Largest Number](https://leetcode.com/problems/largest-number/) | [Largest Number](https://leetcode.com/problems/largest-number/) |    字符相加然后比较     |
+|  75  | 中等 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Sort Colors](https://app.gitbook.com/@guilindev/s/interview/leetcode/hui-wen-jie-gou#75-sort-colors) |    三路快排的思想，交换0和2     |
 | 周五 |  |  |  |  |
-|  121  | 简单 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock]() |         |
-|  122  | 简单 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Best Time to Buy and Sell Stock II]() |         |
+|  121  | 简单 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#121-best-time-to-buy-and-sell-stock) |    股票DP系列     |
+|  122  | 简单 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Best Time to Buy and Sell Stock II](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#122-best-time-to-buy-and-sell-stock-ii) |    股票DP系列     |
 |  315  | 困难 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [Count of Smaller Numbers After Self]() |         |
-|  218  | 困难 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | [The Skyline Problem]() |         |
+|  218  | 困难 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | [The Skyline Problem](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer-1#218-the-skyline-problem) |    扫描线算法     |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
 > 第十周
@@ -372,10 +372,10 @@ Algorithms
 | &emsp;题号&emsp; | &emsp;难度&emsp; | 题目链接&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 答案&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| 简单总结 |
 | :--: | :--: | :----------------------------------------------------------- | :----------------------------------------------------------- | :------: |
 | 周一 |  |  |  |  |
-|  141  | 简单 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Linked List Cycle]() |         |
-|  13  | 简单 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Roman to Integer]() |         |
-|  148  | 中等 | [Sort List](https://leetcode.com/problems/sort-list/) | [Sort List]() |         |
-|  76  | 困难 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring]() |         |
+|  141  | 简单 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Linked List Cycle](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#141-linked-list-cycle) |    快慢指针     |
+|  13  | 简单 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | [Roman to Integer](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#141-linked-list-cycle) |    按情况分即可     |
+|  148  | 中等 | [Sort List](https://leetcode.com/problems/sort-list/) | [Sort List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#148-sort-list) |   Merge Sort      |
+|  76  | 困难 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | [Minimum Window Substring](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-2#76-minimum-window-substring) |    滑动窗口     |
 | 周二 |  |  |  |  |
 |  276  | 简单 | [Paint Fence](https://leetcode.com/problems/paint-fence/) | [Paint Fence]() |         |
 |  14  | 简单 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | [Longest Common Prefix]() |         |
