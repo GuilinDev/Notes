@@ -355,15 +355,15 @@ Algorithms
 |  234  | 简单 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Palindrome Linked List](https://app.gitbook.com/@guilindev/s/interview/leetcode/linkedlist#234-palindrome-linked-list) |    1.Stack记录<br>2.递归<br>3.翻转后半截双指针比较     |
 |  48  | 中等 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | [Rotate Image](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#48-rotate-image) |    第一步，转置矩阵（行列互换）；第二步，逐行交换头尾    |
 |  152  | 中等 | [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) | [Maximum Product Subarray](https://app.gitbook.com/@guilindev/s/interview/leetcode/array/zi-shu-zu-subarray#152-maximum-product-subarray) |    DP或者直接滚动数组，记录一个最大值和最小值     |
-| 周四 |  |  |  |  |
+| 周四 |  |  |  | ✅ |
 |  112  | 简单 | [Path Sum](https://leetcode.com/problems/path-sum/) | [Path Sum](https://app.gitbook.com/@guilindev/s/interview/leetcode/untitled-1#112-path-sum) |     递归    |
 |  202  | 简单 | [Happy Number](https://leetcode.com/problems/happy-number/) | [Happy Number](https://app.gitbook.com/@guilindev/s/interview/leetcode/hash-table#202-happy-number) |    HashSet保存结果     |
 |  179  | 中等 | [Largest Number](https://leetcode.com/problems/largest-number/) | [Largest Number](https://leetcode.com/problems/largest-number/) |    字符相加然后比较     |
 |  75  | 中等 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | [Sort Colors](https://app.gitbook.com/@guilindev/s/interview/leetcode/hui-wen-jie-gou#75-sort-colors) |    三路快排的思想，交换0和2     |
-| 周五 |  |  |  |  |
+| 周五 |  |  |  | ✅ |
 |  121  | 简单 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Best Time to Buy and Sell Stock](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#121-best-time-to-buy-and-sell-stock) |    股票DP系列     |
 |  122  | 简单 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Best Time to Buy and Sell Stock II](https://app.gitbook.com/@guilindev/s/interview/leetcode/array#122-best-time-to-buy-and-sell-stock-ii) |    股票DP系列     |
-|  315  | 困难 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [Count of Smaller Numbers After Self]() |         |
+|  315  | 困难 | [Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/) | [Count of Smaller Numbers After Self](https://app.gitbook.com/@guilindev/s/interview/leetcode/segment-tree#315-count-of-smaller-numbers-after-self) |    1.二分搜索<br>2.线段树     |
 |  218  | 困难 | [The Skyline Problem](https://leetcode.com/problems/the-skyline-problem/) | [The Skyline Problem](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer-1#218-the-skyline-problem) |    扫描线算法     |
 | 周六周日重写不够熟悉的题目 |  |  |  |  |
 
