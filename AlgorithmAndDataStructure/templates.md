@@ -1,5 +1,5 @@
 #### 二分
-迭代
+迭代二分搜索
 ```java
 int binarySearch(int[] nums, int target, int low, int high) {
     // 在 while 循环里，判断搜索的区间范围是否有效
@@ -24,7 +24,7 @@ int binarySearch(int[] nums, int target, int low, int high) {
     return -1;
 }
 ```
-递归
+递归二分搜索
 ```java
 // 二分搜索函数的定义里，除了要指定数组 nums 和目标查找数 target 之外，还要指定查找区间的起点和终点位置，分别用 low 和 high 去表示。
 int binarySearch(int[] nums, int target, int low, int high) {
