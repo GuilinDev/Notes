@@ -388,7 +388,7 @@ Algorithms
 |  395  | 中等 | [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/) | [Longest Substring with At Least K Repeating Characters]() |         |
 | 周四 |  |  |  |  |
 |  387  | 简单 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | [First Unique Character in a String]() |         |
-|  392  | 简单 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence]() |         |
+|  392  | 简单 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | [Is Subsequence](https://app.gitbook.com/@guilindev/s/interview/leetcode/divide-and-conquer#392-is-subsequence) |    1.双指针<br>2.DP     |
 |  221  | 中等 | [Maximal Square](https://leetcode.com/problems/maximal-square/) | [Maximal Square]() |         |
 |  149  | 困难 | [Max Points on a Line](https://leetcode.com/problems/max-points-on-a-line/) | [Max Points on a Line]() |         |
 | 周五 |  |  |  |  |
