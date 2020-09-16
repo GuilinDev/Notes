@@ -104,7 +104,7 @@ function fn(n) {
 }
 ```
 
-#### Quick Sort
+#### Merge Sort
 ```java
 void sort(int[] A, int lo, int hi) {
   // 判断是否只剩下最后一个元素
