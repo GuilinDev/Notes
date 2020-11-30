@@ -18,7 +18,7 @@
 4. TCP的四次挥手 Four-way Handshake
 
     
-    ![TCP四次挥手](/images/java/TCP4WayHandshakes.png)
+    ![TCP四次挥手](/images/java/TCP4WayHandshake.png)
     
 5. TCP和UDP的区别
     * UDP不支持错误重传，滑动窗口等特征，报文也比较简单
