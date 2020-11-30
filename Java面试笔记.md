@@ -11,7 +11,7 @@
     * 了解ACK - 确认序号标志；SYN - 同步序号，用于建立连接过程；FIN - finish标志，用于释放连接
     * URG - 紧急指针标志；PSH - push标志； RST - 重置连接标志
 
-        ![TCP三次握手](/images/java/TCP3WayHandshakes.png)
+        ![TCP三次握手](/images/java/TCP3WayHandshake.png)
     
     * Linux默认重试1 + 2 + 4 + 8 + 16 + 32 = 63秒才断开TCP连接
         
