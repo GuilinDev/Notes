@@ -11,13 +11,14 @@
     * 了解ACK - 确认序号标志；SYN - 同步序号，用于建立连接过程；FIN - finish标志，用于释放连接
     * URG - 紧急指针标志；PSH - push标志； RST - 重置连接标志
 
-    [TCP三次握手](/images/java/TCP3WayHandshakes.png)
+        ![TCP三次握手](/images/java/TCP3WayHandshakes.png)
     
     * Linux默认重试1 + 2 + 4 + 8 + 16 + 32 = 63秒才断开TCP连接
         
 4. TCP的四次挥手 Four-way Handshake
 
-    [TCP四次挥手](/images/java/TCP4WayHandshakes.png)
+    
+    ![TCP四次挥手](/images/java/TCP4WayHandshakes.png)
     
 5. TCP和UDP的区别
     * UDP不支持错误重传，滑动窗口等特征，报文也比较简单
@@ -33,24 +34,24 @@
     * RTO：重传时间间隔
     * TCP使用滑动窗口做流量控制和乱序重排
     
-    [TCP滑动窗口的计算过程](/images/java/TCPSlidingWindow0.png)
+        ![TCP滑动窗口的计算过程](/images/java/TCPSlidingWindow0.png)
     
     * TCP会话发送方四类状态
     
-    [TCP会话发送方四类状态](/images/java/TCPSlidingWindow1.png)
+        ![TCP会话发送方四类状态](/images/java/TCPSlidingWindow1.png)
     
     * TCP会话接收方的三种状态
     
-    [TCP会话接收方的三种状态](/images/java/TCPSlidingWindow2.png)
+        ![TCP会话接收方的三种状态](/images/java/TCPSlidingWindow2.png)
     
 * HTTP相关
     * 客户端/服务器模式
     * 无状态
     * HTTP请求体和响应体结构
     
-    [HTTP请求体结构](/images/java/HTTP_0.png)
+        ![HTTP请求体结构](/images/java/HTTP_0.png)
     
-    [HTTP响应体结构](/images/java/HTTP_1.png)
+        ![HTTP响应体结构](/images/java/HTTP_1.png)
     
     * 浏览器输入URL之后的流程
         * DNS解析
@@ -69,7 +70,7 @@
         
         常见状态码：
         
-        [HTTP常见状态码](/images/java/HTTPStatusCodes.png)
+        ![HTTP常见状态码](/images/java/HTTPStatusCodes.png)
     
     * 常用请求方法，GET和POST请求的区别
         * HTTP报文Message/Packet层面：GET将请求信息放在URL（浏览器都有长度限制），POST放在报文体中，注意这个跟安全性无关
@@ -84,7 +85,7 @@
             * 服务器接收到后，会解析Cookie生成与客户端相对应的内容
             * Cookie的设置及发送过程
             
-            [Cookie](/images/java/HTTPCookie.png)
+                ![Cookie](/images/java/HTTPCookie.png)
             
         * Session
             * Session是服务器端机制，在服务器上保存的类似散列表的信息
@@ -101,7 +102,7 @@
 * HTTP和HTTPS的区别
     * HTTPS简介
     
-    [HTTPS简介](/images/java/HTTPS_0.png)
+        ![HTTPS简介](/images/java/HTTPS_0.png)
     
     * SSL Security Sockets Layer
         * 为网络通信提供安全及数据完整性的一种安全协议
@@ -137,7 +138,7 @@
     * Socket是对TCP/IP协议的抽象，是操作系统对外开放的接口
     * Socket通信流程：
     
-    [HTTPS简介](/images/java/Socket_0.png)
+        ![HTTPS简介](/images/java/Socket_0.png)
     
 * need a mindmap here
     
