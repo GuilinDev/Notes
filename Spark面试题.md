@@ -18,7 +18,7 @@
 ### 1.2 Hadoop：集群的操作系统
 * HDFS + MapReduce = Hadoop （1.0， 2.0， 3.0）, + HBase
 * Hadoop 1.0 的三个缺点
-    ![hadoop1.0](/imanges/spark/hadoop_1.0.png)
+    ![hadoop1.0](/images/spark/hadoop_1.0.png)
     * 主节点可靠性差，没有热备；
     * 提交 MapReduce 作业过多的情况下，调度将成为整个分布式计算的瓶颈 - 未把资源管理和作业调度两个组件分开；
     * 资源利用率低，并且不能支持其他类型的分布式计算框架 - 如果一个集群部署了 Hadoop 1.0，那么想要运行 Spark 作业就必须另外再部署一个集群
@@ -30,10 +30,10 @@
     * 上层的计算框架地位也大大降低，变成了 YARN 的一个用户
     * 另外，YARN 采取了双层调度的设计，大大减轻了调度器的负担
     * 此外，YARN可以兼容多个计算框架，如Spark，Storm， MapReduce等
-    ![hadoop2.0](/imanges/spark/hadoop_2.0.png)
+    ![hadoop2.0](/images/spark/hadoop_2.0.png)
 
 * Hadoop 2.0生态圈部分重要组件
-![hadoop2.0](/imanges/spark/hadoop_2.0_eco.png)
+![hadoop2.0](/images/spark/hadoop_2.0_eco.png)
 
 * Hadoop可以理解为一个***计算机集群的操作系统***，而Spark和MarReduce只是这个操作系统支持的编程语言，HDFS则是这个计算机集群的文件系统的抽象，YARN是对计算机集群的资源管理与调度系统抽象
 
@@ -45,9 +45,9 @@
     * 资源管理： 常见资源的维度有CPU，内存，网络贷款等，对于YARN来说资源的维度有两个，CPU和内存
     * 调度： 调度器范式（scheduler pattern）有三种，通常人为YARN的调度属于第二种双层调度（但严格来说是个很复杂的问题，不深究）
         * 集中式调度器，Monolithic Scheduler - 计算框架的资源申请全部提交给中央调度器来满足，所有的调度逻辑都由中央调度器来实现，高并发作业的情况下，容易出现性能瓶颈， 集中式调度器的实现就是 Hadoop MapReduce 的 JobTracker，实际的资源利用率只有 70% 左右，甚至更低
-        ![Monolithic Scheduler](/imanges/spark/yarn0.png)
+        ![Monolithic Scheduler](/images/spark/yarn0.png)
         * 双层调度器（最常用），Two-level Scheduler - 整个调度工作划分为两层：中央调度器和框架调度器。中央调度器管理集群中所有资源的状态，它拥有集群所有的资源信息，按照一定策略（例如 FIFO、Fair、Capacity、Dominant Resource Fair）将资源粗粒度地分配给框架调度器，各个框架调度器收到资源后再根据应用申请细粒度将资源分配给容器执行具体的计算任务。
-        ![Two-level Scheduler](/imanges/spark/yarn1.png)
+        ![Two-level Scheduler](/images/spark/yarn1.png)
         * 状态共享调度器，Shared-State Scheduler - 由 Google 的 Omega 调度系统所提出的一种新范型，状态共享式调度大大弱化了中央调度器，它只需保存一份集群使用信息，就是图中间的蓝色方块，取而代之的是各个框架调度器，每个调度器都能获取集群的全部信息，并采用乐观锁控制并发。
         > 不用深究：Omega 与双层调度器的不同在于严重弱化了中央调度器，每个框架内部会不断地从主调度器更新集群信息并保存一份，而框架对资源的申请则会在该份信息上进行，一旦框架做出决策，就会将该信息同步到主调度。资源竞争过程是通过事务进行的，从而保证了操作的原子性。由于决策是在自己的私有数据上做出的，并通过原子事务提交，系统保证只有一个胜出者，这是一种类似于 MVCC 的乐观并发机制，可以增加系统的整体并发性能，但是调度公平性有所不足。对于这种调度范式你可以不用深究，这里介绍主要是为了知识的完整性。
         ![Shared-State Scheduler](/imanges/spark/yarn2.png)
@@ -70,7 +70,7 @@
     * 第 7 步：各个任务向 ApplicationMaster 汇报自己的状态和进度，以便让 ApplicationMaster 掌握各个任务的执行情况。
     * 第 8 步：应用程序运行完成后，ApplicationMaster 向 ResourceManager 注销并关闭自己。
 
-    ![YARN启动MR](/imanges/spark/yarn_MR.png)
+    ![YARN启动MR](/images/spark/yarn_MR.png)
 
 > Spark on YARN： 由于 Spark 与 MapReduce 相比，是一种 DAG 计算框架，包含一系列的计算任务，比较特殊，所以 Spark 自己实现了一个集中式调度器  *** Driver ***，用来调用作业内部的计算任务。申请到的资源可以看成是申请分区资源，在该分区内，所有资源由 Driver 全权使用，以客户端方式提交的 Spark on Yarn 这种方式可以看成是 Driver 首先在资源管理和调度系统中注册为框架调度器（二级调度器），接收到需要得资源后，再开始进行作业调度。那么这种方式也可以认为是一种曲线救国的双层调度实现方式 。
 
