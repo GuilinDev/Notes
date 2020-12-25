@@ -58,7 +58,7 @@
 
 主节点是 ResourceManger，也是主调度器，所有的资源的空闲和使用情况都由 ResourceManager 管理。ResourceManager 也负责监控任务的执行，从节点是 NodeManager，主要负责管理 Container 生命周期，监控资源使用情况等 ，Container 是 YARN 的资源表示模型，Task 是计算框架的计算任务，会运行在 Container 中，ApplicationMaster 可以暂时认为是二级调度器，比较特殊的是它同样运行在 Container 中。
 
-![YARN架构图](/imanges/spark/yarn.png)
+![YARN架构图](/images/spark/yarn.png)
 
 * YARN 启动一个 MapReduce 作业的流程
     * 第 1 步：客户端向 ResourceManager 提交自己的应用，这里的应用就是指 MapReduce 作业。
@@ -76,9 +76,72 @@
 
 ### 1.4 解析Spark数据处理与分析场景
 
+![Spark Scenario](/images/spark/spark_scenario.png)
+
+#### 1.4.1 按作业类型分
+* 批处理，Batch Processing - 数十秒到数小时都可能，对每条数据消耗计算资源少
+    * ETL，从数据库中抽取一部分数据进行去重后写入到存储系统
+    * 机器学习中的训练模型
+    * 缺点是处理任务延迟长，无法与在线系统实时对接
+* 流处理，Streaming Processing - 数据是动态源源不断的，来一条处理一条，数据蕴含的价值随着时间流逝而降低，所以需要实时处理
+    * 一般与在线系统对接，实时数据分析，业务系统的消息流转等
+    * 默认数据一到来就进行处理，每条数据的计算成本高
+
+> 批处理和流处理结合的场景： 比如模型分析师用机器学习算法对一批数据进行训练，得到一个模型，测试完毕后，数据工程师会将这个模型部署到线上环境对数据流进行实时预测。
+
+#### 1.4.2 按需求确定性分
+* 需求不确定的情况： 数据探索，了解数据集的最好方式 - 按自己习惯对数据进行一些查询处理
+* 需求确定 - 定时、定期运行
+
+#### 1.4.3 按结果响应时间
+* 可以在线响应，一般涉及数据库和查询语言相关： OLTP和OLAP（ad-hoc等），一般涉及读优化和写优化两种trade-off
+    * HTAP，Hybrid Transaction and Analytical Process，混合事务与分析处理，即可事务处理也可分析处理，近几年的业界提出的新场景，例如TiDB
+* 不能在线响应，离线处理
+* 在线处理和离线处理具有概念的交叉与重合
+* Spark与OLAP并非完全无关 - 例如，在历史订单数据库中，保存了极其巨量的数据（从过去到现在的所有订单），而用户只关心历史某个品类的月度销量数据，但是由于原始数据过于巨大，所以导致普通的查询及其缓慢，在这里，可以用 Spark 将数据从数据库抽取出来并按照时间与品类维度进行转换和汇总（批处理），处理后的数据的大小与原始数据相比可能是上万倍的差距，用户就能很容易地进行在线分析了。
+
 ### 1.5 如何选择Spark编程语言以及部署Spark
+#### 1.5.1 Spark编程语言种类，如何选择
+![Spark Programming Language](/images/spark/spark_programming_language.png)
+大数据工程师一般Scala，数据分析师一般Python
+
+#### 1.5.2 部署Spark
+共分两步进行部署：
+* 1. 选择统一资源管理与调度系统，目前Spark支持的有：
+    * Spark standalone - 基本不适合生产环境
+    * YARN - Spark on YARN模式是目前最普遍用的
+    * Mesos - Spark最先支持的平台，共五步：
+        * SparkContext 在 Mesos master 中注册为框架调度器。
+        * Mesos slave 持续同步以向 Mesos master 发送资源信息。
+        * 一个或者多个资源供给将信息发送给 SparkContext（下发资源）。
+        * SparkContext 接收资源供给。
+        * 在 Mesos slave 上启动计算任务。
+    * Kubernetes - Spark2.4.5版本以上才支持
+    * 本地操作系统 - 伪分布模式，学习用
+* 2. 提交Spark作业
+    * 如果大数据平台使用了统一资源管理与调度系统，那么上层的计算框架就变成了这个资源系统的用户。这样做的结果是直接简化了计算框架的部署。对于部署计算框架这个问题，你可以用客户端/服务端，也就是 C/S 这种模式来理解。把大数据平台看作一个server side，那么节点就是客户端client，例如在Hadoop中，clients可以访问HDFS或者提交作业
+    * 这些clients会有一份相应的安装包，按照客户端进行配置，只需在客户端部署一份Spark安装包，并且正确配置
+    * 以YARN为例，需要将YARN的配置文件复制到Spark客户端的配置文件夹下，就可以从该节点向大数据平台提交作业并在集群中被调度为计算任务，然后在资源管理系统的容器中运行
+
+#### 1.5.3 如何安装Spark学习环境
+* 在本地操作系统以伪分布模式学习
+* 也可以用MAVEN来管理
+* Python环境则使用Anaconda安装Jupyter Notebook和PySpark
 
 ## 2. Spark编程
+### 2.1 Spark抽象、架构与运行环境
+#### 2.1.1 Spark架构
+* 生产环境中，Spark往往作为***统一资源管理平台的用户***，向统一资源管理平台提交作业，Spark作业提交成功后，被调度成计算任务，再资源管理容器中运行
+* 在集群运行中的***Spark架构是典型的主从架构master/slave***
+    * 所有的分布式架构无外乎两种，主从master/slave和点对点p2p架构
+    ![Spark Architect](/images/spark/spark_architect.png)
+* 
+
+#### 2.1.2 Spark抽象
+
+#### 2.1.3 Spark运行环境
+
+### 2.2
 
 ## 3. Spark高级编程
 
