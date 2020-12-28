@@ -131,21 +131,159 @@
 ## 2. Spark编程
 ### 2.1 Spark抽象、架构与运行环境
 #### 2.1.1 Spark架构
-* 生产环境中，Spark往往作为***统一资源管理平台的用户***，向统一资源管理平台提交作业，Spark作业提交成功后，被调度成计算任务，再资源管理容器中运行
-* 在集群运行中的***Spark架构是典型的主从架构master/slave***
+* 生产环境中，Spark往往作为**统一资源管理平台的用户**，向统一资源管理平台提交作业，Spark作业提交成功后，被调度成计算任务，再资源管理容器中运行
+* 在集群运行中的**Spark架构是典型的主从架构master/slave**
     * 所有的分布式架构无外乎两种，主从master/slave和点对点p2p架构
     ![Spark Architect](/images/spark/spark_architect.png)
-* 
+    ![Spark Architect](/images/spark/spark_architect2.png)
+* 1. 首先，Driver 会根据用户编写的代码生成一个计算任务的有向无环图（Directed Acyclic Graph，DAG），这个有向无环图是 Spark 区别 Hadoop MapReduce 的重要特征；
+* 2. 接着，DAG 会根据 RDD（弹性分布式数据集，上图中第 1 根虚线和第 2 根虚线中间的圆角方框）之间的依赖关系被 DAG Scheduler 切分成由 Task 组成的 Stage，这里的 Task 就是计算任务，注意这个 Stage 不要翻译为阶段，这是一个专有名词，它表示的是一个计算任务的集合；
+* 3. 最后 TaskScheduler 会通过 ClusterManager 将 Task 调度到 Executor 上执行。
 
-#### 2.1.2 Spark抽象
+> Spark 并不会直接执行用户编写的代码，而用户代码的作用只是告诉 Spark 要做什么，也就是一种“声明”。
+
+#### 2.1.2 Spark抽象（概念）
+* 当用户编写好代码向集群提交时，一个作业job就产生了（YARN中的作业叫做application，一个意思）
+* Driver根据用户代码生成一个DAG有向无环图
+
+![Spark Architect](/images/spark/spark_dag.png)
+
+上面A 和 C 都是两张表，在分别进行分组聚合和筛选的操作后，做了一次 join 操作。灰色的方框就是分区（partition），它和计算任务是一一对应的，也就是说，有多少个分区，就有多少个计算任务，显然的，一个作业，会有多个计算任务，这也是分布式计算的意义所在，**可以通过设置分区数量来控制每个计算任务的计算量**。在 DAG 中，每个计算任务的输入就是一个分区，一些相关的计算任务所构成的任务集合可以被看成一个 Stage，这里"相关"指的是某个标准，我们后面会讲到。RDD 则是分区的集合（图中 A、B、C、D、E），用户只需要操作 RDD 就可以构建出整个 DAG，从某种意义上来说，它就是为了掩盖上面的概念而存在的。
+
+> 来看看 Executor，一个 Executor 同时只能执行一个计算任务，但一个 Worker（物理节点）上可以同时运行多个 Executor。Executor 的数量决定了同时处理任务的数量，一般来说，分区数远大于 Executor 数量才是合理的。所以同一个作业，在计算逻辑不变的情况下，分区数和 Executor 的数量很大程度上决定了作业运行的时间。
 
 #### 2.1.3 Spark运行环境
+* 一共申请10个Executor，每个10g，一共100g，如果改成100个Executor，每个1g，job执行速度是否大大提升呢？答案是不确定
+* 因为总量不变的情况下，**每个Executor的资源见少为原来的十分之一**，那么Executor有可能无法胜任单个计算任务的计算量（或许能，但是完成速度会大大降低），这样就不得不提升分区数来降低每个计算任务的计算量
+* 所以**完成作业的总时间有可能保持不变，也可能增加，也可能降低**
+* Spark的调参和机器学习的调参类似，都是在一定约束下（这里是是资源），通过超参数的改变，来实现某个目标（这里是job执行时间）的最优化
+* 以上是调参的简化，只考虑Executor的资源，没考虑Driver所需的资源；另外只考虑了内存，而没有考虑cpu
 
-### 2.2
+### 2.3 弹性分布式数据集 RDD
+* 一组分布式的JVM**不可变**对象集合，使用时就当作普通集合使用
+* RDD类型分为几类：
+    * 并行集合 - 将内存中集合变量转化为RDD，学习用，生产环境不用
+    * 从HDFS中读取 - 常用
+    * 外部数据源 - 例如基于MySQL的JDBC，与Sqoop类似，JdbcRDD需要手动指定数据的上下界，例如MySQL中的某一列的最值
+    * PairRDD - 以元组为核心，与上面三种可互相转换
+
+### 2.4 算子（Operator）如何构建数据管道
+* Spark编程风格主要是函数式，核心是基于数据处理的需求，用算子与RDD构建出一个数据管道
+* 算子种类
+    * Transform算子 - Spark 会将转换算子放入一个计算的有向无环图中，并不立刻执行，当 Driver 请求某些数据时，才会真正提交作业并触发计算
+    * Action算子 - 行动算子就会触发 Driver 请求数据
+
+### 2.5 函数式编程思想
+
+### 2.6 共享变量
+* 广播变量，只能读
+* 累加器Accumulator - 只能增加
+
+### 2.7 计算框架的分布式实现，剖析Spark Shuffle原理
+* 容错机制
+    * Driver报错 - Spark 应用最严重的一种情况，标志整个作业彻底执行失败，需要开发人员手动重启 Driver
+    * Executor - Executor 报错通常是因为 Executor 所在的机器故障导致，这时 Driver 会将执行失败的 Task 调度到另一个 Executor 继续执行，重新执行的 Task 会根据 RDD 的依赖关系继续计算，并将报错的 Executor 从可用 Executor 的列表中去掉
+    * Task执行失败 - Spark 会对执行失败的 Task 进行重试，重试 3 次后若仍然失败会导致整个作业失败。在这个过程中，Task 的数据恢复和重新执行都用到了 RDD 的血统机制
+* Spark Shuffle - 很多算子都会引起 RDD 中的数据进行重分区，新的分区被创建，旧的分区被合并或者被打碎，在重分区的过程中，如果数据发生了跨节点移动，就被称为 Shuffle，体现了从函数式编程接口到分布式计算框架的实现
+    * Hash Shuffle
+    * Sort-based Shuffle
+* 对1TB数据排序，可用Spark的RangePartitioner + sortByKey算子（而不是单纯merge sort，归并会最后把结果归到一个executor上，太大），如果数据倾斜怎么办？分区前抽样，根据权重来。
 
 ## 3. Spark高级编程
+### 3.1 DataFrame，DataSet和SparkSQL
+* DataFrame - 相比底层的RDD + Operator，是高级SQL的封装，也有自己的API，所以首选DataFrame + SparkSQL
+* DataFrame和DataSet，DataFrame的API也有算子风格和SQL风格，和RDD一样都是spark平台下的分布式弹性数据集，DataFrame = RDD[Row] + shcema，DataSet则和RDD对比
+
+### 3.2 用户自定义函数 - 复杂需求常用
+* 窗口函数
+* 函数
+* DataFrame API支持用户自定义函数
+    * UDF，类似map操作行处理，一行输入，一行输出
+    * UDAF，聚合处理，多行输入，一行输出
+
+* 任何情况下，都不推荐RDD——算子的方式
+    * 相当于用汇编语言写代码
+    * RDD+算子与SQL/DataFrame API/DataSet API相比，更偏于如何做，而不是做什么，优化空间少
+    * RDD语言比SQL难很多
+    * 其它情况下，优先考虑Dataset，因为静态类型的特点使计算更迅速，但用户也需选择静态语言例如Java和Scala，而Python是没有Dataset API的
+    * DataFrame + SQL是综合最好选择
+
+### 3.3 列式存储，针对查询场景的极致优化
+* 只是查询的场景，没有增删改，使用列式存储对Spark的效率提高很多
+    * 优点：查询时只读取涉及的列，列直接作为索引，行式则必须读入整行
+    * 优点：投影操作非常高效
+    * 优点：数据稀疏的情况下，压缩率比行式存储高很多
+    * 优点：因为直接作用于某一列，所以cluster分析非常迅速
+* 实现1： Google Dremel - repetition level和definition level，查询执行树
+* 实现2： Apache Parquet - ORC格式大多列式情况都使用
+* 实现3： Apache CarbonData，国产
+
+### 3.4 Spark生产环境全方位的性能调优
+* 如何查看Spark的作业日志 - 通常是排错的唯一依据
+    * 注意Spark Jobs是一个分布式执行过程，所以日志也是分布式的
+    * 联想Spark的架构，所以日志也有两个级别，Driver（简单情况）和Executor（复杂情况）
+    * YARN-client模式直接输出到客户端，例如nohup/&等
+    * 查看Executor需要先将散落在各个节点（container）的日志收集汇总成一个文件
+    * 第一件事是利用时间戳和ERROR标记定位最开始报错的那一句日志
+
+#### 3.4.1 硬件维度
+* 内存： 256G，内存与CPU大致1：5
+* CPU： Intel E5-2640v4，24核心
+* 硬盘： 3T * 8
+* Spark中上千的集群是非常大的
+
+#### 3.4.2 资源管理平台维度
+* 增加并行程度的数量
+    * 参数调优和应用调优，在Spark作业划分中，一个Executor只能同时执行一个Task，一个**计算任务的输入**是一个分区partition，所以改变并行程度只有一个办法，就是提高同时运行Executor的个数
+    * 通常集群的总量是一定的，这样Exexutor数量增加，单个Executor所分的资源会减少，这时候可以增加分区数来减少每个分区的大小（让计算任务减少）来避免这个问题
+* 提高Shuffle的性能
+    * Map端中间结果的缓冲区大小，默认32k
+    * Map端输出中间结果的文件大小，默认48M，并会与其它文件进行合并
+    * Map端输出是否开启压缩，默认开启
+* 内存管理 - 计算内存和存储内存
+    * spark.memory.fraction
+    * spark.memory.storageFraction
+    * JVM老年代
+* 序列化 - 时间换空间，推荐Kyro格式而非Java原生支持序列化格式
+
+...
+
+#### 3.4.3 使用方式维度
+...
+
+### 3.5 Tungsten和Hydrogen：Spark的性能提升与优化计划，前沿探索计划
+* Tungsten 
+    * 摆脱JVM内存管理器而自主来内存管理，
+    * 缓存感知计算
+    * Catalyst优化器
+* Hydrogen
+    * 标准化Spark与各机器学习框架之间的数据交换接口
+    * 数据交换
+    * 向量化执行模型
+
+### 3.6 实战：葡萄牙银行电话调查结果
+* DataSet API - Scala
 
 ## 4. Spark流处理
+### 4.1 什么是流处理？如何保证消息送达的问题（delivery guarantee）
+* delivery guarantee三种机制
+    * at least once
+    * at most once
+    * exact once
+* 恰好一次，需要保证both
+    * 发送消息的可靠性保障
+    * 消费消息的可靠性保障
+    * 幂等
+
+### 4.2
+
+### 4.3
+
+### 4.4 
+
+### 4.5 
+
+### 4.6 
 
 ## 5. Spark图挖掘
 
