@@ -27,6 +27,6 @@
 * 可扩展：可以增加并自动分发容器副本
 * 可堆叠：可以垂直和即时堆叠服务
 
-![Kafka Record](/images/docker_commands_diagram.png)
+![Docker Commands Diagram](../images/docker_commands_diagram.png)
 
 > Docker是一个用于开发，交付和运行app的开放平台。Docker能够将app与基础架构分开，从而快速交付软件。Docker还可以与管理app程序相同的方式来管理基础架构。通过利用Docker的方法来快速交付，测试和部署代码，可以大大减少便携代码和在Production环境中运行代码之间的延迟。
