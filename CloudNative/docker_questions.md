@@ -30,3 +30,20 @@
 ![Docker Commands Diagram](../images/docker_commands_diagram.png)
 
 > Docker是一个用于开发，交付和运行app的开放平台。Docker能够将app与基础架构分开，从而快速交付软件。Docker还可以与管理app程序相同的方式来管理基础架构。通过利用Docker的方法来快速交付，测试和部署代码，可以大大减少便携代码和在Production环境中运行代码之间的延迟。
+
+### 4. Docker与VM之间的区别？
+虚拟机通过添加Hypervisor层（虚拟化中间层），虚拟出网卡/内存/CPU等虚拟硬件，再在这之上建立虚拟机，每个虚拟机都有自己的虚拟出来的系统内核。Docker容器则是通过隔离（namespace）的方式，将file systems，进程，设备，网络等资源进行隔离，再对权限，CPU资源等进行控制（cgroup），最终让容器之间互不影响，容器无法影响宿主机host。
+
+与VM相比，容器资源损耗要少。同样的host下，能够建立容器的数量比VM更多。
+
+但是，VM虚拟机的安全性比容器稍好，而docker容器与host共享内核core，file system等资源，更有可能对其他容器，宿主机产生影响。
+
+![Docker Commands Diagram](../images/VM_vs_Container_0.jpg)
+
+| 特性      | 容器 | 虚拟机 |
+| ----------- | ----------- | ----------- |
+| 启动      | 秒级       | 分钟级       |
+| 硬盘使用   | 一般为MB        | 一般为GB        |
+| 性能   | 接近原生        | 弱于原生       |
+| 系统支持量   | 单机支持上千个容器        | 单机最多支持几十个        |
+
