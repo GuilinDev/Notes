@@ -47,3 +47,28 @@
 | 性能   | 接近原生        | 弱于原生       |
 | 系统支持量   | 单机支持上千个容器        | 单机最多支持几十个        |
 
+### 5. Docker的三大核心
+* 镜像image - Docker的镜像是创建容器的基础类似虚拟机的快照，可以理解为一个面向Docker容器引擎的只读模板。通过镜像启动一个容器，一个镜像是一个可执行的包，其中包括运行app所需要的所有内容包含代码，运行时间，库，环境变量和配置文件。Docker镜像也是一个压缩包，只是这个压缩包不只是可执行文件和环境部署脚本，还包含了完成的OS。因为大部分镜像都是基于某个OS来构建，所以很轻松的就可以构建local和remote一样的化境，这也是Docker的镜像的精髓。
+* 容器container - Docker的容器是从镜像创建的运行实例，它可以被启动，停止和删除。每一个容器都是相互隔离，互不可见，以保持平台的安全性。可以把容器看作是一个简易版的Linux环境（包括了root用户权限，镜像空间，用户空间和网络空间等）和运行在其中的apps。
+* 仓库Repo - 仓库注册服务器上往往存放着多个仓库，每个仓库中包含了多个镜像，每个镜像有不同的标签tag。 仓库分为public公开仓库和private私有参股。最大的public仓库是Docker Hub：https://hub.docker.com，存放了数量庞大的镜像供用户下载。
+
+### 6. 快速安装Docker
+以Red Hat/CentOS为例
+
+```shell
+yum install -y yum-utils device-mapper-persistent-data lvm2
+sudo yum-config-manager
+–add-repo
+https://download.docker.com/linux/centos/docker-ce.repo
+[root@centos7 ~] yum -y install docker-ce docker-ce-cli containerd.io
+[root@centos7 ~]# docker ps --查看docker
+```
+```shell
+[root@centos7 ~]# systemctl enable docker
+[root@centos7 ~]# systemctl start docker
+[root@centos7 ~]# systemctl status docker
+[root@centos7 ~]# docker ps --查看容器
+[root@centos7 ~]# docker version --查看版本
+[root@centos7 ~]# docker info --查看版本
+```
+
