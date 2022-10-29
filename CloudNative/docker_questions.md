@@ -72,3 +72,29 @@ https://download.docker.com/linux/centos/docker-ce.repo
 [root@centos7 ~]# docker info --查看版本
 ```
 
+### 7. 修改Docker的存储位置
+
+默认情况下Docker的存放位置是 
+```console
+/var/lib/docker
+```
+
+通过命令查看具体的存储位置
+```console
+docker info | grep “Docker Root Dir”
+```
+
+**修改存储到其他位置**
+
+首先停掉docker服务
+```console
+systemctl stop docker
+```
+
+然后移动/var/lib/docker到目的路径
+```console
+mkdir -p /root/data/docker
+mv /var/lib/docker /root/data/docker
+ln -s /root/data/docker /var/lib/docker --快捷方式
+```
+
