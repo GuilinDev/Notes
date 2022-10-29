@@ -55,7 +55,7 @@
 ### 6. 快速安装Docker
 以Red Hat/CentOS为例
 
-```shell
+```console
 yum install -y yum-utils device-mapper-persistent-data lvm2
 sudo yum-config-manager
 –add-repo
@@ -63,7 +63,7 @@ https://download.docker.com/linux/centos/docker-ce.repo
 [root@centos7 ~] yum -y install docker-ce docker-ce-cli containerd.io
 [root@centos7 ~]# docker ps --查看docker
 ```
-```shell
+```console
 [root@centos7 ~]# systemctl enable docker
 [root@centos7 ~]# systemctl start docker
 [root@centos7 ~]# systemctl status docker
@@ -97,4 +97,87 @@ mkdir -p /root/data/docker
 mv /var/lib/docker /root/data/docker
 ln -s /root/data/docker /var/lib/docker --快捷方式
 ```
+
+### 8. Docker镜像常用的管理命令
+
+快速检索镜像
+```console
+docker search + "keyword"
+```
+
+获取镜像
+```console
+docker pull + "repo名称[:tag]" -- 如果不指定tag则会默认下载repo中最新latest为tag的版本
+```
+
+查看镜像信息
+
+镜像下载后默认存储在 
+```console
+/var/lib/docker
+```
+
+查看所有镜像
+```console
+docker images
+```
+显示信息：
+* REPOSITORY: 镜像所属仓库
+* TAG: 镜像的标签信息，标记同一个仓库中的不同镜像
+* IMAGE ID ：镜像的唯一ID号，唯一标识一个镜像
+* CREATED: 镜像创建时间
+* SIZE: 镜像大小
+
+查看某个镜像的详细信息
+```console
+docker inspect +　"image ID" --image ID是一串hash值，可以不用打全
+```
+
+为本地image添加新的tags
+```console
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG] --这里的SOURCE_IMAGE和TARGET_IMAGE可以用镜像名称或镜像ID
+```
+
+删除镜像标签
+```console
+docker rmi repo名称:tag --如果某镜像有多个tags时，删除的是其中指定的标签
+```
+
+删除镜像
+```console
+docker rmi 镜像ID [-f] --如果该镜像已经被容器使用，正确的做法是先删除依赖该镜像的所有容器，再去删除镜像
+```
+
+将镜像保存为本地文件
+```console
+docker   save   -o  存储文件名   存储的镜像
+```
+例如
+```console
+[root@localhost ~]# docker save -o /opt/nginx.tar nginx:latest
+#将本地镜像传给另一台主机
+[root@localhost ~]# scp /opt/nginx.tar 192.168.1.54:/opt
+```
+
+### 9. 如何创建Docker的containers
+```console
+#docker images   --查看镜像
+docker run -d --name centos7.8 -h centos7.8 \
+-p 220:22 -p 3387:3389 \
+--privileged=true \
+centos:7.8.2003 /usr/sbin/init
+
+#我想拥有一个 linux 8.2 的环境
+docker run -d --name centos8.2 -h centos8.2 \
+-p 230:22 -p 3386:3389 \
+--privileged=true \
+daocloud.io/library/centos:8.2.2004 init
+
+# 进入容器
+docker exec -it centos7.8bash
+docker exec -it centos8.2 bash
+cat /etc/redhat-release    --查看系统版本
+```
+
+### 10. Docker在后台的标准运行过程
 
