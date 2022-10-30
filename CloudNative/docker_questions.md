@@ -161,13 +161,13 @@ docker   save   -o  存储文件名   存储的镜像
 
 ### 9. 如何创建Docker的containers
 ```console
-#docker images   --查看镜像
+# docker images   --查看镜像
 docker run -d --name centos7.8 -h centos7.8 \
 -p 220:22 -p 3387:3389 \
 --privileged=true \
 centos:7.8.2003 /usr/sbin/init
 
-#我想拥有一个 linux 8.2 的环境
+# 我想拥有一个 linux 8.2 的环境
 docker run -d --name centos8.2 -h centos8.2 \
 -p 230:22 -p 3386:3389 \
 --privileged=true \
@@ -180,4 +180,188 @@ cat /etc/redhat-release    --查看系统版本
 ```
 
 ### 10. Docker在后台的标准运行过程
+当利用 docker run 来创建容器时， Docker 在后台的标准运行过程是：
 
+* 检查本地是否存在指定的镜像。当镜像不存在时，会从公有仓库下载；
+* 利用镜像创建并启动一个容器；
+* 分配一个文件系统给容器，在只读的镜像层外面挂载一层可读写层；
+* 从宿主机配置的网桥接口中桥接一个虚拟机接口到容器中；
+* 分配一个地址池中的 IP 地址给容器；
+* 执行用户指定的应用程序，执行完毕后容器被终止运行。
+
+
+### 11. Docker网络模式有哪些
+
+**host模式**
+host 模式 ：使用 --net=host 指定
+
+相当于VMware 中的桥接模式，与宿主机在同一个网络中，但是没有独立IP地址
+
+Docker 使用了Linux 的Namespace 技术来进行资源隔离，如PID Namespace隔离进程，Mount Namespace隔离文件系统，Network Namespace 隔离网络等。
+
+一个Network Namespace 提供了一份独立的网络环境，包括网卡，路由，iptable 规则等都与其他Network Namespace 隔离。
+
+一个Docker 容器一般会分配一个独立的Network Namespace
+
+但是如果启动容器的时候使用host 模式，那么这个容器将不会获得一个独立的Network Namespace ，而是和宿主机共用一个Network Namespace 。容器将不会虚拟出自己的网卡，配置自己的IP等，而是使用宿主机的IP和端口.此时容器不再拥有隔离的、独立的网络栈。不拥有所有端口资源
+
+![Docker Commands Diagram](../images/docker_network_0.png)
+
+**container模式**
+container模式：使用–net=contatiner:NAME_or_ID 指定
+
+这个模式指定新创建的容器和已经存在的一个容器共享一个Network Namespace，而不是和宿主机共享。新创建的容器不会创建自己的网卡，配置自己的IP，而是和一个指定的容器共享IP，端口范围等。 可以在一定程度上节省网络资源，容器内部依然不会拥有所有端口。
+
+同样，两个容器除了网络方面，其他的如文件系统，进程列表等还是隔离的。
+
+两个容器的进程可以通过lo网卡设备通信
+
+![Docker Commands Diagram](../images/docker_network_1.png)
+
+**none模式**
+none模式:使用 --net=none指定
+
+使用none 模式，docker 容器有自己的network Namespace ，但是并不为Docker 容器进行任何网络配置。也就是说，这个Docker 容器没有网卡，ip， 路由等信息。
+
+这种网络模式下，容器只有lo 回环网络，没有其他网卡。
+
+这种类型没有办法联网，但是封闭的网络能很好的保证容器的安全性
+
+该容器将完全独立于网络，用户可以根据需要为容器添加网卡。此模式拥有所有端口。（none网络模式配置网络）特殊情况下才会用到，一般不用
+
+**bridge模式**
+相当于Vmware中的 nat 模式，容器使用独立network Namespace，并连接到docker0虚拟网卡。通过docker0网桥以及iptables nat表配置与宿主机通信，此模式会为每一个容器分配Network Namespace、设置IP等，并将一个主机上的 Docker 容器连接到一个虚拟网桥上。
+
+当Docker进程启动时，会在主机上创建一个名为docker0的虚拟网桥，此主机上启动的Docker容器会连接到这个虚拟网桥上。虚拟网桥的工作方式和物理交换机类似，这样主机上的所有容器就通过交换机连在了一个二层网络中。
+
+从docker0子网中分配一个IP给容器使用，并设置docker0的IP地址为容器的默认网关。在主机上创建一对虚拟网卡veth pair设备。veth设备总是成对出现的，它们组成了一个数据的通道，数据从一个设备进入，就会从另一个设备出来。因此，veth设备常用来连接两个网络设备。
+
+Docker将veth pair 设备的一端放在新创建的容器中，并命名为eth0（容器的网卡），另一端放在主机中， 以veth*这样类似的名字命名，并将这个网络设备加入到docker0网桥中。可以通过 brctl show 命令查看。
+
+容器之间通过veth pair进行访问
+
+使用 docker run -p 时，docker实际是在iptables做了DNAT规则，实现端口转发功能。
+
+可以使用iptables -t nat -vnL 查看。
+
+![Docker Commands Diagram](../images/docker_network_2.png)
+
+### 12. 什么是Docker的数据卷Volume
+Volume是一个供容器使用的特殊目录，位于容器中。可将宿主机的目录挂载到数据卷上，对数据卷的修改操作立刻可见，并且更新数据不会影响镜像，从而实现数据在宿主机与容器之间的迁移。数据卷的使用类似于Linux下对目录进行的mount操作。
+
+如果需要在容器之间共享一些数据，最简单的方法就是使用Volume容器。Volume容器是一个普通的容器，专门提供数据卷给其他容器挂载使用。
+
+容器互联是通过容器的名称在容器间建立一条专门的网络通信隧道。简单点说，就是会在源容器和接收容器之间建立一条隧道，接收容器可以看到源容器指定的信息。
+
+### 13. 如何搭建Docker私有仓库
+1. 拉取私有仓库镜像
+```console
+[root@jeames ~]# docker pull registry
+Using default tag: latest
+```
+
+2. 启动私有仓库容器
+```console
+docker run -di --name registry -p 5000:5000 registry
+docker update --restart=always registry   --开机自启动
+docker ps -a  --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+```
+访问网址：http://192.168.1.54:5000/v2/_catalog
+
+3. 设置信任
+```console
+[root@jeames ~]# vim /etc/docker/daemon.json
+{
+"registry-mirrors":["https://docker.mirrors.ustc.edu.cn"],
+"insecure-registries":["192.168.1.54:5000"]
+}
+
+[root@jeames ~]# systemctl restart docker   --重启docker
+```
+
+4. 上传本地镜像
+```console
+[root@jeames ~]# docker images
+[root@jeames ~]# docker tag postgres:11 192.168.1.54:5000/postgres
+
+[root@jeames ~]# docker push 192.168.1.54:5000/postgres
+```
+
+5. 重新拉取镜像
+```console
+[root@jeames ~]# docker rmi 192.168.1.54:5000/postgres
+[root@jeames ~]# docker images
+[root@jeames ~]# docker pull 192.168.1.54:5000/postgres
+```
+
+### 14. Docker如何迁移备份
+1. 容器保存为镜像
+```console
+[root@jeames ~]# docker images
+[root@jeames ~]# docker ps -a
+docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+[root@jeames ~]# docker commit redis myredis
+##使用新的镜像创建容器
+docker run -di --name myredis myredis
+```
+
+2.镜像的备份
+```console
+[root@jeames ~]# docker save -o myredis.tar myredis
+```
+默认放到当前目录
+```console
+[root@jeames ~]# ll
+[root@jeames ~]# pwd
+```
+
+3.恢复过程
+```console
+##删除容器
+docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Status}}"
+docker stop myredis
+docker rm myredis
+##删除镜像
+docker images
+docker rmi myredis
+[root@jeames ~]# docker load -i myredis.tar
+```
+
+### 15. Docker如何部署MySQL
+1. 下载镜像
+```console
+https://hub.docker.com/ 中搜索mysql
+[root@jeames ~]# docker pull mysql:5.7.30
+[root@jeames ~]# docker pull mysql:8.0.20
+```
+
+2. 安装部署
+
+创建容器
+```console
+mkdir -p /usr/local/mysql5730/
+mkdir -p /usr/local/mysql8020/
+
+docker run -d --name mysql5730 -h mysql5730 \
+-p 3309:3306 \
+-v /usr/local/mysql5730/conf:/etc/mysql/conf.d \
+-e MYSQL_ROOT_PASSWORD=root -e TZ=Asia/Shanghai \
+mysql:5.7.30
+
+docker run -d --name mysql8020 -h mysql8020 \
+-p 3310:3306 \
+-v /usr/local/mysql8020/conf:/etc/mysql/conf.d \
+-e MYSQL_ROOT_PASSWORD=root -e TZ=Asia/Shanghai \
+mysql:8.0.20
+```
+
+访问Mysql
+```console
+## 登陆容器
+docker exec -it mysql5730 bash
+mysql -uroot -proot
+mysql> select user,host from mysql.user
+
+## 远程访问
+mysql -uroot -proot -h192.168.59.220 -P3309
+```
