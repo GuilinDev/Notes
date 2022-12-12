@@ -4,7 +4,7 @@
 * Understanding under-the-hood details can help us pick the right solution and tune the performance.
 * We’ll first look at two types of storage engines: **log-structured** and **page-oriented** storage engines.
 
-## 1. Data Structures Thank Power Your Database
+## Data Structures Thank Power Your Database
 * Many databases internally uses a log, which is an **append-only** data file.
 * To retrieve data efficiently, we need an **index**, which is an additional structure derived from primary data and only affects performance of queries.
 * Well-chosen indexes speed up queries but **slow down writes**. Therefore, databases don’t index everything by default and requires developers to use knowledge of query pattens to choose index manually.
