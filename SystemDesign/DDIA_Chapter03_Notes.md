@@ -10,7 +10,7 @@
 * Well-chosen indexes speed up queries but **slow down writes**. Therefore, databases don’t index everything by default and requires developers to use knowledge of query pattens to choose index manually.
 
 ### Hash Indexes
-* Hash Indexes are for key-value data** and are similar to a dictionary, which is usually implemented as a hash map (hash table).
+* Hash Indexes are for **key-value data** and are similar to a dictionary, which is usually implemented as a hash map (hash table).
 * If the database writes only append new entries to a file, the hash table can simply store key to byte offset in the data file. The hash table (with keys) has to fit into **memory** for quick look up performance, but the values don’t have to fit into memory.
 * To avoid the disk run out of space, a good solution is to break logs into **segments** and perform **compaction** (remove duplicate keys). Further, file segments can be merged while performing compaction. We can use a background thread to perform merging and compaction and switch our read request to the newly created segment when they are read. Afterwards, old segments can be deleted.
 * There are a few details for a real implementation of the idea above
@@ -182,7 +182,7 @@
 * Since data warehouse usually store multiple copies of the same data, it could use a different sort order for each replication, so that we can use different datasets for different queries.
 * An analogy of multiple sorted orders to row-based databases is multiple secondary indexes. The difference is that row-based databases stores the data in one place and use pointers in secondary indexes, while column stores don’t use any pointers.
 
-### Writing to Column0-Oriented Storage
+### Writing to Column-Oriented Storage
 * Sorted columns optimizes for read-only queries, yet writes are more difficult.
 * In-place updates would require rewriting the whole column on every write. Instead, we can use a LSM-tree like structure where a in-memory store buffers the new writes. When enough new writes are accumulated, they are then merged with the column files and written to new files in bulk.
 * Queries, in this case, would require reading data from both disk and the in-memory store. This will be hidden within the engine and invisible to the user.
