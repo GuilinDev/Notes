@@ -10,7 +10,7 @@
 * Well-chosen indexes speed up queries but **slow down writes**. Therefore, databases don’t index everything by default and requires developers to use knowledge of query pattens to choose index manually.
 
 ### Hash Indexes
-* **Hash Indexes are for key-value data** and are similar to a dictionary, which is usually implemented as a hash map (hash table).
+* Hash Indexes are for key-value data** and are similar to a dictionary, which is usually implemented as a hash map (hash table).
 * If the database writes only append new entries to a file, the hash table can simply store key to byte offset in the data file. The hash table (with keys) has to fit into **memory** for quick look up performance, but the values don’t have to fit into memory.
 * To avoid the disk run out of space, a good solution is to break logs into **segments** and perform **compaction** (remove duplicate keys). Further, file segments can be merged while performing compaction. We can use a background thread to perform merging and compaction and switch our read request to the newly created segment when they are read. Afterwards, old segments can be deleted.
 * There are a few details for a real implementation of the idea above
