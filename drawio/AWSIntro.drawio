@@ -1,1 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2023-01-07T22:17:27.760Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="RpqzsWE0INB-6p_Oq9Wb" type="github"><diagram id="JW6J2cp5EflMFaqWk7zK">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-01-07T22:27:42.716Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="cKmOyQwwRA4Xh_Sd7S9J" type="github">
+  <diagram id="Pr5awPEJJXZDI8rIQ1T_" name="Page-1">
+    <mxGraphModel dx="1434" dy="1896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-3" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry y="-120" width="1140" height="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-1" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="140" width="780" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-2" value="Private Network" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-5" value="VM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="220" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-6" value="Web Server" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="208" y="235" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-9" value="&lt;br&gt;Disk" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="310" y="250" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="n67U7tYu0zLwfpIRGkh0-10" target="n67U7tYu0zLwfpIRGkh0-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-10" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.user_group" vertex="1" parent="1">
+          <mxGeometry x="280" y="6" width="50" height="37" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
