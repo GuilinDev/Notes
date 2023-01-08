@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-01-08T02:30:23.810Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="EyWQGUP8etnUU6vo-wbL" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-08T02:38:13.644Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="FJMUkTDISqmli-_Hv1KH" type="github">
   <diagram id="Pr5awPEJJXZDI8rIQ1T_" name="Page-1">
     <mxGraphModel dx="2359" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -412,7 +412,7 @@
             <mxPoint x="369" y="1890" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="n67U7tYu0zLwfpIRGkh0-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;opacity=20;" edge="1" parent="1" source="n67U7tYu0zLwfpIRGkh0-156" target="n67U7tYu0zLwfpIRGkh0-186">
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-155" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;opacity=20;startArrow=none;" edge="1" parent="1" source="n67U7tYu0zLwfpIRGkh0-258" target="n67U7tYu0zLwfpIRGkh0-186">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="n67U7tYu0zLwfpIRGkh0-156" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.intune.user_group;opacity=20;" vertex="1" parent="1">
@@ -779,6 +779,18 @@
         </mxCell>
         <mxCell id="n67U7tYu0zLwfpIRGkh0-257" value="API Gateway" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fontSize=18;fillColor=#9999FF;" vertex="1" parent="1">
           <mxGeometry x="309" y="1932.5" width="841" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-259" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;opacity=20;endArrow=none;" edge="1" parent="1" source="n67U7tYu0zLwfpIRGkh0-156" target="n67U7tYu0zLwfpIRGkh0-258">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="394" y="1834.4999999999995" as="sourcePoint" />
+            <mxPoint x="485" y="1834.4999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-258" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cognito;fillColor=#AD688B;gradientColor=none;strokeColor=#000000;strokeWidth=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="390.63" y="1806" width="44.75" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="n67U7tYu0zLwfpIRGkh0-260" value="Cognito (Using IAM for User Management)" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000000;strokeWidth=1;fontSize=18;fillColor=#9999FF;" vertex="1" parent="1">
+          <mxGeometry x="433.5" y="1819.5" width="696.5" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
