@@ -1,4 +1,4 @@
-## Docker15个常见的问题和坑
+## Docker15个常见的问题
 
 ### 1. 什么是Docker？
 * Docker是一个开源的app容器引擎，基于go语言开发，并遵循apache2.0协议开源
