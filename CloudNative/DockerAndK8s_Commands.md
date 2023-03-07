@@ -1,5 +1,37 @@
-pod
-kubectl
+## Docker
+熟悉image, container和registry
+
+```shell
+# 从registry 拉取镜像
+docker pull nginx
+docker pull lyzhang1999/hello-world-flask:latest
+
+# 查看本地已经拉取的镜像
+docker images
+
+# 运行image，浏览器可查看 localhost:8000
+docker run -d -p 8000:5000 hello-world-flask:latest
+
+# 查看本地container列表
+docker ps
+# 进入container
+docker exec -it c370825640b6 bash / docker exec -it c370825640b6 sh
+
+# 停止container
+docker stop docker containerID
+
+# 制作本地image
+docker build -t hello-world-flask .
+# tag制作好的本地image(提交到registry，例如dockerhub时，需要的标签)
+docker tag hello-world-flask guilindev/hello-world-flask
+# 上传上述image到docker hub上
+docker push guilindev/hello-world-flask
+
+```
+
+## Kubenetes
+熟练 pod，kubectl的概念
+
 Yaml: list, dict, list of dict
 
 ```shell
