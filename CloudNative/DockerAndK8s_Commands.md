@@ -72,4 +72,12 @@ kubectl replace -f replicaset-definition.yml
 kubectl scale --replicas=6 -f replicaset-definition.yml
 # 或者接运行scale命令+replica set Name (此时配置文件不会改变，只是实际的pod数量变了)
 kubectl scale --replicas=6 replicaset myapp-relicaset
+
+kubectl get replicaset
+kubectl describe replicaset myapp-replicaset
+
+# 修改k8s自动生成的在内存中的配置文件，修改后无需apply
+kubectl edit replicaset myapp-replicaset
 ```
+
+设置了replicaset的replica数字以后，手动删除一个pod后，会自动生成same label的足额的pods数目；同样，如果想额外创建，则会自动terminating
