@@ -54,6 +54,7 @@ kubectl create -f redis.yaml
 ```
 
 老 - Replication Controller - 为pod做LB和Scaling（单个node内部，以及多个nodes之间）
+
 新 - Replica Set - spec下面多了个selector
 
 创建replicaset-definition.yml (rs for relicaset)
@@ -78,6 +79,9 @@ kubectl scale --replicas=6 replicaset myapp-relicaset
 
 kubectl get replicaset
 kubectl describe replicaset myapp-replicaset
+
+# 解释k8s的resources和fields的详细信息
+kubectl explain rs
 
 # 修改k8s自动生成的在内存中的配置文件，修改后无需apply，但如果需要替换掉坏掉的pods，需要删除坏的pods  kubectl delete pod new-replica-set-xkzg6 new-replica-set-hzlq8 new-replica-set-sftjd new-replica-set-9kdr2， 然后kubectl会自动重新生成新的pods
 kubectl edit replicaset myapp-replicaset
