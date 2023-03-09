@@ -30,7 +30,9 @@ docker push guilindev/hello-world-flask
 ```
 
 ## Kubenetes
-熟练 pod，kubectl的概念
+熟练 kubectl
+
+Pod-> Replicaset -> Deployment ->
 
 Yaml: list, dict, list of dict
 
@@ -39,7 +41,7 @@ kubectl run - - help
 kubectl run nginx - -image=nginx
 
 kubectl get pods
-kubectl describe pod podname 
+kubectl describe pod myapp-pod 
 
 kubectl get pods -o wide
 
@@ -88,3 +90,19 @@ kubectl edit replicaset myapp-replicaset
 ```
 
 设置了replicaset的replica数字以后，手动删除一个pod后，会自动生成same label的足额的pods数目；同样，如果想额外创建，则会自动terminating
+
+```shell
+# 创建一个deployment
+kubectl create -f deployment-definition.yml
+
+# check创建出啦的deployment
+kubectl get deployments
+kubectl describe deployment myapp-deployment
+# deployment会自动create replicaset
+kubectl get replicaset
+# replicaset会自动创建pods
+kubectl get pods
+
+# 检查已经创建出来的所有objects，包括deployments， replicaset和pods
+kubectl get all
+```
