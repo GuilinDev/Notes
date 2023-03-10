@@ -85,7 +85,11 @@ kubectl describe replicaset myapp-replicaset
 # 解释k8s的resources和fields的详细信息
 kubectl explain rs
 
-# 修改k8s自动生成的在内存中的配置文件，修改后无需apply，但如果需要替换掉坏掉的pods，需要删除坏的pods  kubectl delete pod new-replica-set-xkzg6 new-replica-set-hzlq8 new-replica-set-sftjd new-replica-set-9kdr2， 然后kubectl会自动重新生成新的pods
+# 修改k8s自动生成的在内存中的配置文件，修改后无需apply，但如果需要替换掉坏掉的pods，需要删除坏的pods  
+kubectl delete pod new-replica-set-xkzg6 new-replica-set-hzlq8 new-replica-set-sftjd new-replica-set-9kdr2
+#然后kubectl会自动重新生成新的pods
+
+# 直接编辑rs配置文件
 kubectl edit replicaset myapp-replicaset
 ```
 
@@ -105,4 +109,11 @@ kubectl get pods
 
 # 检查已经创建出来的所有objects，包括deployments， replicaset和pods
 kubectl get all
+```
+
+```shell
+# 从头新建一个deployment的yaml
+kubectl create deployment --help
+kubectl create deployment-name --image=image-name --replicas=3
+kubectl get deploy
 ```
