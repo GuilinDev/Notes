@@ -1,7 +1,7 @@
 ## Achieved
-[Basic Life Support - Valid 07/24/2024](https://www.redcross.org/take-a-class/digital-certificate)
-[Terraform Associate 003 - HashCorp]()
-[AWS Solution Architecture Associate]()
+* [Basic Life Support - Valid 07/24/2024](https://www.redcross.org/take-a-class/digital-certificate)
+* [Terraform Associate 003 - HashCorp]()
+* [AWS Solution Architecture Associate]()
 
 ## Potential Purchasing
 * K8S: CKAD, CKA, CKS
