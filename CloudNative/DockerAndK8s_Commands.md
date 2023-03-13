@@ -117,3 +117,37 @@ kubectl create deployment --help
 kubectl create deployment-name --image=image-name --replicas=3
 kubectl get deploy
 ```
+
+Update and Rollback:
+
+When first crates a deployment, it triggers a **roolout**, a new rollout creates a new revision. When application is updated, new rollout is triggered and new deployment revision is created. 
+```shell
+# check the status of rollout
+kubectl rollout status deployment/myapp-deployment
+# check revisions and history of deployment
+kubectl rollout history deployment/myapp-deployment
+```
+
+Two deployment strategies: 1）(Default)Rolling update: 逐个替换，service不会down，2）Recreate: 全部destroy后再spin up新的版本
+
+```shell
+# 1）更新版本号方法1: 直接修改配置yml中spec下pod的image的版本号，然后应用
+kubectl apply -f deployment-definition.yml
+# 2）更新版本号方法2: set命令 (会产生新的definition文件)
+kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
+
+# 查看具体deployment的strategy (strategyType)是rolling update还是recreate
+kubectl describe deployment myapp-deployment
+```
+
+Upgrade： # ReplicaSet总是会重新创建的
+
+Rollback (把前一个版本的replicaset的回滚)：
+```shell
+kubectl rollout undo deployment/myapp-deployment
+# 检查rs的名字
+kubectl get replicaset
+```
+
+# check the status of rollout）
+# check the status of rollout
