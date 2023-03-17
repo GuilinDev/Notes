@@ -137,9 +137,14 @@ kubectl apply -f deployment-definition.yml
 # 2）更新版本号方法2: set命令 (会产生新的definition文件)
 kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
 kubectl set image deployment myapp-deployment nginx=nginx:1.9.1 --record
+# 例子
+kubectl set image deployment(整个deployment)/frontend(具体deployment的名字，/可用空格) simple-webapp(pod中container的名字)=kodekloud/webapp-color:v2(需要替换的版本号)
 
 # 查看具体deployment的strategy (strategyType)是rolling update还是recreate
 kubectl describe deployment myapp-deployment
+# 更换deployment的strategy，一种方法是修改原始的yaml然后apply，另一种是以下(原始yaml文件不变)：
+kubectl edit deployment myapp-deployment # 修改后不用做任何apply
+
 ```
 
 Upgrade： # ReplicaSet总是会重新创建的
