@@ -98,6 +98,7 @@ kubectl edit replicaset myapp-replicaset
 ```shell
 # 创建一个deployment
 kubectl create -f deployment-definition.yml
+kubectl create -f deployment-definition.yml --record # 记录已经发生的变化
 
 # check创建出啦的deployment
 kubectl get deployments
@@ -135,6 +136,7 @@ Two deployment strategies: 1）(Default)Rolling update: 逐个替换，service�
 kubectl apply -f deployment-definition.yml
 # 2）更新版本号方法2: set命令 (会产生新的definition文件)
 kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
+kubectl set image deployment myapp-deployment nginx=nginx:1.9.1 --record
 
 # 查看具体deployment的strategy (strategyType)是rolling update还是recreate
 kubectl describe deployment myapp-deployment
@@ -147,7 +149,17 @@ Rollback (把前一个版本的replicaset的回滚)：
 kubectl rollout undo deployment/myapp-deployment
 # 检查rs的名字
 kubectl get replicaset
+
+# rollout相关的命令
+kubectl rollout status
+kubectl rollout hisotry
+kubectl rollout undo
+kubectl rollout pause
+kubectl rollout resume
+
+# 例如，查看rollout的历史修改各版本，以及各自信息
+kubectl rollout history deployment.apps/myapp-deployment
 ```
 
-# check the status of rollout）
+# check the status of rollout
 # check the status of rollout
