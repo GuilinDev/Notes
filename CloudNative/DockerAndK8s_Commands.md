@@ -166,5 +166,11 @@ kubectl rollout resume
 kubectl rollout history deployment.apps/myapp-deployment
 ```
 
-# check the status of rollout
-# check the status of rollout
+### K8s Network 101
+* 同一个node下，default部署pods的最大数量是110；
+* 同一个node下，Each pod has its own ip;
+* 同一个node下Pods之间不直接交流(up down不方便，而通过internal network)
+* 而在K8s的cluster中，不同nodes之间的交流，K8s需要我们自己配置，使用现有的解决方案例如Calico，flannel，cilium，NSX，作为nodes之间的routing用
+
+### Services
+
