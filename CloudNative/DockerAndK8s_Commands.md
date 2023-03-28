@@ -175,4 +175,4 @@ kubectl rollout history deployment.apps/myapp-deployment
 ### Services
 K8s services enable communication btw components within/outside the application
 
-TargetPort -> port(on Service) -> NodePort (range from 30000 to 32767), only port is required in yaml file, if not set targetPort, then targetPort will be same as port, it not set nodePort, it will auto set a free port btw 30000 and 32767.
+TargetPort (backend port for container/pod to be exposed) -> port(on K8s Service) -> NodePort (range from 30000 to 32767), only port is required in yaml file, if not set targetPort, then targetPort will be same as port, it not set nodePort, it will auto set a free port btw 30000 and 32767.
