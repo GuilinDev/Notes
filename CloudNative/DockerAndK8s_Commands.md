@@ -170,7 +170,7 @@ kubectl rollout history deployment.apps/myapp-deployment
 * 同一个node下，default部署pods的最大数量是110；
 * 同一个node下，Each pod has its own ip;
 * 同一个node下Pods之间不直接交流(up down不方便，而通过internal network)
-* 而在K8s的cluster中，不同nodes之间的交流，K8s需要我们自己配置，使用现有的解决方案例如Calico，flannel，cilium，NSX，作为nodes之间的routing用
+* 而在K8s的cluster中，不同pods(无论pods在不在同一个node)之间的交流，K8s需要我们自己配置，使用现有的解决方案（CNI Provider）例如Calico，flannel，cilium，NSX等等，确保不同pods之间各自的IP能被别的pods访问，作为pods之间的routing用；
 
 ### Services
 K8s services enable communication btw components within/outside the application
