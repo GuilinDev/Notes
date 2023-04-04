@@ -178,6 +178,8 @@ K8s services enable communication btw components within/outside the application
 TargetPort (backend port for container/pod to be exposed) -> port(on K8s Service) -> NodePort (range from 30000 to 32767), only port is required in yaml file, if not set targetPort, then targetPort will be same as port, it not set nodePort, it will auto set a free port btw 30000 and 32767.
 
 ```shell
+kubectl get service
+kubectl get svc
 # 查看k8s集群下的service的各种状态，包括labels，nodePorts等
 kubectl describe svc myServiceName
 # 创建一个service
