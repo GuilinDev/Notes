@@ -176,3 +176,14 @@ kubectl rollout history deployment.apps/myapp-deployment
 K8s services enable communication btw components within/outside the application
 
 TargetPort (backend port for container/pod to be exposed) -> port(on K8s Service) -> NodePort (range from 30000 to 32767), only port is required in yaml file, if not set targetPort, then targetPort will be same as port, it not set nodePort, it will auto set a free port btw 30000 and 32767.
+
+```shell
+# 查看k8s集群下的service的各种状态，包括labels，nodePorts等
+kubectl describe svc myServiceName
+# 创建一个service
+kubectl create -f service-definition.yaml
+```
+Pods通常带有labels，这些labels通常作为Service的selectors（如果service的selector昱pods的labels不同，则service无法access pods）
+
+### Microservice Application
+
