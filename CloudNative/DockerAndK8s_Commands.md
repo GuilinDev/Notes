@@ -117,6 +117,9 @@ kubectl get all
 kubectl create deployment --help
 kubectl create deployment-name --image=image-name --replicas=3
 kubectl get deploy
+
+# 同时check多个部署单位
+kubectl get pods, deploy, svc, rs
 ```
 
 Update and Rollback:
