@@ -191,4 +191,4 @@ kubectl create -f service-definition.yaml
 Pods通常带有labels，这些labels通常作为Service的selectors（如果service的selector昱pods的labels不同，则service无法access pods）
 
 ### Microservice Application
-
+GKE, EKS, AKS
