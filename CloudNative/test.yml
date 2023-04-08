@@ -1,0 +1,23 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: fifo-pod
+spec:
+  volumes:
+    - name: queue
+      emptyDir: {}
+  containers:
+    - name: server
+      image: ubuntu
+      volumeMounts:
+        - name: queue
+          mountPath: /var/lib/queue
+      command: ["/bin/sh"]
+      args: ["-c", "mkfifo /var/lib/queue/fifo; cat /var/lib/queue/fifo"]
+    - name: client
+      image: ubuntu
+      volumeMounts:
+        - name: queue
+          mountPath: /var/lib/queue
+      command: ["/bin/sh"]
+      args: ["-c", "echo Hey > /var/lib/queue/fifo"]
