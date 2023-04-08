@@ -1,9 +1,12 @@
-<mxfile host="app.diagrams.net" modified="2023-04-08T15:30:12.437Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="XtrZGWSkq7gHVbFU71qS" version="21.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-08T18:56:48.817Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="FOLvV0GxcFmTpZqzT2OC" version="21.0.6" type="github">
   <diagram name="Page-1" id="kTUMGS3Ad_0SVGwf9lWE">
     <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="720" width="600" height="400" as="geometry" />
+        </mxCell>
         <mxCell id="pnt_n_mxFb-sLE3t90gV-11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="360" width="550" height="310" as="geometry" />
         </mxCell>
@@ -36,6 +39,72 @@
         </mxCell>
         <mxCell id="pnt_n_mxFb-sLE3t90gV-10" value="More important to data scientist" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="630" y="510" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="pnt_n_mxFb-sLE3t90gV-12" target="pnt_n_mxFb-sLE3t90gV-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-12" value="Pull last week&#39;s data from data warehouse" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="750" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-13" value="Featurize data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="810" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pnt_n_mxFb-sLE3t90gV-14" target="pnt_n_mxFb-sLE3t90gV-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="953" />
+              <mxPoint x="320" y="953" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-14" value="Train model A on extracted features" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="880" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.808;entryY=0.285;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="pnt_n_mxFb-sLE3t90gV-15" target="pnt_n_mxFb-sLE3t90gV-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="957" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-15" value="Train model B on extracted features" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="880" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="pnt_n_mxFb-sLE3t90gV-16" target="pnt_n_mxFb-sLE3t90gV-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="1018" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pnt_n_mxFb-sLE3t90gV-16" target="pnt_n_mxFb-sLE3t90gV-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="1020" />
+              <mxPoint x="530" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-16" value="Compare A and B test set" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="320" y="920" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-17" value="Pull last week&#39;s data from data warehouse" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1060" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-18" value="Pull last week&#39;s data from data warehouse" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1060" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.169;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.692;entryY=-0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="pnt_n_mxFb-sLE3t90gV-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="279.94000000000005" y="840" as="sourcePoint" />
+            <mxPoint x="281.1199999999999" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="pnt_n_mxFb-sLE3t90gV-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.869;exitY=1.067;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="pnt_n_mxFb-sLE3t90gV-13" target="pnt_n_mxFb-sLE3t90gV-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="289.94000000000005" y="850" as="sourcePoint" />
+            <mxPoint x="290" y="887" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
