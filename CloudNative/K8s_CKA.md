@@ -1,9 +1,19 @@
 ## Core Concepts
-### Docker & containerD
+#### Docker & containerD
 containerD command line tools: ctr, nerdctl, crictl
 
-### ETCD Beginner
+#### ETCD Beginner
 etcdctl
+
+#### Kube-API server
+1. Authenticate  User
+2. Validate Request
+3. Retrieve Data
+4. Update ETCD (Kube-API server是唯一与ECTD直接打交道的component)
+5. Scheduler
+6. Kubelet
+
+#### Kube Controller Manager
 
 ## Scheduling
 
