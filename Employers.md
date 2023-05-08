@@ -55,7 +55,7 @@ There is no easily made template for IC7+ career levels. The typical mnodel for 
 * You simplify the world around you by applying past experiences. Your systems can be reasoned about formally and with an eye towards operational costs.
 * ...
 
-## What to write for performance review (Calibratin)
+## What to write for performance review (Calibration)
 
 ### AXES
 
