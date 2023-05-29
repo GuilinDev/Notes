@@ -1,23 +1,22 @@
-kind: Pod
-apiVersion: v1
+### The kind of the Kubernetes object
+kind: ReplicaSet
+apiVersion: apps/v1
 metadata:
-  name: fifo-pod
+  name: nginx
 spec:
-  volumes:
-    - name: queue
-      emptyDir: {}
-  containers:
-    - name: server
-      image: ubuntu
-      volumeMounts:
-        - name: queue
-          mountPath: /var/lib/queue
-      command: ["/bin/sh"]
-      args: ["-c", "mkfifo /var/lib/queue/fifo; cat /var/lib/queue/fifo"]
-    - name: client
-      image: ubuntu
-      volumeMounts:
-        - name: queue
-          mountPath: /var/lib/queue
-      command: ["/bin/sh"]
-      args: ["-c", "echo Hey > /var/lib/queue/fifo"]
+  ### The number of replicas of nginx Pod
+  ### The controller will manage the Pods on our behalf
+  ### Anytime a Pod goes down, the controller will restart a new one to guarantee that at least 2 nginx Pods are running
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        

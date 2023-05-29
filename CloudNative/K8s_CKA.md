@@ -88,4 +88,22 @@ echo "上一步查出来的Pod Name" > /opt/KUTR000401/KUTR00401.txt
 cat /opt/KUTR000401/KUTR00401.txt
 ```
 
+### 3. Network Policy
+```bash
+# Task:
+# 在现有的namespacemy-app中创建一个名为allow-port-from-namespace的新NetworkPolicy。确保新的NetworkPolicy允许namespaceecho中的Pods连接到namespacemy-app中的Pods的9000端口。进一步确保新的NetworkPolicy：不允许对没有在监听端口9000的Pods的访问, 不允许非来自namespaceecho中的Pods的访问
+# 双重否定就是肯定，所以最后两句话的意思就是：仅允许端口为9000的pod方法。仅允许echo命名空间中的pod访问
+
+# 考点： NetworkPolicy的创建
+
+kubectl config use-context k8s
+
+# 参考： https://kubernetes.io/docs/concepts/services-networking/network-policies/
+
+# 查看所有ns标签的label
+kubectl get ns --show-labels
+
+
+
+```
 
