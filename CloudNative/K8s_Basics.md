@@ -49,10 +49,29 @@ kubectl get nodes
 kubectl delete pod podname
 
 # 产生一个可运行的redis.yaml
-kubectl run redis —image=redis123 —dry-run=client -o yaml > redis.yaml
+kubectl run redis --image=redis123 --dry-run=client -o yaml > redis.yaml
 # 然后可以运行: 
 kubectl create -f redis.yaml
 # Change the image name: 1) kubectl edit 2) change redis.yaml and kubectl apply -f redis.yaml
+
+# 更多例子
+# Create an NGINX Pod
+kubectl run nginx --image=nginx
+# Generate POD Manifest YAML file (-o yaml). Don't actually create the pod(--dry-run)
+kubectl run nginx --image=nginx --dry-run=client -o yaml
+
+# Create the deployment
+kubectl create deployment --image=nginx nginx
+# Generate Deployment YAML file (-o yaml). Don't actually create the deployment(--dry-run)
+kubectl create deployment --image=nginx nginx --dry-run=client -o yaml
+
+# Generate Deployment YAML file (-o yaml). Don’t actually create the deployment(–dry-run) and save it to a file.
+kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-deployment.yaml
+
+# Make necessary changes to the file (for example, adding more replicas) and then create the deployment.
+kubectl create -f nginx-deployment.yaml
+# OR, In k8s version 1.19+, we can specify the --replicas option to create a deployment with 4 replicas.
+kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o yaml > nginx-deployment.yaml
 ```
 
 老 - Replication Controller - 为pod做LB和Scaling（单个node内部，以及多个nodes之间）
