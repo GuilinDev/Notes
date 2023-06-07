@@ -278,7 +278,7 @@ kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
 
 Expose pod port to service when creating pod 
 ```shell
-kubectl run httpd --image=httpd:alpine --port=80 --expose
+kubectl run httpd --image=httpd:alpine --port=80 --expose=true
 ```
 
 
