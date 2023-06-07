@@ -276,6 +276,11 @@ kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
 ```
 (This will not use the pods labels as selectors, instead it will assume selectors as app=redis. You cannot pass in selectors as an option. So it does not work very well if your pod has a different label set. So generate the file and modify the selectors before creating the service)
 
+Expose pod port to service when creating pod 
+```shell
+kubectl run httpd --image=httpd:alpine --port=80 --expose
+```
+
 
 Create a Service named nginx of type NodePort to expose pod nginx's port 80 on port 30080 on the nodes:
 ```shell
