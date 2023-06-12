@@ -32,6 +32,12 @@ docker push guilindev/hello-world-flask
 ## Kubenetes
 熟练 kubectl
 
+```shell
+# 查看所有资源
+kubectl get all --no-headers # --no-headers不算header以免出错
+kubectl get all --no-headers | wc -l
+```
+
 Pod-> Replicaset -> Deployment ->
 
 Yaml: list, dict, list of dict
