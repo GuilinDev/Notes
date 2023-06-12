@@ -41,6 +41,7 @@ kubectl run - - help
 kubectl run nginx - -image=nginx
 
 kubectl get pods
+kubectl get po --watch # 有时候创建的时间太长，这个命令会创建完成后再显示
 kubectl describe pod myapp-pod 
 
 kubectl get pods -o wide
@@ -51,7 +52,9 @@ kubectl delete pod podname
 # 产生一个可运行的redis.yaml
 kubectl run redis --image=redis123 --dry-run=client -o yaml > redis.yaml
 # 然后可以运行: 
-kubectl create -f redis.yaml
+kubectl 
+
+-f redis.yaml
 # Change the image name: 1) kubectl edit 2) change redis.yaml and kubectl apply -f redis.yaml
 
 # 更多例子
@@ -70,6 +73,7 @@ kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-d
 
 # Make necessary changes to the file (for example, adding more replicas) and then create the deployment.
 kubectl create -f nginx-deployment.yaml
+kubectl create --force -f nginx-deployment.yaml # 如果有pod，强行替代
 # OR, In k8s version 1.19+, we can specify the --replicas option to create a deployment with 4 replicas.
 kubectl create deployment --image=nginx nginx --replicas=4 --dry-run=client -o yaml > nginx-deployment.yaml
 ```
