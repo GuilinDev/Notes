@@ -123,7 +123,7 @@ kubectl config use-context k8s
 
 ```
 
-#### 5. 暴露服务service
+#### 5. 创建Ingress
 ```shell
 kubectl config use-context k8s
 
@@ -132,6 +132,13 @@ kubectl config use-context k8s
 #### 6. 扩容deployment副本数量
 ```shell
 kubectl config use-context k8s
+
+# 先检查一下现有的pod数量（可不检查
+kubectl get deployments presentation -o wide
+kubectl get pod -l app=presentation
+
+# 扩容
+kubectl scale deployments presentation --replicas=4
 
 ```
 
@@ -145,12 +152,20 @@ kubectl config use-context k8s
 ```shell
 kubectl config use-context k8s
 
+# grep -i是忽略大小写，grep -v是排除在外，grep -c是统计查出来的条数。
+kubectl describe nodes | grep -i Taint | grep -vc NoSchedule
+echo "查出来的数字" > /opt/KUSC00402/kusc00402.txt
+
+# 检查
+cat /opt/KUSC00402/kusc00402.txt
 ```
 
 #### 9. 创建多容器的pod
 ```shell
 kubectl config use-context k8s
 
+vim pod-kucc.yaml
+# 注意:set paste，防止yaml文件空格错序
 ```
 
 #### 10. 创建PV
