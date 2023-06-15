@@ -119,14 +119,89 @@ kubectl describe neworkpolicy -n my-app
 ```bash
 kubectl config use-context k8s
 
+# 检查deployment信息，并记下SELECTOR的Lable标签，这里是app=front-end
+kubectl get deployment front-end -o wide
 
+# 参考官方文档， 按需edit上面的deployment
+kubectl edit deployment front-end
 
+# ...
+spec:
+  containers:
+  -image: vicuu/nginx:hello
+    imagePullPolicy: IfNotPresent
+    name: nginx # 找到此位置。下文会简单说明一下yaml文件的格式，不懂yaml格式的，往下看。
+    ports:                  #添加这4行
+    -name: http
+      containerPort: 80
+      protocol: TCP
+      
+# ...      
+      
+# 暴露对应端口
+# 注意考试中需要创建的是NodePort，还是ClusterIP。如果是ClusterIP，则应为--type=ClusterIP
+# --port是service的端口号，--target-port是deployment里pod的容器的端口号。
+kubectl expose deployment front-end --type=NodePort --port=80 --target-port=80--name=front-end-svc
+
+# 暴露服务后，检查一下service的selector标签是否正确，这个要与deployment的selector标签一致的。
+kubectl get svc front-end-svc -o wide
+kubectl get deployment front-end -o wide
+
+# 如果kubectl expose暴露服务后，发现service的selector标签是空的<none>，或者不是deployment的, 则需要编辑service，手动添加标签
+kubectl edit svc front-end-svc
+# 在ports这一小段下面添加selector标签
+selector:
+  app: front-end      
+# 注意yaml里是写冒号，而不是等号，不是app=front-end。确保service的selector标签与deployment的selector标签一致。
+
+# 最后curl检查
+kubectl get pod,svc -o wide
+curl 所在的node的ip或主机名:30938
+curl svc的ip地址:80
+# （注意，只能curl通svc的80端口，但是无法ping通的。）考试时，如果curl不通，简单排错后也不通，就不要过于纠结，继续往下做题即可。
 ```
 
 #### 5. 创建Ingress
+参考文档： [依次点击Concepts→Services, Load Balancing, and Networking→Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 ```shell
 kubectl config use-context k8s
 
+# 从上面官网copy一个ingress的yaml文件，然后修改如下
+apiVersion: networking.k8s.io/v1
+kind: IngressClass
+metadata:
+  labels:
+    app.kubernetes.io/component: controller
+  name: nginx-example # 考试时，默认是没有ingressClassName的，所以我们要先手动建一个ingressClassName，命名就为nginx-example吧
+  annotations:ingressclass.kubernetes.io/is-default-class: "true"
+spec:controller: k8s.io/ingress-nginx
+--- # 因为是不同文件，所以这3个---，必须要写，不能省略
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ping
+  namespace: ing-internal
+  annotations:
+nginx.ingress.kubernetes.io/rewrite-target: / # 因为考试环境有多套，不清楚具体抽中的是哪套。在1.26的考试里，先写上这行，如果apply时报错需要指定域名，则注释这行再apply，就成功了。spec:
+  ingressClassName: nginx-example#这里调用上面新建的ingressClassName为nginx-example
+  rules:
+  -http:paths:-path: /hello
+    pathType: Prefix
+    backend:service:
+      name:hello
+      port:
+        number: 5678
+```
+
+创建好Ingress的yaml后，执行如下命令
+
+```shell
+kubectl apply -f ingress.yaml
+
+# 检查，利用curl，通过get ingress 查看ingress的内外IP，然后通过提供的curl 测试ingress 是否正确
+# 做完题后，略等3分钟，再检查，否则可能还没获取IP地址。或者可以先去做别的题，等都做完了，再回来检查这道题，一下，记得回来检查时，先使用kubectl config use-context k8s切换到此集群。
+kubectl get ingress -n ing-internal # 查看ingress的内外IP
+curl 拿到的ID/hello # 测试ingress 是否正确
 ```
 
 #### 6. 扩容deployment副本数量
@@ -143,6 +218,7 @@ kubectl scale deployments presentation --replicas=4
 ```
 
 #### 7. 调度pod到指定节点
+参考文档：[依次点击Tasks→Configure Pods and Containers→Assign Pods to Nodes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
 ```shell
 kubectl config use-context k8s
 
