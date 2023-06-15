@@ -226,6 +226,7 @@ kubectl get pods --namespace=example
 kubectl get pods -n=example
 # 查看所有ns的pods
 kubectl get pods --all-namespaces
+kubectl get pods -A
 ```
 
 ### Microservice Application
