@@ -50,6 +50,11 @@ kubectl get pods
 kubectl get po --watch # 有时候创建的时间太长，这个命令会创建完成后再显示
 kubectl describe pod myapp-pod 
 
+# 创建一个pod并且传递参数
+kubectl run po nginx image=nginx -- --color green
+kubectl run po my-app image=my-image --command python3 app.py --color green
+# kubectl describe po my-app 可以查看参数
+
 kubectl get pods -o wide
 
 kubectl get nodes
