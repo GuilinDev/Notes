@@ -329,3 +329,8 @@ grep -i staticpod /var/lib/kubelet/config.yaml
 # 从命令行生成cm
 kubectl create cm webapp-config-map --from-literal=APP_COLOR=darkblue --from-literal=APP_OTHER=disregard
 ```
+### SecretMaps
+```shell
+# 从命令行生成secret
+kubectl create secret generic db-secret --from-literal=DB_Host=sql01 --from-literal=DB_User=root --from-literal=DB_Password=password123
+```
