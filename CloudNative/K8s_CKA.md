@@ -19,6 +19,14 @@ etcdctl
 
 ## Logging & Monitoring
 
+```shell
+kubectl top node --sort-by='cpu'
+kubectl top pod --no-headers
+
+kubectl logs my-web-pod
+
+```
+
 ## Application Lifecycle Management
 
 ## Cluster Maintaince
