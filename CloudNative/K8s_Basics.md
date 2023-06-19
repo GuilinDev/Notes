@@ -334,3 +334,7 @@ kubectl create cm webapp-config-map --from-literal=APP_COLOR=darkblue --from-lit
 # 从命令行生成secret
 kubectl create secret generic db-secret --from-literal=DB_Host=sql01 --from-literal=DB_User=root --from-literal=DB_Password=password123
 ```
+#### MultiContainer
+```shell
+kubectl -n my-namespace logs my-pod
+```
