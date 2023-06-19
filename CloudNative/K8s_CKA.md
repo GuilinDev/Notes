@@ -222,6 +222,32 @@ kubectl scale deployments presentation --replicas=4
 ```shell
 kubectl config use-context k8s
 
+# 先检查一下是否有这个pod，一般是没有创建的，所以需要自己创建
+kubectl get pod -A | grep nginx-kusc00401
+
+# 确保node有这个labels，考试时，检查一下就行，应该已经提前设置好了labels
+kubectl get nodes --show-labels | grep 'disk=ssd'
+# 如果node没有这个labels，可以手动添加
+kubectl label nodes node01 disk=ssd
+
+# 创建pod yaml，set paste，防止yaml文件空格错序
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-kusc00401
+spec:
+  containers:
+  -name: nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent       #这句的意思是，如果此image已经有了，则不重新下载。考试时写不写这个都是可以的。
+  nodeSelector:
+    disk: ssd
+
+# 创建pod
+kubectl apply -f pod-disk-ssd.yaml
+
+# 检查
+kubectl get po nginx-kusc00401 -o wide
 ```
 
 #### 8. 查看可用节点数量
@@ -242,18 +268,113 @@ kubectl config use-context k8s
 
 vim pod-kucc.yaml
 # 注意:set paste，防止yaml文件空格错序
+apiVersion: v1
+kind: Pod
+  metadata:
+  name: kucc8
+spec:
+  containers:
+  -name:nginx
+    image: nginx
+    imagePullPolicy: IfNotPresent#这句的意思是，如果此image已经有了，则不重新下载。考试时写不写都可以。但模拟环境里推荐写，pod启动快。
+  -name: consul
+    image: consul
+    imagePullPolicy: IfNotPresent
+
+# 创建pod
+kubectl apply -f pod-kucc.yaml
+
+# 检查
+kubectl get po kucc8
 ```
 
 #### 10. 创建PV
+参考文档：[依次点击Tasks→Configure Pods and Containers→Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
 ```shell
-kubectl config use-context k8s
+kubectl config use-context hk8s
 
+# 直接从官方复制合适的案例，修改参数，然后设置hostPath 为/srv/app-config 即可。
+vim pv.yaml
+#注意: set paste，防止yaml文件空格错序
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: app-config
+  #labels:#不需要写
+    #type: local
+spec:
+  capacity:
+    storage: 1Gi
+  accessModes:
+    -ReadWriteMany #注意，考试时的访问模式可能有ReadWriteMany和ReadOnlyMany和ReadWriteOnce，根据题目要求写。
+  hostPath:path: "/srv/app-config"
+
+# 创建pv
+kubectl apply -f pv.yaml
+
+# 检查
+kubectl get pv
+# 在检查结果里，ACCESS MODES那一列中，RWX是ReadWriteMany，RWO是ReadWriteOnce。
 ```
 
 #### 11. 创建PVC
+参考文档：[依次点击Tasks→Configure Pods and Containers→Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
 ```shell
-kubectl config use-context k8s
+```shell
+kubectl config use-context ok8s
 
+# 根据官方文档复制一个PVC配置，修改参数，不确定的地方就是用kubectl 的explain 帮助。
+vim pvc.yaml
+#注意:set paste，防止yaml文件空格错序
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pv-volume #pvc名字
+spec:
+  storageClassName: csi-hostpath-sc
+  accessModes:
+    -ReadWriteOnce #注意，考试时的访问模式可能有ReadWriteMany和ReadOnlyMany和ReadWriteOnce，根据题目要求写。
+  resources:
+    requests:
+      storage: 10Mi
+
+# 创建pvc
+kubectl apply -f pvc.yaml
+
+# 检查
+kubectl get pvc
+
+vim pvc-pod.yaml
+# 注意:set paste，防止yaml文件空格错序
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-server
+spec:
+  volumes:
+    -name: task-pv-storage # 这个name要和下面volumeMounts的name一样。
+      persistentVolumeClaim:
+        claimName:pv-volume #这个要使用上面创建的pvc名字
+  containers:
+    -name: nginx
+      image: nginx:1.16
+      volumeMounts:
+        -mountPath: "/usr/share/nginx/html"
+        name: task-pv-storage # 这个name要和上面的volumes的name一样。
+
+# 创建pod
+kubectl apply -f pvc-pod.yaml
+
+# 检查
+kubectl get po web-server
+
+# 更改大小，并记录过程。
+# 将storage: 10Mi改为storage: 70Mi   （模拟环境里会报错，下面有解释。）
+# 注意是修改上面的spec:里面的storage:
+kubectl edit pvc pv-volume --record
+# 模拟环境是nfs存储，操作时，会有报错忽略即可。考试时用的动态存储，不会报错的。
 ```
 
 #### 12. 查看pod日志
@@ -271,7 +392,64 @@ cat /opt/KUTR00101/foo
 ```shell
 kubectl config use-context k8s
 
-# 修改官方文档的yaml
+# 通过kubectl get pod -o yaml 的方法备份原始pod 信息，删除旧的pod 11-factor-appcopy 一份新yaml 文件，添加一个名称为sidecar 的容器新建emptyDir 的卷，确保两个容器都挂载了/var/log 目录新建含有sidecar 的pod，并通过kubectl logs 验证
+
+# 导出这个pod的yaml文件
+kubectl get pod 11-factor-appcopy -o yaml > varlog.yaml
+# 备份yaml文件，防止改错了时回退。
+cp varlog.yaml varlog.yaml.bak
+
+# 修改varlog.yaml文件
+vim varlog.yaml
+
+# 根据官方文档拷贝需要的信息，在《下面是运行两个边车容器的Pod 的配置文件》里。
+spec:
+。。。。。。
+    volumeMounts:#在原配置文件，灰色的这段后面添加
+    -mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-4l6w8
+      readOnly: true
+    -name: varlog # 新加内容
+      mountPath: /var/log # 新加内容
+  -name: sidecar #新加内容，注意name 别写错了
+    image:busybox # 新加内容
+    args: [/bin/sh, -c, 'tail -n+1 -f /var/log/11-factor-app.log'] # 新加内容，注意文件名别写错了。另外是用逗号分隔的，而题目里是空格。
+    volumeMounts: # 新加内容
+    -name: varlog #新加内容
+      mountPath: /var/log # 新加内容
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+。。。。。。
+  volumes: # 在原配置文件，灰色的这段后面添加。
+  -name: kube-api-access-kcjc2
+    projected:defaultMode: 420
+    sources:
+    -serviceAccountToken:
+      expirationSeconds: 3607
+      path: token
+    -configMap:
+      items:
+      -key: ca.crt
+        path: ca.crt
+      name: kube-root-ca.crt
+    -downwardAPI:
+      items:
+      -fieldRef:
+        apiVersion: v1
+        fieldPath: metadata.namespace
+      path: namespace
+  -name: varlog # 新加内容，注意找好位置。
+    emptyDir: {} # 新加内容
+
+# 删除原先的pod，大于需要等2分钟
+kubectl delete pod 11-factor-appcopy
+# 检查一下是否删除了
+kubectl get pod 11-factor-appcopy
+# 新建这个pod
+kubectl apply -f varlog.yaml
+
+# 检查
+kubectl logs 11-factor-app sidecar
 ```
 
 #### 14. 升级集群
