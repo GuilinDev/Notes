@@ -323,3 +323,9 @@ grep -i staticpod /var/lib/kubelet/config.yaml
 
 # Modify yaml 文件
 ```
+
+#### ConfigMaps
+```shell
+# 从命令行生成cm
+kubectl create cm webapp-config-map --from-literal=APP_COLOR=darkblue --from-literal=APP_OTHER=disregard
+```
