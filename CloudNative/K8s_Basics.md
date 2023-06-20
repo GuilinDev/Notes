@@ -337,4 +337,6 @@ kubectl create secret generic db-secret --from-literal=DB_Host=sql01 --from-lite
 #### MultiContainer
 ```shell
 kubectl -n my-namespace logs my-pod
+
+kubectl logs orange -c init-myservice(container name)
 ```
