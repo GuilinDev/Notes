@@ -50,6 +50,11 @@ kubectl get pods
 kubectl get po --watch # 有时候创建的时间太长，这个命令会创建完成后再显示
 kubectl describe pod myapp-pod 
 
+# 创建一个pod并且传递参数
+kubectl run po nginx image=nginx -- --color green
+kubectl run po my-app image=my-image --command python3 app.py --color green
+# kubectl describe po my-app 可以查看参数
+
 kubectl get pods -o wide
 
 kubectl get nodes
@@ -317,4 +322,21 @@ ps -aux | grep kubelet
 grep -i staticpod /var/lib/kubelet/config.yaml
 
 # Modify yaml 文件
+```
+
+#### ConfigMaps
+```shell
+# 从命令行生成cm
+kubectl create cm webapp-config-map --from-literal=APP_COLOR=darkblue --from-literal=APP_OTHER=disregard
+```
+### SecretMaps
+```shell
+# 从命令行生成secret
+kubectl create secret generic db-secret --from-literal=DB_Host=sql01 --from-literal=DB_User=root --from-literal=DB_Password=password123
+```
+#### MultiContainer
+```shell
+kubectl -n my-namespace logs my-pod
+
+kubectl logs orange -c init-myservice(container name)
 ```
