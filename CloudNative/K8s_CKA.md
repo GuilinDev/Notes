@@ -510,6 +510,8 @@ kubectl get nodes
 # 这步不需做 kubectl config use-context k8s
 
 # 备份
+# 如果不使用export ETCDCTL_API=3，而使用ETCDCTL_API=3，则下面每条etcdctl命令前都要加ETCDCTL_API=3。
+# 如果执行时，提示permission denied，则是权限不够，命令最前面加sudo即可
 export ETCDCTL_API=3
 etcdctl --endpoints=https://11.0.1.111:2379--cacert="/opt/KUIN00601/ca.crt" --cert="/opt/KUIN00601/etcd-client.crt" --key="/opt/KUIN00601/etcd-client.key" snapshot save /var/lib/backup/etcd-snapshot.db
 
