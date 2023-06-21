@@ -33,6 +33,8 @@ kubectl logs my-web-pod
 
 ## Security
 
+三种certificates，1）server certificate, configured on servers; 2) root certificate, configured on CA servers; 3) client certificates, configured on clients;
+
 ## Storage
 
 ## Networking
