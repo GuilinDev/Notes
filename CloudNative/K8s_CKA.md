@@ -35,6 +35,26 @@ kubectl logs my-web-pod
 
 三种certificates，1）server certificate, configured on servers; 2) root certificate, configured on CA servers; 3) client certificates, configured on clients;
 
+```shell
+# 以text方式查看server和etcd证书信息
+openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text
+openssl x509 -in /etc/kubernetes/pki/ca.crt -text
+openssl x509 -in /etc/kubernetes/pki/etcd/server.crt -text
+```
+
+```shell
+# 提取certificate文件中的证书信息
+cat akshay.csr | base64 -w 0
+
+# 查看已创建csr request
+kubectl get csr
+# 批准或拒绝一个csr
+kubectl certificate approve akshay
+kubectl certificate deny agent-smith
+# 查看某个csr的yaml
+kubectl get csr agent-smith -o yaml
+```
+
 ## Storage
 
 ## Networking
