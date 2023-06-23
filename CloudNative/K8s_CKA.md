@@ -55,6 +55,31 @@ kubectl certificate deny agent-smith
 kubectl get csr agent-smith -o yaml
 ```
 
+```shell
+# 查看当前config
+kubectl config --kubeconfig=/root/my-kube-config current-context
+```
+
+```shell
+# 用can-i检查权限
+kubectl auth can-i create deployments
+kubectl auth can-i create deployments --as dev-user
+kubectl auth can-i delete nodes
+kubectl auth can-i delete nodes --as sta-user
+
+# 检查当前用的何种authorization mode，检查--authorization-mode=Node
+kubectl describe pod kube-apiserver-controlplane -n kube-system
+```
+
+```shell
+# Create a role, or with yaml
+kubectl create role developer --namespace=default --verb=list,create,delete --resource=pods
+# Create a rolebinding, or with yaml
+kubectl create rolebinding dev-user-binding --namespace=default --role=developer --user=dev-user
+
+# clusterrole and clusterrolebinding are similar
+```
+
 ## Storage
 
 ## Networking
