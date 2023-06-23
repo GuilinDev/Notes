@@ -80,6 +80,12 @@ kubectl create rolebinding dev-user-binding --namespace=default --role=developer
 # clusterrole and clusterrolebinding are similar
 ```
 
+1.24版本后需要自己在serviceaccount里面创建secret和token
+```shell
+kubectl create secret docker-registry my-secret --docker-server=DOCKER_REGISTRY_SERVER
+--docker-username=DOCKER_USER --docker-password=DOCKER_PASSWORD --docker-email=DOCKER_EMAIL
+```
+
 ## Storage
 
 ## Networking
