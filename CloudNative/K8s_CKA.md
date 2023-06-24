@@ -89,6 +89,16 @@ kubectl create secret docker-registry my-secret --docker-server=DOCKER_REGISTRY_
 ## Storage
 
 ## Networking
+```shell
+ip link
+ip addr
+ip route
+cat /proc/sys/net/ipv4/ip_forward
+
+dig
+
+ip netns
+```
 
 ## Others
 
