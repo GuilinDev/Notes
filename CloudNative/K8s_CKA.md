@@ -100,6 +100,11 @@ dig
 ip netns
 ```
 
+```shell
+# 查看container runtime
+ps -aux | grep -i kubelet | grep --color container-runtime-endpoint
+```
+
 ## Others
 
 
