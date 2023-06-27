@@ -9,11 +9,11 @@
   * CKAD
   * CKS
 * AWS series
-  * SAA [x]
+  * SAA ✅
   * SAP
 * Azure Top
 * HashCorp
-  * Terraform [x]
+  * Terraform ✅
 * Real Estate License, Saleperson -> Broker
 * Insurance Agent
 * IRS Enrolled Agent
