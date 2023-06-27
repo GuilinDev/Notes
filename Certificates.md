@@ -4,9 +4,16 @@
 * [AWS Solution Architecture Associate - Valid 02/17/2026](https://www.credly.com/badges/cddd05df-e96c-4e2d-808e-82b14370c667/linked_in?t=rqa2bo)
 
 ## Potential Purchasing
-* K8S: CKAD, CKA, CKS
+* K8S
+  * CKA
+  * CKAD
+  * CKS
 * AWS series
+  * SAA [x]
+  * SAP
 * Azure Top
+* HashCorp
+  * Terraform [x]
 * Real Estate License, Saleperson -> Broker
 * Insurance Agent
 * IRS Enrolled Agent
@@ -14,6 +21,7 @@
 * Notary Public
 * Dental Hygienist
 * Certification in Transportation and Logistics
-* Project Management Professional (PMP) vs Certified ScrumMaster (CSM)
+* Project Management Professional (PMP)
+* Certified ScrumMaster (CSM)
 * Cisco Certified Internetwork Expert (CCIE) - Final Level
 * CISSP (Certified Information Systems Security Professional)
