@@ -107,6 +107,16 @@ ps -aux | grep -i kubelet | grep --color container-runtime-endpoint
 
 ## Others
 
+```shell
+# For controlplane failture
+service kubelet status
+kubectl logs kube-api-server -n kube-system
+sudo journalctl -u kube-apiserver
+
+# For work node failture
+
+```
+
 
 ## Questions
 ### 1. Role-based Access Control (RBAC)
