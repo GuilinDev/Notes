@@ -191,7 +191,7 @@ kubectl describe neworkpolicy -n my-app
 
 ```
 
-#### 4. Expose Service
+## 4. Expose Service
 参考文档： [依次点击Concepts→Workloads→Workload Resources→Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 ```bash
 kubectl config use-context k8s
@@ -201,19 +201,9 @@ kubectl get deployment front-end -o wide
 
 # 参考官方文档， 按需edit上面的deployment
 kubectl edit deployment front-end
-
-# ...
-spec:
-  containers:
-  -image: vicuu/nginx:hello
-    imagePullPolicy: IfNotPresent
-    name: nginx # 找到此位置。下文会简单说明一下yaml文件的格式，不懂yaml格式的，往下看。
-    ports:                  #添加这4行
-    -name: http
-      containerPort: 80
-      protocol: TCP
-      
-# ...      
+```
+![](../images/certificates/cka/4.png)
+```bash
       
 # 暴露对应端口
 # 注意考试中需要创建的是NodePort，还是ClusterIP。如果是ClusterIP，则应为--type=ClusterIP
@@ -226,7 +216,7 @@ kubectl get deployment front-end -o wide
 
 # 如果kubectl expose暴露服务后，发现service的selector标签是空的<none>，或者不是deployment的, 则需要编辑service，手动添加标签
 kubectl edit svc front-end-svc
-# 在ports这一小段下面添加selector标签
+# 在spec.ports这一小段下面添加selector标签
 selector:
   app: front-end      
 # 注意yaml里是写冒号，而不是等号，不是app=front-end。确保service的selector标签与deployment的selector标签一致。
@@ -238,41 +228,19 @@ curl svc的ip地址:80
 # （注意，只能curl通svc的80端口，但是无法ping通的。）考试时，如果curl不通，简单排错后也不通，就不要过于纠结，继续往下做题即可。
 ```
 
-#### 5. 创建Ingress
+## 5. 创建Ingress
 参考文档： [依次点击Concepts→Services, Load Balancing, and Networking→Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
-```shell
+```bash
 kubectl config use-context k8s
 
 # 从上面官网copy一个ingress的yaml文件，然后修改如下
-apiVersion: networking.k8s.io/v1
-kind: IngressClass
-metadata:
-  labels:
-    app.kubernetes.io/component: controller
-  name: nginx-example # 考试时，默认是没有ingressClassName的，所以我们要先手动建一个ingressClassName，命名就为nginx-example吧
-  annotations:ingressclass.kubernetes.io/is-default-class: "true"
-spec:controller: k8s.io/ingress-nginx
---- # 因为是不同文件，所以这3个---，必须要写，不能省略
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: ping
-  namespace: ing-internal
-  annotations:
-nginx.ingress.kubernetes.io/rewrite-target: / # 因为考试环境有多套，不清楚具体抽中的是哪套。在1.26的考试里，先写上这行，如果apply时报错需要指定域名，则注释这行再apply，就成功了。spec:
-  ingressClassName: nginx-example#这里调用上面新建的ingressClassName为nginx-example
-  rules:
-  -http:paths:-path: /hello
-    pathType: Prefix
-    backend:service:
-      name:hello
-      port:
-        number: 5678
 ```
+![](../images/certificates/cka/5.png)
+
 
 创建好Ingress的yaml后，执行如下命令
 
-```shell
+```bash
 kubectl apply -f ingress.yaml
 
 # 检查，利用curl，通过get ingress 查看ingress的内外IP，然后通过提供的curl 测试ingress 是否正确
@@ -281,7 +249,7 @@ kubectl get ingress -n ing-internal # 查看ingress的内外IP
 curl 拿到的ID/hello # 测试ingress 是否正确
 ```
 
-#### 6. 扩容deployment副本数量
+## 6. 扩容deployment副本数量
 ```shell
 kubectl config use-context k8s
 
@@ -294,7 +262,7 @@ kubectl scale deployments presentation --replicas=4
 
 ```
 
-#### 7. 调度pod到指定节点
+## 7. 调度pod到指定节点
 参考文档：[依次点击Tasks→Configure Pods and Containers→Assign Pods to Nodes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
 ```shell
 kubectl config use-context k8s
@@ -307,19 +275,10 @@ kubectl get nodes --show-labels | grep 'disk=ssd'
 # 如果node没有这个labels，可以手动添加
 kubectl label nodes node01 disk=ssd
 
-# 创建pod yaml，set paste，防止yaml文件空格错序
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx-kusc00401
-spec:
-  containers:
-  -name: nginx
-    image: nginx
-    imagePullPolicy: IfNotPresent       #这句的意思是，如果此image已经有了，则不重新下载。考试时写不写这个都是可以的。
-  nodeSelector:
-    disk: ssd
-
+# 创建pod yaml，set paste，防止yaml文件空格错序，其实就是加个nodeSelector标签
+```
+![](../images/certificates/cka/7.png)
+```shell
 # 创建pod
 kubectl apply -f pod-disk-ssd.yaml
 
@@ -327,7 +286,7 @@ kubectl apply -f pod-disk-ssd.yaml
 kubectl get po nginx-kusc00401 -o wide
 ```
 
-#### 8. 查看可用节点数量
+## 8. 查看可用节点数量
 ```shell
 kubectl config use-context k8s
 
@@ -339,25 +298,15 @@ echo "查出来的数字" > /opt/KUSC00402/kusc00402.txt
 cat /opt/KUSC00402/kusc00402.txt
 ```
 
-#### 9. 创建多容器的pod
+## 9. 创建多容器的pod
 ```shell
 kubectl config use-context k8s
 
 vim pod-kucc.yaml
 # 注意:set paste，防止yaml文件空格错序
-apiVersion: v1
-kind: Pod
-  metadata:
-  name: kucc8
-spec:
-  containers:
-  -name:nginx
-    image: nginx
-    imagePullPolicy: IfNotPresent#这句的意思是，如果此image已经有了，则不重新下载。考试时写不写都可以。但模拟环境里推荐写，pod启动快。
-  -name: consul
-    image: consul
-    imagePullPolicy: IfNotPresent
-
+```
+![](../images/certificates/cka/9.png)
+```shell
 # 创建pod
 kubectl apply -f pod-kucc.yaml
 
@@ -365,7 +314,7 @@ kubectl apply -f pod-kucc.yaml
 kubectl get po kucc8
 ```
 
-#### 10. 创建PV
+## 10. 创建PV
 参考文档：[依次点击Tasks→Configure Pods and Containers→Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
 ```shell
 kubectl config use-context hk8s
@@ -373,19 +322,9 @@ kubectl config use-context hk8s
 # 直接从官方复制合适的案例，修改参数，然后设置hostPath 为/srv/app-config 即可。
 vim pv.yaml
 #注意: set paste，防止yaml文件空格错序
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: app-config
-  #labels:#不需要写
-    #type: local
-spec:
-  capacity:
-    storage: 1Gi
-  accessModes:
-    -ReadWriteMany #注意，考试时的访问模式可能有ReadWriteMany和ReadOnlyMany和ReadWriteOnce，根据题目要求写。
-  hostPath:path: "/srv/app-config"
-
+```
+![](../images/certificates/cka/10.png)
+```shell
 # 创建pv
 kubectl apply -f pv.yaml
 
@@ -394,28 +333,17 @@ kubectl get pv
 # 在检查结果里，ACCESS MODES那一列中，RWX是ReadWriteMany，RWO是ReadWriteOnce。
 ```
 
-#### 11. 创建PVC
+## 11. 创建PVC
 参考文档：[依次点击Tasks→Configure Pods and Containers→Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
-```shell
 ```shell
 kubectl config use-context ok8s
 
 # 根据官方文档复制一个PVC配置，修改参数，不确定的地方就是用kubectl 的explain 帮助。
 vim pvc.yaml
 #注意:set paste，防止yaml文件空格错序
-
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: pv-volume #pvc名字
-spec:
-  storageClassName: csi-hostpath-sc
-  accessModes:
-    -ReadWriteOnce #注意，考试时的访问模式可能有ReadWriteMany和ReadOnlyMany和ReadWriteOnce，根据题目要求写。
-  resources:
-    requests:
-      storage: 10Mi
-
+```
+![](../images/certificates/cka/11-1.png)
+```shell
 # 创建pvc
 kubectl apply -f pvc.yaml
 
@@ -424,23 +352,9 @@ kubectl get pvc
 
 vim pvc-pod.yaml
 # 注意:set paste，防止yaml文件空格错序
-
-apiVersion: v1
-kind: Pod
-metadata:
-  name: web-server
-spec:
-  volumes:
-    -name: task-pv-storage # 这个name要和下面volumeMounts的name一样。
-      persistentVolumeClaim:
-        claimName:pv-volume #这个要使用上面创建的pvc名字
-  containers:
-    -name: nginx
-      image: nginx:1.16
-      volumeMounts:
-        -mountPath: "/usr/share/nginx/html"
-        name: task-pv-storage # 这个name要和上面的volumes的name一样。
-
+```
+![](../images/certificates/cka/11-2.png)
+```shell
 # 创建pod
 kubectl apply -f pvc-pod.yaml
 
@@ -454,7 +368,7 @@ kubectl edit pvc pv-volume --record
 # 模拟环境是nfs存储，操作时，会有报错忽略即可。考试时用的动态存储，不会报错的。
 ```
 
-#### 12. 查看pod日志
+## 12. 查看pod日志
 ```shell
 kubectl config use-context k8s
 
@@ -464,7 +378,7 @@ kubectl logs foo| grep "RLIMIT_NOFILE"> /opt/KUTR00101/foo
 cat /opt/KUTR00101/foo
 ```
 
-#### 13. 使用sidecar代理容器日志
+## 13. 使用sidecar代理容器日志
 参考文档：[依次点击Concepts→Cluster Administration→LoggingArchitecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
 ```shell
 kubectl config use-context k8s
@@ -480,44 +394,9 @@ cp varlog.yaml varlog.yaml.bak
 vim varlog.yaml
 
 # 根据官方文档拷贝需要的信息，在《下面是运行两个边车容器的Pod 的配置文件》里。
-spec:
-。。。。。。
-    volumeMounts:#在原配置文件，灰色的这段后面添加
-    -mountPath: /var/run/secrets/kubernetes.io/serviceaccount
-      name: default-token-4l6w8
-      readOnly: true
-    -name: varlog # 新加内容
-      mountPath: /var/log # 新加内容
-  -name: sidecar #新加内容，注意name 别写错了
-    image:busybox # 新加内容
-    args: [/bin/sh, -c, 'tail -n+1 -f /var/log/11-factor-app.log'] # 新加内容，注意文件名别写错了。另外是用逗号分隔的，而题目里是空格。
-    volumeMounts: # 新加内容
-    -name: varlog #新加内容
-      mountPath: /var/log # 新加内容
-  dnsPolicy: ClusterFirst
-  enableServiceLinks: true
-。。。。。。
-  volumes: # 在原配置文件，灰色的这段后面添加。
-  -name: kube-api-access-kcjc2
-    projected:defaultMode: 420
-    sources:
-    -serviceAccountToken:
-      expirationSeconds: 3607
-      path: token
-    -configMap:
-      items:
-      -key: ca.crt
-        path: ca.crt
-      name: kube-root-ca.crt
-    -downwardAPI:
-      items:
-      -fieldRef:
-        apiVersion: v1
-        fieldPath: metadata.namespace
-      path: namespace
-  -name: varlog # 新加内容，注意找好位置。
-    emptyDir: {} # 新加内容
-
+```
+![](../images/certificates/cka/13.png)
+```shell
 # 删除原先的pod，大于需要等2分钟
 kubectl delete pod 11-factor-appcopy
 # 检查一下是否删除了
