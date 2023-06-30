@@ -118,8 +118,8 @@ sudo journalctl -u kube-apiserver
 ```
 
 
-## Questions
-### 1. Role-based Access Control (RBAC)
+# Questions
+## 1. Role-based Access Control (RBAC)
 ```bash
 kubectl config use-context k8s
 
@@ -138,7 +138,7 @@ kubectl -n app-team1 describe rolebinding cicd-token-rolebinding
 kubectl -n app-team1 describe clusterrolebinding cicd-token-clusterrolebinding
 ```
 
-### 2. Check Pod's CPU
+## 2. Check Pod's CPU
 ```bash
 # Task:
 # 通过pod labelname=cpu-loader，找到运行时占用大量CPU 的pod，
@@ -161,7 +161,7 @@ echo "上一步查出来的Pod Name" > /opt/KUTR000401/KUTR00401.txt
 cat /opt/KUTR000401/KUTR00401.txt
 ```
 
-### 3. Network Policy
+## 3. Network Policy
 参考文档：[依次点击Concepts→Services, Load Balancing, and Networking →Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 ```bash
 # Task:
@@ -180,8 +180,8 @@ kubectl label ns echo project=echo
 ```
   
 
-# 编写一个NetworkPolicy的yaml文件，从上面官网copy过来，然后如下修改
-![](../images/certificates/3.png)
+#### 编写一个NetworkPolicy的yaml文件，从上面官网copy过来，然后如下修改
+![](../images/certificates/cka/3.png)
 
 ```bash
 kubectl apply -f network-policy.yaml
