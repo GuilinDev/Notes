@@ -130,12 +130,12 @@ kubectl -n app-team1 create serviceaccount cicd-token
 # 如果题目说了“限于namespace app-team1中”，创建rolebinding；如果没说，则创建clusterrolebinding
 # option 1，创建rolebinding，只给一个namespace授权permission
 kubectl -n app-team1 create rolebinding cicd-token-rolebinding --clusterrole=deployment-clusterrole --serviceaccount=app-team1:cicd-token
-# option 2，创建clusterrolebinding，给cluster中所有namespace授权permission
-kubectl -n app-team1 create clusterrolebinding cicd-token-clusterrolebinding --clusterrole=deployment-clusterrole --serviceaccount=app-team1:cicd-token
+# option 2，创建clusterrolebinding，给cluster中所有namespace授权permission，这里用不用-n app-team1都一样
+kubectl create clusterrolebinding cicd-token-clusterrolebinding --clusterrole=deployment-clusterrole --serviceaccount=app-team1:cicd-token
 
 # 验证 (optional)
 kubectl -n app-team1 describe rolebinding cicd-token-rolebinding
-kubectl -n app-team1 describe clusterrolebinding cicd-token-clusterrolebinding
+kubectl -n app-team1 describe clusterrolebinding cicd-token-clusterrolebinding # 这里用不用-n app-team1都一样
 ```
 
 ## 2. Check Pod's CPU
@@ -145,6 +145,8 @@ kubectl -n app-team1 describe clusterrolebinding cicd-token-clusterrolebinding
 # 并将占用CPU 最高的pod 名称写入文件/opt/KUTR000401/KUTR00401.txt（已存在）。
 
 # 考点：对kubectl top pod --| 的理解，直接看-h，不用查文档
+kubectl config use-context k8s
+
 kubectl top pod -h
 
 # switch to k8s context
@@ -162,7 +164,7 @@ cat /opt/KUTR000401/KUTR00401.txt
 ```
 
 ## 3. Network Policy
-参考文档：[依次点击Concepts→Services, Load Balancing, and Networking →Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+参考文档：[依次点击：Concepts → Services, Load Balancing, and Networking → Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 ```bash
 # Task:
 # 在现有的namespacemy-app中创建一个名为allow-port-from-namespace的新NetworkPolicy。确保新的NetworkPolicy允许namespaceecho中的Pods连接到namespacemy-app中的Pods的9000端口。进一步确保新的NetworkPolicy：不允许对没有在监听端口9000的Pods的访问, 不允许非来自namespaceecho中的Pods的访问
@@ -170,7 +172,7 @@ cat /opt/KUTR000401/KUTR00401.txt
 
 # 考点： NetworkPolicy的创建
 
-kubectl config use-context k8s
+kubectl config use-context hk8s
 
 # 查看所有ns标签的label
 kubectl get ns --show-labels
@@ -192,7 +194,7 @@ kubectl describe neworkpolicy -n my-app
 ```
 
 ## 4. Expose Service
-参考文档： [依次点击Concepts→Workloads→Workload Resources→Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+参考文档： [依次点击：Concepts → Workloads → Workload Resources → Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 ```bash
 kubectl config use-context k8s
 
@@ -208,7 +210,7 @@ kubectl edit deployment front-end
 # 暴露对应端口
 # 注意考试中需要创建的是NodePort，还是ClusterIP。如果是ClusterIP，则应为--type=ClusterIP
 # --port是service的端口号，--target-port是deployment里pod的容器的端口号。
-kubectl expose deployment front-end --type=NodePort --port=80 --target-port=80--name=front-end-svc
+kubectl expose deployment front-end --type=NodePort --port=80 --target-port=80 --name=front-end-svc
 
 # 暴露服务后，检查一下service的selector标签是否正确，这个要与deployment的selector标签一致的。
 kubectl get svc front-end-svc -o wide
@@ -223,17 +225,18 @@ selector:
 
 # 最后curl检查
 kubectl get pod,svc -o wide
-curl 所在的node的ip或主机名:30938
+curl 所在的node的ip或主机名:30938，例如curl node01:30938
 curl svc的ip地址:80
 # （注意，只能curl通svc的80端口，但是无法ping通的。）考试时，如果curl不通，简单排错后也不通，就不要过于纠结，继续往下做题即可。
 ```
 
 ## 5. 创建Ingress
-参考文档： [依次点击Concepts→Services, Load Balancing, and Networking→Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+参考文档： [依次点击：Concepts → Services, Load Balancing, and Networking → Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 ```bash
 kubectl config use-context k8s
 
 # 从上面官网copy一个ingress的yaml文件，然后修改如下
+vim ingress.yaml
 ```
 ![](../images/certificates/cka/5.png)
 
@@ -263,7 +266,7 @@ kubectl scale deployments presentation --replicas=4
 ```
 
 ## 7. 调度pod到指定节点
-参考文档：[依次点击Tasks→Configure Pods and Containers→Assign Pods to Nodes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
+参考文档：[依次点击：Tasks → Configure Pods and Containers → Assign Pods to Nodes](https://kubernetes.io/docs/tasks/configure-pod-container/assign-pods-nodes/)
 ```shell
 kubectl config use-context k8s
 
@@ -276,6 +279,7 @@ kubectl get nodes --show-labels | grep 'disk=ssd'
 kubectl label nodes node01 disk=ssd
 
 # 创建pod yaml，set paste，防止yaml文件空格错序，其实就是加个nodeSelector标签
+vim pod-disk-ssd.yaml
 ```
 ![](../images/certificates/cka/7.png)
 ```shell
@@ -334,7 +338,7 @@ kubectl get pv
 ```
 
 ## 11. 创建PVC
-参考文档：[依次点击Tasks→Configure Pods and Containers→Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
+参考文档：[依次点击：Tasks → Configure Pods and Containers → Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
 ```shell
 kubectl config use-context ok8s
 
@@ -379,7 +383,7 @@ cat /opt/KUTR00101/foo
 ```
 
 ## 13. 使用sidecar代理容器日志
-参考文档：[依次点击Concepts→Cluster Administration→LoggingArchitecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
+参考文档：[依次点击：Concepts → Cluster Administration → LoggingArchitecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
 ```shell
 kubectl config use-context k8s
 
@@ -408,7 +412,8 @@ kubectl apply -f varlog.yaml
 kubectl logs 11-factor-app sidecar
 ```
 
-#### 14. 升级集群
+## 14. 升级集群
+参考文档：[依次点击：Tasks → Administer a Cluster → Administration with kubeadm → Upgrading kubeadm clusters](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
 ```shell
 kubectl config use-context mk8s
 
@@ -453,7 +458,8 @@ kubectl uncordon master01
 kubectl get nodes
 ```
 
-#### 15. 备份还原etcd
+## 15. 备份还原etcd
+参考文档：[依次点击：Tasks → Administer a Cluster → Operating etcd clusters for Kubernetes]((https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/))
 ```shell
 # 这步不需做 kubectl config use-context k8s
 
@@ -466,12 +472,12 @@ etcdctl --endpoints=https://11.0.1.111:2379--cacert="/opt/KUIN00601/ca.crt" --ce
 # 检查（optional）
 etcdctl snapshot status /var/lib/backup/etcd-snapshot.db -wtable
 
-# 还原
-sudo ETCDCTL_API=3etcdctl --endpoints=https://11.0.1.111:2379--cacert="/opt/KUIN00601/ca.crt" --cert="/opt/KUIN00601/etcd-client.crt" --key="/opt/KUIN00601/etcd-client.key" snapshot restore /data/backup/etcd-snapshot-previous.db
+# 还原（可以不写证书和ETCDCTL_API=3）
+sudo ETCDCTL_API=3 etcdctl --endpoints=https://11.0.1.111:2379--cacert="/opt/KUIN00601/ca.crt" --cert="/opt/KUIN00601/etcd-client.crt" --key="/opt/KUIN00601/etcd-client.key" snapshot restore /data/backup/etcd-snapshot-previous.db
 
 ```
 
-#### 16. 排查集群中的故障节点
+## 16. 排查集群中的故障节点
 ```shell
 kubectl config use-context wk8s
 
@@ -494,7 +500,7 @@ exit
 exit
 ```
 
-#### 17. 节点维护
+## 17. 节点维护
 ```shell
 kubectl config use-context ek8s
 
@@ -505,4 +511,8 @@ kubect get nodes
 
 kubectl drain node02 --ignore-daemonsets
 # 加上 --delete-emptydir-data --force 强制将node上的pod删除
+
+# 检查node02上的pod是否已经删除
+kubectl get node
+kubectl get pod -A -o wide | grep node02
 ```
