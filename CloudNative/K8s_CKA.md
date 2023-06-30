@@ -176,9 +176,10 @@ kubectl config use-context k8s
 kubectl get ns --show-labels
 
 # 如果没有标签，手动打一个
-kubectl label ns my-namespace purpose=production,env=dev
+kubectl label ns echo project=echo
 
-# 编写一个NetworkPolicy的yaml文件，从上面官网copy过来，然后修改
+# 编写一个NetworkPolicy的yaml文件，从上面官网copy过来，然后如下修改
+![](../images/certificates/3.png)
 
 kubectl apply -f network-policy.yaml
 
