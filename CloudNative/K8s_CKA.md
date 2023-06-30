@@ -121,19 +121,6 @@ sudo journalctl -u kube-apiserver
 ## Questions
 ### 1. Role-based Access Control (RBAC)
 ```bash
-# Task:为部署流水线创建一个新的ClusterRole并将其绑定到范围为特定的namespace 的特定ServiceAccount。
-# Task:
-# 创建一个名为deployment-clusterrole且仅允许创建以下资源类型的新ClusterRole：
-# Deployment, StatefulSet, DaemonSet
-#
-# 在现有的namespace app-team1中, 创建一个名为cicd-token的新ServiceAccount。
-# 限于namespace app-team1中，将新的ClusterRole deployment-clusterrole绑定到新的ServiceAccount cicd-token上。
-
-# 考点：对RBAC的理解，直接看-h，不用查文档
-kubectl create clusterrole -h
-kubectl create rolebinding -h
-
-# switch to k8s context
 kubectl config use-context k8s
 
 # 解题：
