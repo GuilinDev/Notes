@@ -179,12 +179,11 @@ kubectl get ns --show-labels
 
 # 如果没有标签，手动打一个
 kubectl label ns echo project=echo
+
+# 编写一个NetworkPolicy的yaml文件，从上面官网copy过来，然后如下修改
+vim network-policy.yaml
 ```
-  
-
-#### 编写一个NetworkPolicy的yaml文件，从上面官网copy过来，然后如下修改
 ![](../images/certificates/cka/3.png)
-
 ```bash
 kubectl apply -f network-policy.yaml
 
@@ -256,7 +255,7 @@ curl 拿到的ID/hello # 测试ingress 是否正确
 ```shell
 kubectl config use-context k8s
 
-# 先检查一下现有的pod数量（可不检查
+# 先检查一下现有的pod数量（可不检查）
 kubectl get deployments presentation -o wide
 kubectl get pod -l app=presentation
 
@@ -303,6 +302,7 @@ cat /opt/KUSC00402/kusc00402.txt
 ```
 
 ## 9. 创建多容器的pod
+参考文档：[依次点击：Concepts → Workloads → Pods](https://kubernetes.io/docs/concepts/workloads/pods/)
 ```shell
 kubectl config use-context k8s
 
@@ -319,7 +319,7 @@ kubectl get po kucc8
 ```
 
 ## 10. 创建PV
-参考文档：[依次点击Tasks→Configure Pods and Containers→Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
+参考文档：[依次点击：Tasks→Configure Pods and Containers→Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
 ```shell
 kubectl config use-context hk8s
 
