@@ -188,7 +188,7 @@ vim network-policy.yaml
 kubectl apply -f network-policy.yaml
 
 # 验证 (optional)
-kubectl describe neworkpolicy -n my-app
+kubectl describe networkpolicy -n my-app
 
 ```
 
