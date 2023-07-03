@@ -30,6 +30,8 @@
 * VMWARE CERTIFIED PROFESSIONAL – DATA CENTER VIRTUALIZATION (VCP-DCV)
 
 ### Non-technical
+* BLS ✅
+* Weapon Permit ✅
 * Real Estate License, Saleperson -> Broker
 * Insurance Agent
 * IRS Enrolled Agent
