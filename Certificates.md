@@ -24,4 +24,5 @@
 * Project Management Professional (PMP)
 * Certified ScrumMaster (CSM)
 * Cisco Certified Internetwork Expert (CCIE) - Final Level
-* CISSP (Certified Information Systems Security Professional)
+* Security+ -> SSCP, GSEC, CEH (optional) ->CISSP (Certified Information Systems Security Professional)
+* [CGEIT](https://www.isaca.org/credentialing/cgeit) for governance
