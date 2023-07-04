@@ -28,6 +28,7 @@
 * CISA - CERTIFIED INFORMATION SYSTEMS AUDITOR
 * [CGEIT](https://www.isaca.org/credentialing/cgeit) for governance
 * VMWARE CERTIFIED PROFESSIONAL – DATA CENTER VIRTUALIZATION (VCP-DCV)
+* RHCE, RHCA
 
 ### Non-technical
 * BLS ✅
