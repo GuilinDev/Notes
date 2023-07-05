@@ -19,7 +19,7 @@
 * NUTANIX CERTIFIED PROFESSIONAL – MULTICLOUD INFRASTRUCTURE (NCP-MCI)
 * HashCorp
   * Terraform ✅
-* Certification in Transportation and Logistics
+* ITIL/ITSM
 * Project Management Professional (PMP)
 * Certified ScrumMaster (CSM)
 * Cisco Certified Internetwork Expert (CCIE)
@@ -40,3 +40,4 @@
 * Certified Personal Trainer
 * Notary Public
 * Dental Hygienist
+* Certification in Transportation and Logistics
