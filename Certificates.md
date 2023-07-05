@@ -5,7 +5,7 @@
 
 ## Technical
 * K8S
-  * CKA
+  * CKA ✅
   * CKAD
   * CKS
 * AWS all
@@ -15,6 +15,7 @@
   * CLOUD DIGITAL LEADER
   * PROFESSIONAL CLOUD ARCHITECT
 * MICROSOFT CERTIFIED: AZURE SOLUTIONS ARCHITECT EXPERT
+* Microsoft Certified: Azure Administrator Associate/Microsoft Certified: Azure Developer Associate -> Microsoft Certified: DevOps Engineer Expert
 * NUTANIX CERTIFIED PROFESSIONAL – MULTICLOUD INFRASTRUCTURE (NCP-MCI)
 * HashCorp
   * Terraform ✅
