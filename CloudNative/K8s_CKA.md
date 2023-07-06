@@ -149,9 +149,6 @@ kubectl config use-context k8s
 
 kubectl top pod -h
 
-# switch to k8s context
-kubectl config use-context k8s
-
 # 解题：
 # 通过-A查询所有namespace下的pod名称，由高到低排序
 kubectl top pod -l name=cpu-loader --sort-by=cpu -A
