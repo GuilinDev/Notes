@@ -1,4 +1,4 @@
-## An incomplete list of skills senior engineers need, beyond coding
+## An incomplete list of skills senior+ engineers need, beyond coding
 
 ### 1. How to run a meeting, and no, being the person who talks the most in the meeting is not the same thing as running it
 
