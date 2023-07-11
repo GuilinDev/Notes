@@ -277,17 +277,155 @@ kubectl apply -f nginx-secret.yaml
 ```
 
 ## 13. Pod健康检查 livelinessProbe
+参考文档：[依次点击：Tasks -> Configure Pods and Containers -> Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+
+```shell
+kubectl config use-context dk8s
+
+# 1. 检查集群 dk8s 下的所有命令空间里的 Pods，找出 Liveness probe 问题的 Pod。
+kubectl get pods -A
+# 对所有 namespace 下的 pod 逐一检查，考试时，你切换集群后，只会有 5 个 pod 需要你检查，不会像模拟环境里这么多的。
+# Message column下面
+kubectl describe pod probe-demo -n probe-ns |tail
+
+echo probe-ns/probe-demo > /ckad/CKAD00011/broken.txt
+
+# 2.
+kubectl get events -n probe-ns -o wide |grep probe-demo > /ckad/CKAD00011/error.txt
+
+# 3.
+kubectl get pods probe-demo -n probe-ns -o yaml > probe.yaml
+cp probe.yaml bak-probe.yaml
+kubectl delete -f probe.yaml
+
+vim probe.yaml
+# 修改 livenessProbe:字段下的 port 为 8443。
+port: 8443
+# 重新创建此 Pod
+kubectl apply -f probe.yaml
+
+# 检查
+kubectl describe pod probe-demo -n probe-ns |tail
+
+```
 
 ## 14. Pod健康检查 readinessProbe
+参考文档：[依次点击：Tasks -> Configure Pods and Containers -> Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
+
+```shell
+kubectl config use-context dk8s
+
+kubectl edit deployment probe-http
+
+# 在 image 或者 name 下面添加，注意空格对齐位置。
+```
+![](../images/certificates/ckad/14.png)
+```shell
+# 检查，确保pod probe-http-*** 已经变成 Running 状态。
+kubectl get pod
+```
 
 ## 15. 升级与回滚
+参考文档：[依次点击：Concepts -> Workloads -> Workload Resources -> Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
+
+```shell
+kubectl config use-context k8s
+
+kubectl edit deployment webapp -n ckad00015
+# 按照题目要求，修改红框中的内容
+maxSurge 和 maxUnavailable 可以是数字，也可以是百分比，请根据题目的要求写
+```
+![](../images/certificates/ckad/15.png)
+```shell
+# 先检查一下之前的 image 版本，为 lfccncf/nginx:1.12.2
+kubectl -n ckad00015 get deployments webapp -o yaml|grep image
+
+# 更新为 lfccncf/nginx:1.13.7，这里的 nginx=其中的 nginx 是 containers 的 name 字段。如上图划线处。
+kubectl set image deployment webapp nginx=lfccncf/nginx:1.13.7 -n ckad00015
+
+# 或者 kubectl set image deployment webapp nginx=lfccncf/nginx:1.13.7 -n ckad00015 --record
+# 注意，这里加不加--record 都行，加上，则下面第 3 步的 rollout history 描述里会是命令，不加，则下面第 3 步的 rollout history 描述里就是<none>
+# 再次检查，image 为 1.13.7 了。
+kubectl -n ckad00015 get deployments webapp -o yaml|grep image
+
+如果需要看历史，则可以使用下面这条命令
+# kubectl -n ckad00015 rollout history deployment webapp
+
+# 回滚
+kubectl rollout undo deployment webapp -n ckad00015
+
+# 或者 kubectl rollout undo deployment webapp -n ckad00015 --to-revision=1
+#--to-revision 指定回滚的版本，其实，这里指不指定都行，一共就两个版本，1 为 lfccncf/nginx:1.12.2，而 2 为 lfccncf/nginx:1.13.7
+
+# 再检查，image 为 1.12.2 了。
+kubectl -n ckad00015 get deployments webapp -o yaml|grep image
+```
 
 ## 16. Deployment使用ServiceAccount
+```shell
+kubectl config use-context k8s
+
+# 检查 deployment 的名字
+kubectl -n frontend get deployment
+# 开始更新
+kubectl -n frontend set serviceaccount deployments frontend-deployment app
+```
 
 ## 17. 更新Deployment并暴露Service
+```shell
+kubectl config use-context k8s
+
+# 1. Task1
+kubectl get deployment ckad00017-deployment -n ckad00017 -o yaml > ckad00017.yaml
+cp ckad00017.yaml bak-ckad00017.yaml
+kubectl delete -f ckad00017.yaml
+
+vim ckad00017.yaml
+```
+![](../images/certificates/ckad/17.png)
+```shell
+kubectl apply -f ckad00017.yaml
+# 检查
+kubectl get pod -n ckad00017 --show-labels
+
+# 2. Task2
+# 先确认 pod 容器的端口，就是下面命令--target-port=的端口，检查后发现是81.
+kubectl -n ckad00017 get deployments ckad00017-deployment -o yaml|grep -i "containerPort:"
+
+kubectl -n ckad00017 expose deployment ckad00017-deployment --name=rover --protocol=TCP --port=81 --target-port=81 --type=NodePort
+
+# 检查
+kubectl -n ckad00017 get svc
+curl 10.103.95.21:81
+```
 
 ## 18. NetworkPolicy
+参考文档：[依次点击：Concepts -> Services, Load Balancing, and Networking -> Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
+```shell
+kubectl config use-context nk8s
+
+# 不需要你写 NetworkPolicy，但是考试中会有多个 NetworkPolicy 供你选择出正确的。在所有的 NetworkPolicy 的 yaml 文件中导找，
+# 找 ingress 和 egress 都有标签 podSelector 的，那么这个 NetworkPolicy 就是正确的。那么 podSelector 里面的标签就是要给 pod 打上的正确标签。
+
+# 1、先检查所有的 networkpolicy 和 pod 标签
+# 通过查看所有 networkpolicy 得知，
+# front 和 db 各有一个 networkpolicy，ckad00018-newpod 没有 networkpolicy。
+# 所以查看 front 和 db 的 networkpolicy 标签，把可以跟他们互通的标签，设置给 ckad00018-newpod
+kubectl -n ckad00018 get networkpolicy
+kubectl -n ckad00018 get networkpolicy access-front -o yaml
+
+kubectl -n ckad00018 get networkpolicy access-db -o yaml
+
+kubectl -n ckad00018 get pod --show-labels
+
+# 2、给 ckad00018-newpod 打正确的标签 (考试中是api-access而不是db-access)
+kubectl label pod -n ckad00018 ckad00018-newpod front-access=true
+kubectl label pod -n ckad00018 ckad00018-newpod db-access=true
+
+# 再次检查标签
+kubectl -n ckad00018 get pod --show-labels
+```
 ## 19. Ingress排错 - 1
 
 ## 20. Ingress排错 - 2
