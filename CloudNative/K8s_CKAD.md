@@ -427,8 +427,54 @@ kubectl label pod -n ckad00018 ckad00018-newpod db-access=true
 kubectl -n ckad00018 get pod --show-labels
 ```
 ## 19. Ingress排错 - 1
+参考文档：[依次点击：Concepts -> Services, Load Balancing, and Networking -> Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+
+```shell
+kubectl config use-context nk8s
+
+vim /ckad/CKAD202206/ingress.yaml
+
+# 记住 Deployment 的 labels 标签，因为题目说明了 Deployment 是正确的
+# 记住 Deployment 的容器的端口号，因为题目说明了 Deployment 是正确的。
+
+![](../images/certificates/ckad/19-1.png)
+![](../images/certificates/ckad/19-2.png)
+
+```shell
+# 创建
+kubectl apply -f /ckad/CKAD202206/ingress.yaml
+
+# 检查
+kubectl -n ingress-ckad get pod,svc,ingress -o wide
+```
 
 ## 20. Ingress排错 - 2
+参考文档：[依次点击：Concepts -> Services, Load Balancing, and Networking -> Service](https://kubernetes.io/docs/concepts/services-networking/service/)
+
+```shell
+kubectl config use-context k8s
+
+# 先检查这道题里的 ingress 和 deployment，以及 service，这三项哪里有问题。
+kubectl -n ingress-kk get all
+
+# 查看 ingress，记下 service 的 name 和 port 的 number。
+kubectl -n ingress-kk get ingress -o yaml
+
+# 查看 deployment，记下 ports 的 containerPort
+kubectl -n ingress-kk get deployments -o yaml
+
+# 创建 service
+vim kk-svc.yaml
+```
+![](../images/certificates/ckad/20.png)
+```shell
+# 创建 service
+kubectl apply -f kk-svc.yaml
+# 检查
+kubectl -n ingress-kk get pod,svc,ingress -o wide
+curl <ingress 的 ip 地址>
+# 返回提示：Hello World ^_^
+```
 
 ## 21. Service、ConfigMap、Sidecar
 
