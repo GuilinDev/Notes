@@ -477,6 +477,39 @@ curl <ingress 的 ip 地址>
 ```
 
 ## 21. Service、ConfigMap、Sidecar
+参考文档：[依次点击：Concepts -> Configuration -> ConfigMaps](https://kubernetes.io/docs/concepts/configuration/configmap/)
+
+```shell
+kubectl config use-context k8s
+
+kubectl edit svc nginxsvc -n default
+# 修改为 port: 9090, 注意，不是修改 targetPort
+```
+![](../images/certificates/ckad/21-1.png)
+```shell
+# 检查
+kubectl get svc -n default
+
+# 创建 configmap
+kubectl create configmap haproxy-config --from-file=/ckad/ambassador/haproxy.cfg -n default
+
+kubectl -n default get pod poller -o yaml > poller.yaml
+cp poller.yaml bak-poller.yaml
+kubectl delete -f poller.yam
+
+vim poller.yaml
+# 注意图片浅蓝色的部分。如果考试时，已经给你挂载好了，就不要重复挂载了。否则会报错。如果没有挂载，则需要手动写上去。
+```
+![](../images/certificates/ckad/21-2.png)
+```shell
+# 创建
+kubectl apply -f poller.yaml
+
+# 检查
+kubectl get pod poller -n default
+kubectl get svc -n default
+curl 10.98.61.231:9090
+```
 
 ## 22. Deployment修改镜像
 
