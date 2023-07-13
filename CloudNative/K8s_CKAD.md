@@ -512,15 +512,141 @@ curl 10.98.61.231:9090
 ```
 
 ## 22. Deployment修改镜像
+```shell
+kubectl config use-context nk8s
 
-## 23. 获取使用CPU最高的Pod
+# 检查 pod，找到 ImagePullBackOff 或 ErrImagePull 报错的。（hello-和 ppi-开始的pods是前面题目 CronJob相关的pods，忽略即可）
+kubectl get pods -n default
 
-## 24. PV/PVC
+# 通过查出来的 pod，去编辑它的 deployment。
+kubectl edit deployment deploy-nk8s -n default
+# 修改 image:为正确的镜像，比如改为 image: nginx
 
-## 25. Pod多容器 - sidecar
+# 再次检查，显示 Running 了
+kubectl get pods -n default
+```
+
+## 23. PV/PVC
+参考文档：[依次点击：Tasks -> Configure Pods and Containers -> Configure a Pod to Use a PersistentVolume for Storage](https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/)
+
+```shell
+kubectl config use-context sk8s
+
+# 从 node01 上 ssh 跳转到 node02 上
+ssh node0
+echo WEPKEY=7789 > /opt/KDSP00101/data/index.html
+
+vim task-pv-volume.yaml
+```
+![](../images/certificates/ckad/23-1.png)
+```shell
+kubectl apply -f task-pv-volume.yaml
+
+vim task-pv-claim.yaml
+```
+![](../images/certificates/ckad/23-2.png)
+```shell
+kubectl apply -f task-pv-claim.yaml
+
+# 因为 Kubernetes supports hostPath for development and testing on a single-node cluster.
+# 所以，测试环境里，需要指定 Pod 在 node02 上运行，即，与 hostPath 类型的 PV 在同一个节点上。
+# 考试环境，一般只有一个 node 节点，所以不需要指定。但是最好你考试时，kubectl get node 先检查一下，如果有多个 node 节点，则也需要指定 Pod 在创建 PV
+# 的那个节点上运行，即，使用 nodeSelector。
+vim task-pv-pod.yaml
+```
+![](../images/certificates/ckad/23-3.png)
+```shell
+kubectl apply -f task-pv-pod.yaml
+
+测试
+kubectl get pod -o wide | grep task-pv-pod
+curl 10.244.2.35
+
+# 退回到 node01
+exit
+```
+
+## 24. Pod多容器 - sidecar
+参考文档：[依次点击：Concepts -> Cluster Administration -> Logging Architecture](https://kubernetes.io/docs/concepts/cluster-administration/logging/)
+
+```shell
+kubectl config use-context k8s
+
+cp /ckad/KDMC00102/fluentd-configmap.yaml bak-2.yaml
+vim /ckad/KDMC00102/fluentd-configmap.yaml
+# 考试中，这个 fluentd-configmap.yaml 文件一般是正确的，一般不需要你载更改。模拟环境为了让你了解原理，所以故意写错了。
+```
+![](../images/certificates/ckad/24-1.png)
+```shell
+kubectl apply -f /ckad/KDMC00102/fluentd-configmap.yaml
+
+vim sidecar.yaml
+```
+![](../images/certificates/ckad/24-2.png)
+```shell
+# 创建
+kubectl apply -f sidecar.yaml
+# 检查
+kubectl get deploy,pod | grep deploymenb-web
+# 检查
+kubectl exec deploymenb-web-857b985b8b-zmcfj -c adaptor-dev -- tail /ckad/log/input.log
+```
 
 ## 扩展
+[CheatSheet](https://kubernetes.io/zh-cn/docs/reference/kubectl/cheatsheet/)
 ### 1. 资源配额 Quota
+![参考文档](https://kubernetes.io/docs/concepts/policy/resource-quotas/)
+```shell
+# 在 qutt 命名空间，创建一个名为 myquota 的 Quota ，该资源 Quota 具有 1 个 CPU，1G 内存和 2 个 pod 的硬限制。
+vim quota.yaml
+```
+![](../images/certificates/ckad/30-1.png)
+```shell
+kubectl create -f quota.yaml
+```
 ### 2. SecurityContext
+![参考文档](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#set-capabilities-for-a-container)
+```shell
+# 在 test 命名空间，有一个名为 secnginx 的 pod，修改此 pod，为容器添加 CAP_NET_ADMIN 和 CAP_SYS_TIME 权能。
+
+kubectl get pod -n test secnginx -o yaml > secnginx.yaml
+cp secnginx.yaml bak-secnginx.yaml
+kubectl delete -f secnginx.yaml
+vim secnginx.yaml
+```
+![](../images/certificates/ckad/30-2.png)
+```shell
+kubectl apply -f secnginx.yaml
+```
+
 ### 3. Secret private Key
+![参考文档](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/)
+![参考文档](https://kubernetes.io/docs/concepts/configuration/secret/)
+```shell
+# 在 test 命名空间，创建一个名为 mysecret 的密钥，其值 username 为 devuser 和 password 为 A!B\*d$zDsb=
+# 在 test 命名空间，创建一个 pod，镜像使用 nginx: 1.16，名字为 mypod，将秘密 mysecret 挂载到路径 /etc/foo 上的卷中。
+kubectl create secret generic mysecret --from-literal=username=devuser --from-literal=password='A!B\*d$zDsb=' -n test
+vim mypod.yaml
+```
+![](../images/certificates/ckad/30-3.png)
+```shell
+kubectl apply -f mypod.yaml
+```
 ### 4. Jobs
+![参考文档](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/)
+```shell
+kubectl config use-context k8s
+
+# 创建 job
+vim busybox-job.yaml
+```
+![](../images/certificates/ckad/30-4.png)
+```shell
+# 创建
+kubectl apply -f busybox-job.yaml
+# 查看此 job 和 pod
+kubectl get jobs busybox-job
+kubectl get po busybox-job-*****
+# 查看 Job 日志
+kubectl logs job/busybox-job
+```
