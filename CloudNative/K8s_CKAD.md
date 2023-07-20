@@ -3,6 +3,9 @@
 ## Configuration
 
 ## Multi-container Pods
+1. SideCar
+2. Adapter
+3. Ambassador
 
 ## Obervability
 
