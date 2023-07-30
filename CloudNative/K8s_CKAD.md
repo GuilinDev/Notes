@@ -18,7 +18,7 @@
 ## Others
 
 ## 1. CronJob - 1
-参考文档1：[依次点击：Tasks -> Run Jobs -> Running Automated Tasks with a CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/)\
+参考文档1：[依次点击：Tasks -> Run Jobs -> Running Automated Tasks with a CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/)
 
 参考文档2：[依次点击：Concepts -> Workloads -> Workload Resources -> Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
 
@@ -41,7 +41,7 @@ kubectl create job ppi-test --from=cronjob/ppi
 kubectl get jobs
 ```
 ## 2. CronJob - 2
-参考文档1：[依次点击：Tasks -> Run Jobs -> Running Automated Tasks with a CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/)\
+参考文档1：[依次点击：Tasks -> Run Jobs -> Running Automated Tasks with a CronJob](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/)
 
 参考文档2：[依次点击：Concepts -> Workloads -> Workload Resources -> Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
 
