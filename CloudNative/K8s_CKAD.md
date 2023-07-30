@@ -91,7 +91,7 @@ vim nginx-resources.yaml
 ![](../images/certificates/ckad/4.png)
 ```shell
 kubectl apply -f nginx-resources.yaml
-``
+```
 
 ## 5. 限制CPU和内存 - 2
 参考文档：[依次点击：Concepts -> Configuration -> Resource Management for Pods and Containers](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/)
