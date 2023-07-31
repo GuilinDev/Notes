@@ -19,7 +19,7 @@ Manager其实可以给予我们不少帮助，如果想更多visibility，不妨
 特别要珍惜Org下那些跨团队的回忆，比如all hands，weekly livesite meeting，postmortem review等，因为这些会议通常有skip manager和其他managers参加。
 
 参加这些会议时，不是简单的加入，要留意两点：
-  1. **去理解高层领导的意思，思考如何让自己做的东西与其align**。例如，大领导向看到什么？有哪些concerns？可以把自己的思考和想法告知M1，看看有哪些action items可以实施。
+  1. **去理解高层领导的意思，思考如何让自己做的东西与其align**。例如，大领导想看到什么？有哪些concerns？可以把自己的思考和想法告知M1，看看有哪些action items可以实施。
   2. **实时发表看法，做出自己的贡献**。特别是大老板针对自己组提问时，如果能回答得漂亮，绝对得加分项。就算与组里无关，也可以大胆提出自己的看法，you have nothing to lose。
 
 ## 4. 找到自己的伙伴
