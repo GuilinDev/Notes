@@ -444,6 +444,7 @@ vim /ckad/CKAD202206/ingress.yaml
 # 记住 Deployment 的 labels 标签，因为题目说明了 Deployment 是正确的
 # 记住 Deployment 的容器的端口号，因为题目说明了 Deployment 是正确的。
 ```
+![](../images/certificates/ckad/19-0.png)
 ![](../images/certificates/ckad/19-1.png)
 ![](../images/certificates/ckad/19-2.png)
 ```shell
