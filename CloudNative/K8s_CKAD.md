@@ -540,7 +540,7 @@ kubectl get pods -n default
 kubectl config use-context sk8s
 
 # 从 node01 上 ssh 跳转到 node02 上
-ssh node0
+ssh node02
 echo WEPKEY=7789 > /opt/KDSP00101/data/index.html
 
 vim task-pv-volume.yaml
