@@ -277,6 +277,7 @@ vim nginx-secret.yaml
 ![](../images/certificates/ckad/12.png)
 ```shell
 kubectl apply -f nginx-secret.yaml
+# kubectl describe po nginx-secret 可以看到Environment引用情况
 ```
 
 ## 13. Pod健康检查 livelinessProbe
