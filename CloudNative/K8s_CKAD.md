@@ -373,6 +373,9 @@ kubectl config use-context k8s
 kubectl -n frontend get deployment
 # 开始更新
 kubectl -n frontend set serviceaccount deployments frontend-deployment app
+
+# 检查 Service Account
+kubectl -n frontend describe deploy frontend-deployment
 ```
 
 ## 17. 更新Deployment并暴露Service
