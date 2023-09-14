@@ -191,7 +191,7 @@ kubectl edit deployment broker-deployment -n quetzal
 kubectl config use-context k8s
 
 # 下面命令背过，如果不会，就使用 kubectl -h 来帮助。
-kubectl create deployment api --image=nginx:1.16 --replicas=6 -n ckad00014 --dry-run=client -o yaml > api.yaml
+kubectl create deployment api --image=nginx:1.16 --replicas=6 --port=80 -n ckad00014 --dry-run=client -o yaml > api.yaml
 
 vim api.yaml
 # 在 containers:里的 image:和 name:下添加
@@ -540,7 +540,7 @@ kubectl get pods -n default
 kubectl config use-context sk8s
 
 # 从 node01 上 ssh 跳转到 node02 上
-ssh node0
+ssh node02
 echo WEPKEY=7789 > /opt/KDSP00101/data/index.html
 
 vim task-pv-volume.yaml
