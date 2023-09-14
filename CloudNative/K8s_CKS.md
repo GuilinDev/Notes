@@ -30,8 +30,8 @@ vim /var/lib/kubelet/config.yaml
 
 ![](../images/certificates/cks/1-1.png)
 
-# 可以使用这条命令查。可以不查的，直接按照考试题目里的要求做就行。
 ```shell
+# 可以使用这条命令查。可以不查的，直接按照考试题目里的要求做就行。
 kube-bench
 ```
 ![](../images/certificates/cks/1-2.png)
