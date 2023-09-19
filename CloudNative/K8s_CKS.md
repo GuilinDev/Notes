@@ -1,5 +1,5 @@
 ## 1. kube-bench 修复不安全项
-参考文档1：[依次点击：Tasks -> Run Jobs -> Running Automated Tasks with a CronJob](https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/)
+参考文档：[依次点击：Tasks -> Run Jobs -> Running Automated Tasks with a CronJob](https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/)
 
 ```shell
 kubectl config use-context KSCS00201
@@ -37,3 +37,37 @@ kube-bench
 ![](../images/certificates/cks/1-2.png)
 
 ## 2. Pod 指定 ServiceAccount
+参考文档：[ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+
+```shell
+kubectl config use-context KSCH0030
+
+# 1. 创建一个 ServiceAccount
+vim qa-ns.yaml
+# 根据参考文档修改如下
+```
+![](../images/certificates/cks/2-1.png)
+
+```shell
+kubectl apply -f qa-ns.yaml
+kubectl get sa -n qa
+
+# 2. 修改已存在的文件，创建一个 Pod使用该 ServiceAccount
+vim /cks/sa/pod1.yaml
+```
+![](../images/certificates/cks/2-2.png)
+
+```shell
+kubectl apply -f /cks/sa/pod1.yaml
+kubectl get pod -n qa
+
+# 3. 删除没有使用的 ServiceAccount
+# 查看所有sa
+kubectl get sa -n qa
+# 查看已经使用sa，例如default和backend-sa已经使用
+kubectl get pod -n qa -o yaml | grep -i serviceAccountName
+# 删除没有使用的sa
+kubectl delete sa test01 -n qa
+```
+
+# 3. 默认的NetworkPolicy
