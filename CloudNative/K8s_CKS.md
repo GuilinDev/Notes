@@ -71,3 +71,21 @@ kubectl delete sa test01 -n qa
 ```
 
 # 3. 默认的NetworkPolicy
+参考文档：[NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+
+```shell
+kubectl config use-context KSCS00101
+
+# 可能是ingress或egress或both
+vim /cks/net/p1.yaml
+```
+![](../images/certificates/cks/3-1.png)
+
+```shell
+kubectl apply -f /cks/net/p1.yaml
+
+# 检查
+kubectl describe networkpolicy denypolicy -n testing
+```
+
+# 4. RBAC - RoleBinding
