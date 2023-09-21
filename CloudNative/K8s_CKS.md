@@ -89,3 +89,75 @@ kubectl describe networkpolicy denypolicy -n testing
 ```
 
 # 4. RBAC - RoleBinding
+参考文档：[RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
+
+```shell
+kubectl config use-context KSCH00201
+
+# 查看 ServiceAccount service-account-web 对应的 rolebindings role-1-binding
+# 查看 rolebindings role-1-binding 对应的 role 为 role-1
+kubectl describe rolebindings -n db
+
+# 编辑 role-1 权限：
+kubectl edit role role-1 -n db
+```
+![](../images/certificates/cks/4-1.png)
+
+```shell
+# 检查
+kubectl describe role role-1 -n db
+
+# 在 db 命名空间，创建名为 role-2 的 role，并且通过 rolebinding 绑定 service-account-web，只允许对 namespaces 做 delete 操作。
+# 记住 --verb 是权限，可能考 delete 或者 update 等 --resource 是对象，可能考 namespaces 或者 persistentvolumeclaims 等。
+kubectl create role role-2 --verb=delete --resource=namespaces -n db
+kubectl create rolebinding role-2-binding --role=role-2 --serviceaccount=db:service-account-web -n db
+
+# 检查
+kubectl describe rolebindings -n db
+```
+
+# 5. 日志审计 log audit
+参考文档：[Auditing](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
+
+```shell
+kubectl config use-context KSCH00601
+
+# 1. 切换到Master的root下
+ssh master01
+sudo -i
+
+# 2. 配置审计策略
+# 先备份配置文件
+# 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
+cp /etc/kubernetes/logpolicy/sample-policy.yaml /tmp
+vim /etc/kubernetes/logpolicy/sample-policy.yaml
+```
+![](../images/certificates/cks/5-1.png)
+
+```shell
+# 3. 配置master节点的kube-apiserver.yaml
+cp /etc/kubernetes/manifests/kube-apiserver.yaml /tmp
+vim /etc/kubernetes/manifests/kube-apiserver.yaml
+
+# 等待kube-apiserver自动重启，且恢复正常
+# 配置完后保存，当 kube-apiserver.yaml 文件内容有变化时，kube-apiserver 会自动重启。
+# 等待 2 分钟后，再检查
+kubectl get pod -A
+tail /var/log/kubernetes/audit-logs.txt
+
+# (Optional)如果等了 3 分钟，kubectl get pod -A 还是报错，可以重启一下 kubelete 服务
+systemctl daemon-reload
+systemctl restart kubelet
+
+
+# 退出 root，退回到 candidate@master01
+exit
+# 退出 master01，退回到 candidate@node01
+exit
+
+```
+
+# 6. 创建Secret
+
+
+# 7. Dockerfile 检测
