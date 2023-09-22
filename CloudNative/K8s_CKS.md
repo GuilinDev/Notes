@@ -158,6 +158,47 @@ exit
 ```
 
 # 6. 创建Secret
+参考文档：[Decoding Secret](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#decoding-secret)
+参考文档：[Create Secret](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#create-a-secret)
+参考文档：[Using Secret](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets)
+
+```shell
+kubectl config use-context KSCH00701
+
+# 1. 将 db1-test 的 username 和 password，通过 base64 解码保存到题目指定文件
+kubectl get secrets db1-test -n istio-system -o jsonpath={.data}
+# 会反馈结果为：{"password":"aGVsbG8=","username":"ZGIx"}
+echo 'ZGIx'|base64 -d > /cks/sec/user.txt
+echo 'aGVsbG8='|base64 -d > /cks/sec/pass.txt
+
+# 检查
+cat /cks/sec/user.txt
+cat /cks/sec/pass.txt
+
+# 2. 创建名为 db2-test 的 secret 使用题目要求的用户名和密码作为键值。注意要加命名空间
+kubectl create secret generic db2-test -n istio-system --from-literal=username=production-instance --from-literal=password=KvLftKgs4aVH
+
+# 检查
+kubectl get secret -n istio-system
+
+# 3. 根据题目要求，参考官网，创建 Pod 使用该 secret
+vim k8s-secret.yaml
+
+```
+![](../images/certificates/cks/6-1.png)
+
+```shell
+# 创建
+kubectl apply -f k8s-secret.yaml
+# 检查
+kubectl get pod -n istio-system
+```
 
 
 # 7. Dockerfile 检测
+
+# 8. Sandbox运行容器gVisor
+
+# 9. NetworkPolicy
+
+# 10. Trivy扫描镜像安全漏洞
