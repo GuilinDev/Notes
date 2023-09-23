@@ -196,6 +196,24 @@ kubectl get pod -n istio-system
 
 
 # 7. Dockerfile 检测
+参考文档：[Dockerfile](https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted)
+
+```shell
+# 1. 修改Dockerfile
+vim /cks/docker/Dockerfile
+# 仅将 CMD 上面的 USER root 修改为 USER nobody，不需要改其他的 USER root。
+USER nobody
+# 修改基础镜像为题目要求的 ubuntu:16.04
+FROM ubuntu:16.04
+
+# 2. 修改deployment.yaml
+vim /cks/docker/deployment.yaml
+
+# template 里标签跟上面的内容不一致，所以需要将原先的 run: couchdb 修改为 app: couchdb
+app: couchdb
+# 确保 'privileged': 为 False ，确保'readonlyRootFilesystem': 为 True，确保'runAsUser': 为 65535
+```
+
 
 # 8. Sandbox运行容器gVisor
 
