@@ -214,9 +214,108 @@ app: couchdb
 # 确保 'privileged': 为 False ，确保'readonlyRootFilesystem': 为 True，确保'runAsUser': 为 65535
 ```
 
-
 # 8. Sandbox运行容器gVisor
+参考文档：[gVisor](https://kubernetes.io/docs/concepts/containers/runtime-class/#2-create-the-corresponding-runtimeclass-resources)
+
+```shell
+kubectl config use-context KSMV00301
+
+# 1. 创建一个 RuntimeClass
+vim /cks/gvisor/rc.yaml
+
+# 修改或添加如下内容
+apiVersion: node.k8s.io/v1
+kind: RuntimeClass
+metadata:
+  name: untrusted # 用来引用 RuntimeClass 的名字，RuntimeClass 是一个集群层面的资源
+handler: runsc # 对应的 CRI 配置的名称
+
+# 创建
+kubectl create -f /cks/gvisor/rc.yaml
+# 检查
+kubectl get RuntimeClass
+
+# 2. 将命名空间为 server 下的 Pod 引用 RuntimeClass
+# 查看发现3个deploy
+kubectl -n server get deployment
+
+# 编辑 deployment
+kubectl -n server edit deployments busybox-run
+kubectl -n server edit deployments nginx-host
+kubectl -n server edit deployments run-test
+```
+![](../images/certificates/cks/8-1.png)
+
+```shell
+# 检查 pod
+kubectl -n server get pod
+```
 
 # 9. NetworkPolicy
+参考文档：[NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/#networkpolicy-resource)
+
+```shell
+kubectl config use-context KSSH00301
+
+# 1. 检查namespace标签
+kubectl get ns --show-labels
+
+# 查看 pod 标签（environment: testing）
+kubectl get pod -n dev-team --show-labels
+
+
+# 2. 创建 NetworkPolicy
+vim /cks/net/po.yaml
+```
+![](../images/certificates/cks/9-1.png)
+
+```shell
+# 创建
+kubectl apply -f /cks/net/po.yaml
+
+# 检查
+kubectl get networkpolicy -n dev-team
+```
 
 # 10. Trivy扫描镜像安全漏洞
+参考文档：[Trivy](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
+```shell
+# kubectl config use-context KSSC00401
+
+# 1. 切换到Master的candidate下
+ssh master01
+
+# 2. 获取namespace kamino 下的所有pod和其image的对应关系
+kubectl get pods --namespace kamino --output=custom-columns="NAME:.metadata.name,IMAGE:.spec.containers[*].image"
+# 或
+kubectl describe pod -n kamino |grep -iE '^Name:|Image:'
+
+# 3. 检查镜像是否有高危和严重的漏洞
+trivy image -s HIGH,CRITICAL nginx:1.19 # HIGH,CRITICAL，这里的 nginx:1.19 换成你上一步查出来的镜像名字
+# 或者也可以使用这条命令查询 trivy image nginx:1.19 | grep -iE 'High|Critical'
+
+# 注意 tri222 和 tri333 的 2 个 pod 里各有 2 个 image，都需要扫描。
+trivy image -s HIGH,CRITICAL amazonlinux:1
+trivy image -s HIGH,CRITICAL amazonlinux:2
+trivy image -s HIGH,CRITICAL nginx:1.19
+trivy image -s HIGH,CRITICAL vicuu/nginx:host
+
+# 4. 删除有问题的pod
+kubectl delete pod tri111 -n kamino
+
+# 5. 退出 root，退回到 candidate@node01
+exit
+```
+
+# 11. AppArmor
+
+# 12. Sysdig & falco
+
+# 13. Container安全上下文
+
+# 14 TLS安全配置
+
+# 15 启用API servicer认证
+
+# 16. ImagePolicyWebhook容器镜像扫描
