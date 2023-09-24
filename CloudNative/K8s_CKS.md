@@ -309,13 +309,212 @@ exit
 ```
 
 # 11. AppArmor
+参考文档：[AppArmor](https://kubernetes.io/docs/tutorials/security/apparmor/#example)
+
+```shell
+kubectl config use-context KSSH00401
+
+# 1. 切换到node02的root下
+ssh node02
+sudo -i
+
+# 2. 切换到apparmor的目录
+cd /etc/apparmor.d/
+cat nginx_apparmor
+
+# 3. 执行apparmor策略模块
+# 没有 grep 到，说明没有启动。 #这个 nginx-profile-3 是/etc/apparmor.d/nginx_apparmor 里的配置的名字，即第一行 profile 后面紧跟的单词。
+apparmor_status | grep nginx-profile-3
+# 加载启用这个配置文件
+apparmor_parser /etc/apparmor.d/nginx_apparmor
+# 再次检查有结果了
+apparmor_status | grep nginx-profile-3
+# 显示如下内容
+nginx-profile-3
+# 4. 修改 pod 文件
+# 退出 root，退回到 candidate@node02
+exit
+# vim /cks/KSSH00401/nginx-deploy.yaml
+修改如下内容
+```
+![](../images/certificates/cks/11-1.png)
+
+```shell
+# 创建
+kubectl apply -f /cks/KSSH00401/nginx-deploy.yaml
+# 检查
+kubectl get pod
+# 可以通过检查该配置文件的 proc attr 来验证容器是否实际使用该配置文件运行：
+kubectl exec podx -- cat /proc/1/attr/current
+```
 
 # 12. Sysdig & falco
+参考文档：[Sysdig](https://falco.org/docs/reference/rules/supported-fields/)
+
+```shell
+kubectl config use-context KSSC00401
+
+# 1. 切换到node02的root下
+ssh node02
+sudo -i
+
+# 2. 确认题目里所要求 Pod 的唯一标识，比如 ContainerID
+crictl ps | grep redis123
+
+# 3. 编辑falco规则
+vim /etc/falco/falco_rules.local.yaml
+```
+![](../images/certificates/cks/12-1.png)
+
+```shell
+# 4. 查看保存的文件
+cat /opt/KSR00101/incidents/summary
+# 退出 root，退回到 candidate@node02
+exit
+# 退出 node02，退回到 candidate@node01
+exit
+```
 
 # 13. Container安全上下文
+参考文档：[SecurityContext](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+
+```shell
+kubectl config use-context KSMV00102
+
+# 按照题目要求，在线修改
+kubectl -n sec-ns edit deployment secdep
+```
+![](../images/certificates/cks/13-1.png)
+![](../images/certificates/cks/13-2.png)
 
 # 14 TLS安全配置
+参考文档：[kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
+
+```shell
+# 1. 切换到Master的root下
+ssh master01
+sudo -i
+
+# 2. 修改kube-apiserver
+# 修改之前，备份一下配置文件。
+# 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
+cp /etc/kubernetes/manifests/kube-apiserver.yaml /tmp
+vim /etc/kubernetes/manifests/kube-apiserver.yaml
+
+# 添加或修改相关内容，并保存
+    - --tls-cipher-suites=TLS_AES_128_GCM_SHA256
+    - --tls-min-version=VersionTLS13 
+
+# 3. 等待kube-apiserver自动重启，且恢复正常
+# 检查 kube-apiserver，确保 Running
+kubectl -n kube-system get pod
+
+# 4. 修改etcd
+# 修改之前，备份一下配置文件。
+# 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
+cp /etc/kubernetes/manifests/etcd.yaml /tmp
+vim /etc/kubernetes/manifests/etcd.yaml
+# 添加或修改相关内容，并保存
+    - --cipher-suites=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+
+# 5. 等待etcd自动重启，且恢复正常
+# 检查一下所有 pod，特别是 etcd 和 kube-apiserver 两个 pod
+kubectl -n kube-system get pod
+
+# 退出 root，退回到 candidate@master01
+exit
+# 退出 master01，退回到 candidate@node01
+exit
+```
 
 # 15 启用API servicer认证
+参考文档：[kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
+
+```shell
+# 1. 切换到Master的root下
+ssh master01
+sudo -i
+
+# 2. 确保只有认证并且授权过的 REST 请求才被允许
+# 编辑/etc/kubernetes/manifests/kube-apiserver.yaml，修改下面内容
+- --authorization-mode=AlwaysAllow
+- --enable-admission-plugins=AlwaysAdmit
+- --anonymous-auth=true
+vim /etc/kubernetes/manifests/kube-apiserver.yaml
+```
+![](../images/certificates/cks/15-1.png)
+
+```shell
+# 3. 等待kube-apiserver自动重启，且恢复正常
+# 配置完后保存，当 kube-apiserver.yaml 文件内容有变化时，kube-apiserver 会自动重启
+# 如果超过 5 分钟没有恢复，表示改错了
+kubectl get pod -A
+
+# 4. 删除相应的角色绑定
+# 检查
+kubectl get clusterrolebinding system:anonymous
+# 删
+kubectl delete clusterrolebinding system:anonymous
+# 再检查
+kubectl get clusterrolebinding system:anonymou
+
+# 退出 root，退回到 candidate@master01
+exit
+# 退出 master01，退回到 candidate@node01
+exit
+
+# 最后验证
+kubctl get ClusterRoleBinding system:anonymous --kubeconfig /etc/kubernetes/admin.conf
+less /etc/kubernetes/manifets/kube-apiserver.yaml
+```
 
 # 16. ImagePolicyWebhook容器镜像扫描
+参考文档：[Adminssion Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
+参考文档：[ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
+
+```shell
+# 1. 切换到Master的root下
+ssh master01
+sudo -i
+
+# 2. 编辑 admission_configuration.json（题目会给这个目录），修改 defaultAllow 为 false
+vim /etc/kubernetes/admission_configuration.json
+
+……
+"denyTTL": 50,
+"retryBackoff": 500,
+"defaultAllow": false #将 true 改为 false
+……
+
+# 3. 编辑/etc/kubernetes/epconfig/kubeconfig.yaml, 添加webhook server地址
+# 操作前，先备份配置文件
+# 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
+cp /etc/kubernetes/epconfig/kubeconfig.yml /tmp
+vi /etc/kubernetes/epconfig/kubeconfig.yml
+修改如下内容
+……
+certificate-authority: /etc/kubernetes/epconfig/server.crt
+server: https://image-bouncer-webhook.default.svc:1323/image_policy #添加 webhook server 地址
+name: bouncer_webhook
+……
+
+# 4. 编辑kube-apiserver.yaml，添加如下内容
+# 操作前，先备份配置文件
+# 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
+cp /etc/kubernetes/manifests/kube-apiserver.yaml /tmp
+vim /etc/kubernetes/manifests/kube-apiserver.yaml
+# 在- command:下修改或添加如下内容，注意空格要对齐（不建议放到最后，建议放置的位置详见下方截图）
+- --enable-admission-plugins=NodeRestriction,ImagePolicyWebhook #注意先搜索，如果存在则修改，比如模拟环境里已经有了，但不全，需要修改。
+- --admission-control-config-file=/etc/kubernetes/epconfig/admission_configuration.json
+
+# 5. 等待kube-apiserver自动重启，且恢复正常
+kubectl -n kube-system get pod
+# 通过尝试部署易受攻击的资源 /cks/img/web1.yaml 来测试配置是否有效
+kubectl apply -f /cks/img/web1.yaml
+
+# 6. 退回到原 ssh 终端
+# 退出 root，退回到 candidate@master01
+exit
+# 退出 master01，退回到 candidate@node01
+exit
+```
