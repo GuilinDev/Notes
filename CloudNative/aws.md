@@ -24,4 +24,5 @@
 23. A solution architect needs -> SQS + S3 bucket
 24. A security engineer -> Secretes Manager with RotationSchedule
 25. A company two-tier -> Aurora Replicas + round robin
-26. 
+26. A company..internal cloud billing -> AWS Budgets/organization's master account
+27. 
