@@ -49,4 +49,15 @@
 48. ALB, RDS, SIA -> Store Docker images in ECR
 49. NodeJs, MySQL -> Aurora MySQL + AWS DMS + RDS Proxy
 50. EC2 instance, log files -> Systems Manager + EventBridge (CloudWatch Events, not SNS)
-51. 
+51. 72-hour run/LARGEST overall cost reduction -> S3 Intelligent-tiering + FSx for Lustre
+52. on-premises/NoSQL MongoDB -> DocumentDB with appropriately sized instances
+53. Multi-AZ VPS/Cost Explorer -> interface VPC endpoints + VPC endpoint policy
+54. sequel fora -> create another S3 bucket in a new Region
+55. OU -> Organizations management account
+56. A company's factory -> 1) Activate the user-defined; 2) Create a cost category; 3) Enable Cost Explorer
+57. AWS WAF -> AWS Firewall Manager
+58. analyze a company's Amazon EC3 instances -> Install the Amazon CloudWatch agent on the EC2 instances +  AWS Compute Optimizer
+59. single AWS Region + SQS -> 1) Deploy SQS Lambda; 2) Subscribe the SQS in each Region to the SNS topic
+60. video streaming company -> 1) Enable S3 Transfer; 2) break videos into chunks
+61. A company is storing data in several Amazon DynamoDB -> 1) API Gateway REST API; 2) API Gateway HTTP API + Lambda
+62. 
