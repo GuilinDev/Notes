@@ -60,4 +60,5 @@
 59. single AWS Region + SQS -> 1) Deploy SQS Lambda; 2) Subscribe the SQS in each Region to the SNS topic
 60. video streaming company -> 1) Enable S3 Transfer; 2) break videos into chunks
 61. A company is storing data in several Amazon DynamoDB -> 1) API Gateway REST API; 2) API Gateway HTTP API + Lambda
-62. 
+62. A retail company -> transit VIF + DX-B + cross-Region routing
+63. 
