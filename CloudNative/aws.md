@@ -75,4 +75,22 @@
 74. video processing -> AWS Snowball Edge Storage Optimized device
 75. Windows Amazon EC2 -> FSX
 76. digital marketing + KMS -> 1) bucket policy that includes read permissions; 2) Update the custom KMS key policy; 3) Update the strategy_reviewer IAM role to grant read permissions 
-77. 
+77. MySQL -> read replicas on Amazon RDS, cross-Region read replicas
+78. external audit -> CloudTrail + AWS identity and Access Management Access Analyzer
+79. work remotely at their homes -> VPN endpoint + internal applications
+80. order-processing/Rabbit MQ -> AMI + Amazon MQ + EKS
+81. hundreds of AWS accounts/Reservated instances -> 1) all AWS accounts with all features enabled; 2) SCP
+82. MFA -> 1) AWS Control Tower; 2) transit gateway; 3) AWS SSO
+83. MySQL -> RDS Proxy; 2) Lambda function
+84. DynamoDB -> during peak period + researved RCU/WCU
+85. third-party SaaS -> PrivateLink
+86. ALB -> provision an ALB
+87. AWS Direct Connect connection -> 1) transit gateway; 2) transit gateway attach; 3) private subnets
+88. RDS Multi-AZ DB -> RDS proxy
+89. several AWS accounts -> 1) centralized account + Lambda service as a trusted entity; 2) other AWS accounts with minimal permissions
+90. large number of archived documents through VPN -> S3 One Zone-Infrquent Access
+91. forms-processing application -> AWS Step functions + Amazon Textract
+92. adventure company -> S3 Intelligent-Tiering
+93. A company has an asynchronous HTTP -> API Gateway endpoint + Route 53
+94. A company is hosting a critical application on a single Amazon EC2 instance -> 1) ELB + Auto Scaling group; 2) DB instance for Multi-AZ deployment; 3) ElastiCache + Multi-AZ
+95. 
