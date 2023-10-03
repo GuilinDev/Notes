@@ -60,5 +60,19 @@
 59. single AWS Region + SQS -> 1) Deploy SQS Lambda; 2) Subscribe the SQS in each Region to the SNS topic
 60. video streaming company -> 1) Enable S3 Transfer; 2) break videos into chunks
 61. A company is storing data in several Amazon DynamoDB -> 1) API Gateway REST API; 2) API Gateway HTTP API + Lambda
-62. A retail company -> transit VIF + DX-B + cross-Region routing
-63. 
+62. A retail company on-premises data center in Europe -> transit VIF + DX-B + cross-Region routing
+63. REST API/PUT -> 429
+64. A retail company S3 bucket -> 1) Account A, set S3 bucket policy; 2) Account B, set permissions of User DataProcessor;
+65. many AWS accounts/IP CIDR -> customer-mamaged prefix list
+66. AWS WAF -> Set the action of the web ACL rules to Count Enable AWS WAF logging
+67. CMK -> kms:GenerateDataKey
+68. Cost Explorer -> IAM policy + IAM group + IAM accounts
+69. electronic document management system -> 1) Enable S3 Transfer Acceleration; 2) Change the API Gateway Regional endpoints to edge-optimized endpoints
+70. PII -> SSE-KMS, S3 bcket policy to deny unencrypted PutObject requests
+71. SaaS/REST API/429 -> API Gateway account limit for calls per second
+72. two OUs: Research and DataOps -> 1) SCP + aws:RequestedRegion; 2) SCP + ec2:InstanceType
+73. S3 gateway VPC endpoint
+74. video processing -> AWS Snowball Edge Storage Optimized device
+75. Windows Amazon EC2 -> FSX
+76. digital marketing + KMS -> 1) bucket policy that includes read permissions; 2) Update the custom KMS key policy; 3) Update the strategy_reviewer IAM role to grant read permissions 
+77. 
