@@ -93,4 +93,13 @@
 92. adventure company -> S3 Intelligent-Tiering
 93. A company has an asynchronous HTTP -> API Gateway endpoint + Route 53
 94. A company is hosting a critical application on a single Amazon EC2 instance -> 1) ELB + Auto Scaling group; 2) DB instance for Multi-AZ deployment; 3) ElastiCache + Multi-AZ
-95. 
+95. monolithic REST-based API -> Separate API into Lambda functions
+96. unstructured data in S3 -> AWS Glue Data Catalog + Athena
+97. video processing company with images -> 1) ECR; 2) ECS + Fargate
+98. auditing the security setup -> IAM database
+99. refactor application as microservices in 2 environments ->  ECR + 2 ECS with Faragate
+100. AWS Organizations allows experiment on AWS -> 1) AWS Budgets; 2) SCP to deny; 3) AWS Budgets alert + SNS;
+101. The workloads run on Linux and Windows -> 1) AWS Application Discovery Agent; 2) AWS Migration Hub; 3) recommend instance types + Migration Hub
+102. three-tier web application -> 1) S3 + CloudFront; 2) Rehost the Java appliation in Beanstalk; 3) AWS DMS
+103. A publishing company -> 1) production account, IAM policy + S3 bucket; 2) production account, Attach the new policy; 3) in development account, create a group + IAM policy
+104. 
