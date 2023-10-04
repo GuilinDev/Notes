@@ -102,4 +102,50 @@
 101. The workloads run on Linux and Windows -> 1) AWS Application Discovery Agent; 2) AWS Migration Hub; 3) recommend instance types + Migration Hub
 102. three-tier web application -> 1) S3 + CloudFront; 2) Rehost the Java appliation in Beanstalk; 3) AWS DMS
 103. A publishing company -> 1) production account, IAM policy + S3 bucket; 2) production account, Attach the new policy; 3) in development account, create a group + IAM policy
-104. 
+104. fleet of AWS EC2 -> SNS
+105. A company uses an on-premises data analytics platform. -> three instances
+106. A company has created an Amazon CloudFront distribution with two Amazon S3 buckets as origins -> OAI + S3 bucket policy
+107.  management account 
+108. CloudFront
+109. com.amazonaws.region.elasticloadbalancing VPC interface endpoint 
+110. API endpoint from 
+111. AWS Organizations and AWS CloudFormation StackSets. 
+112. In the AWS Billing and Cost Management console, use the organization's management account 
+113. oute 53 Resolver outbound e + AWS RAM
+114. 1) Amazon EventBridge rule 2) Invoke an AWS Step Functions 3) SNS
+115. Use AWS Transfer Family to create an FTP
+116. 1) RDS Proxy 2) Migrate the database to Amazon Aurora MySQL 3) Create an Amazon Aurora Replica
+117. IAM role + DBA-Secret + DBA-Admin
+118. Use the AWS Schema Conversion Tool
+119. Provision an Aurora Replica in a different Region
+120. Use an Amazon DynamoDB table to store the spam numbers
+121. Turn on SSE-S3 on both S3 buckets.Use S3 Batch Operations
+122. Use AWS Control Tower
+123. 1 Deploy the security 2）Provision a Gateway Load Balancer
+124. Lambda function that starts instances
+125. Glue + Invoke an AWS Lambda function
+126. Configure scale-in protection for the instances during processing
+127. Increase capacity
+128. CloudWatch console + "like 198.51.100.2"
+129. Attach a rol
+130. 1) ELB + Auto Scaling group 2) Modify the DB instance to create a Multi_AZ deployment 3) Create a replication group for the ElastiCache for Redis cluster. Enable Multi-AZ on the cluster
+131. AD Connector to connect to the company's on-premises Active Directory Configure IAM Identity Center and set the AD Connector 
+132. SSO + Active Directory
+133. failover record
+134. 1) Activate the user-defined cost allocation tags 2) Create a cost categor 3) Enable Cost Explorer
+135. 1) Create an Amazon S3 bucket. 2)  Add a custom error response
+136. 1) Create an AWS Lambda function 2) Create an Amazon CloudFront distribution 3) Create an SSL certificate
+137. 1) Configure the loT 2) Write the metadata to Amazon DocumentDB 3) Use AWS Step Functions 
+138. Provision a transit gateway in an account in each OU.
+139. AUTH token + AWS Secrets Manager
+140. Amazon Pinpoint 
+141. 1) Create an Amazon S3 bucket.  2) Add a custom error response 
+142. SQS
+143. Add a security group rule to the ALB to allow traffic from the AWS managed prefix list for CloudFront only
+144. Set up AWS IoT Core 
+145. AWS Databnse Migration Service (AWS DMS) to rehost the database. 
+146. ECR + ECS + Fargate
+147. S3 event notificatin + Lambda function
+148. 1) bucket policy to allow a user 2) IAM policy in the destination account 3) s3 + destination account
+149. VPC peering + multi-Region
+150. 1) Associate an AWS Lambda function 2) Modify the S3 bucket resource 
