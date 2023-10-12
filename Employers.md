@@ -13,7 +13,7 @@
 11. dropbox
 12. Rubrik
 13. Airbnb
-14 Atlassian
+~~14 Atlassian~~
 15. Moloco
 16. Zillow
 17. Doximity
