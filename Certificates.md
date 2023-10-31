@@ -31,7 +31,10 @@
   * Cisco Certified Internetwork Expert (CCIE)
   * Cisco Certified Network Professional (CCNP) 
 * CISM - CERTIFIED INFORMATION SECURITY MANAGER
-* Security+ ✅ -> SSCP, GSEC, CEH (optional) -> CISSP (Certified Information Systems Security Professional)
+* CompTIA
+  * Security+ ✅
+  * SSCP, GSEC, CEH (optional)
+  * CISSP
 * CISA - CERTIFIED INFORMATION SYSTEMS AUDITOR
 * [CGEIT](https://www.isaca.org/credentialing/cgeit) for governance
 * VMWARE CERTIFIED PROFESSIONAL – DATA CENTER VIRTUALIZATION (VCP-DCV)
