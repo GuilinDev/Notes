@@ -16,18 +16,22 @@
 * GCP
   * CLOUD DIGITAL LEADER
   * PROFESSIONAL CLOUD ARCHITECT
-* MICROSOFT CERTIFIED: AZURE SOLUTIONS ARCHITECT EXPERT
-* Microsoft Certified: Azure Administrator Associate/Microsoft Certified: Azure Developer Associate -> Microsoft Certified: DevOps Engineer Expert
+* MICROSOFT CERTIFIED
+  * Azure Administrator Associate
+  * Azure Developer Associate
+  * Azure DevOps Engineer Expert
+  * AZURE SOLUTIONS ARCHITECT EXPERT
 * NUTANIX CERTIFIED PROFESSIONAL – MULTICLOUD INFRASTRUCTURE (NCP-MCI)
 * HashCorp
   * Terraform ✅
   * Vault
 * ITIL/ITSM
 * Certified ScrumMaster (CSM)
-* Cisco Certified Internetwork Expert (CCIE)
-* Cisco Certified Network Professional (CCNP) 
+* Cisco
+  * Cisco Certified Internetwork Expert (CCIE)
+  * Cisco Certified Network Professional (CCNP) 
 * CISM - CERTIFIED INFORMATION SECURITY MANAGER
-* Security+ ✅ -> SSCP, GSEC, CEH (optional) ->CISSP (Certified Information Systems Security Professional)
+* Security+ ✅ -> SSCP, GSEC, CEH (optional) -> CISSP (Certified Information Systems Security Professional)
 * CISA - CERTIFIED INFORMATION SYSTEMS AUDITOR
 * [CGEIT](https://www.isaca.org/credentialing/cgeit) for governance
 * VMWARE CERTIFIED PROFESSIONAL – DATA CENTER VIRTUALIZATION (VCP-DCV)
