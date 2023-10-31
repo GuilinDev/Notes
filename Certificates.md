@@ -4,14 +4,16 @@
 * [AWS Solution Architecture Associate - Valid 02/17/2026](https://www.credly.com/badges/cddd05df-e96c-4e2d-808e-82b14370c667/linked_in?t=rqa2bo)
 
 ## Technical
-* K8S
-  * CKA ✅
-  * CKAD
-  * CKS
-* AWS all
+* Linux Foundation
+  * CNCF
+    * CKA ✅
+    * CKAD ✅
+    * CKS
+    * Prometheus PCA
+* AWS
   * SAA ✅
   * SAP
-* GOOGLE CLOUD
+* GCP
   * CLOUD DIGITAL LEADER
   * PROFESSIONAL CLOUD ARCHITECT
 * MICROSOFT CERTIFIED: AZURE SOLUTIONS ARCHITECT EXPERT
@@ -19,17 +21,19 @@
 * NUTANIX CERTIFIED PROFESSIONAL – MULTICLOUD INFRASTRUCTURE (NCP-MCI)
 * HashCorp
   * Terraform ✅
+  * Vault
 * ITIL/ITSM
-* Project Management Professional (PMP)
 * Certified ScrumMaster (CSM)
 * Cisco Certified Internetwork Expert (CCIE)
 * Cisco Certified Network Professional (CCNP) 
 * CISM - CERTIFIED INFORMATION SECURITY MANAGER
-* Security+ -> SSCP, GSEC, CEH (optional) ->CISSP (Certified Information Systems Security Professional)
+* Security+ ✅ -> SSCP, GSEC, CEH (optional) ->CISSP (Certified Information Systems Security Professional)
 * CISA - CERTIFIED INFORMATION SYSTEMS AUDITOR
 * [CGEIT](https://www.isaca.org/credentialing/cgeit) for governance
 * VMWARE CERTIFIED PROFESSIONAL – DATA CENTER VIRTUALIZATION (VCP-DCV)
 * RHCE, RHCA
+* Scrum Master ✅
+* Project Management Professional (PMP)
 
 ### Non-technical
 * BLS ✅
