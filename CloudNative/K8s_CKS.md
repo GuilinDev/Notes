@@ -28,6 +28,7 @@ systemctl status kubelet
 ![](../images/certificates/cks/1-2.png)
 
 ```shell
+4. 修改etcd
 # 可以使用这条命令查。可以不查的，直接按照考试题目里的要求做就行。
 kube-bench
 ```
