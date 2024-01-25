@@ -35,7 +35,7 @@ kube-bench
 ![](../images/certificates/cks/1-3.png)
 
 ## 2. Pod 指定 ServiceAccount
-参考文档：[ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
+参考文档：[ServiceAccount: https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 
 ```shell
 kubectl config use-context KSCH0030
