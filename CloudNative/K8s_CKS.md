@@ -11,7 +11,12 @@ sudo -i
 # sh kube-bench.sh # 模拟
 
 # 2. 修改 api-server
+# optional, 利用kube-bench检查
+kube-bench master
+```
+![](../images/certificates/cks/1-1.png)
 
+```shell
 # 3. 修改 kubelet
 
 # 修复
@@ -27,8 +32,6 @@ vim /var/lib/kubelet/config.yaml
 
 #修改
 ```
-
-![](../images/certificates/cks/1-1.png)
 
 ```shell
 # 可以使用这条命令查。可以不查的，直接按照考试题目里的要求做就行。
