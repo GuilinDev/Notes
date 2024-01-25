@@ -14,11 +14,11 @@ sudo -i
 # optional, 利用kube-bench检查
 kube-bench master
 ```
-![](../images/certificates/cks/1-1.png)
+![](../images/certificates/cks/1-2.png)
 
 ```shell
 # 3. 修改 kubelet
-![](../images/certificates/cks/1-2.png)
+![](../images/certificates/cks/1-1.png)
 # 修复
 # 检查 kubelet 配置文件位置。
 systemctl status kubelet
