@@ -14,11 +14,11 @@ sudo -i
 # optional, 利用kube-bench检查
 kube-bench master
 ```
-![](../images/certificates/cks/1-2.png)
+![](../images/certificates/cks/1-1.png)
 
 ```shell
 # 3. 修改 kubelet
-![](../images/certificates/cks/1-1.png)
+
 # 修复
 # 检查 kubelet 配置文件位置。
 systemctl status kubelet
@@ -32,6 +32,7 @@ vim /var/lib/kubelet/config.yaml
 
 #修改
 ```
+![](../images/certificates/cks/1-2.png)
 
 ```shell
 # 可以使用这条命令查。可以不查的，直接按照考试题目里的要求做就行。
