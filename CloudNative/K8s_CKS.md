@@ -146,9 +146,9 @@ vim /etc/kubernetes/manifests/kube-apiserver.yaml
 # 等待 2 分钟后，再检查
 kubectl get pod -A
 tail /var/log/kubernetes/audit-logs.txt
-
+```
 ![](../images/certificates/cks/5-2.png)
-
+```shell
 # (Optional)如果等了 3 分钟，kubectl get pod -A 还是报错，可以重启一下 kubelete 服务
 systemctl daemon-reload
 systemctl restart kubelet
