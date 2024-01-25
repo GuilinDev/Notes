@@ -69,7 +69,7 @@ kubectl delete sa test01 -n qa
 ```
 
 # 3. 默认的NetworkPolicy
-参考文档：[NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+参考文档：[NetworkPolicy: https://kubernetes.io/docs/concepts/services-networking/network-policies/](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
 
 ```shell
 kubectl config use-context KSCS00101
@@ -87,7 +87,7 @@ kubectl describe networkpolicy denypolicy -n testing
 ```
 
 # 4. RBAC - RoleBinding
-参考文档：[RBAC Authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
+参考文档：[RBAC Authorization: https://kubernetes.io/docs/reference/access-authn-authz/rbac/#role-and-clusterole](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#role-and-clusterole)
 
 ```shell
 kubectl config use-context KSCH00201
@@ -115,7 +115,7 @@ kubectl describe rolebindings -n db
 ```
 
 # 5. 日志审计 log audit
-参考文档：[Auditing](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
+参考文档：[Auditing: https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/](https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/)
 
 ```shell
 kubectl config use-context KSCH00601
@@ -160,9 +160,9 @@ exit
 ```
 
 # 6. 创建Secret
-参考文档：[Decoding Secret](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#decoding-secret)
-参考文档：[Create Secret](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#create-a-secret)
-参考文档：[Using Secret](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets)
+参考文档：[Decoding Secret: https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#decoding-secret](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#decoding-secret)
+参考文档：[Create Secret: https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#create-a-secret](https://kubernetes.io/docs/tasks/configmap-secret/managing-secret-using-kubectl/#create-a-secret)
+参考文档：[Using Secret: https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets)
 
 ```shell
 kubectl config use-context KSCH00701
@@ -198,7 +198,7 @@ kubectl get pod -n istio-system
 
 
 # 7. Dockerfile 检测
-参考文档：[Dockerfile](https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted)
+参考文档：[Dockerfile: https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted](https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted)
 
 ```shell
 # 1. 修改Dockerfile
@@ -217,7 +217,7 @@ app: couchdb
 ```
 
 # 8. Sandbox运行容器gVisor
-参考文档：[gVisor](https://kubernetes.io/docs/concepts/containers/runtime-class/#2-create-the-corresponding-runtimeclass-resources)
+参考文档：[gVisor: https://kubernetes.io/docs/concepts/containers/runtime-class/#2-create-the-corresponding-runtimeclass-resources](https://kubernetes.io/docs/concepts/containers/runtime-class/#2-create-the-corresponding-runtimeclass-resources)
 
 ```shell
 kubectl config use-context KSMV00301
@@ -254,7 +254,7 @@ kubectl -n server get pod
 ```
 
 # 9. NetworkPolicy
-参考文档：[NetworkPolicy](https://kubernetes.io/docs/concepts/services-networking/network-policies/#networkpolicy-resource)
+参考文档：[NetworkPolicy: https://kubernetes.io/docs/concepts/services-networking/network-policies/#networkpolicy-resource](https://kubernetes.io/docs/concepts/services-networking/network-policies/#networkpolicy-resource)
 
 ```shell
 kubectl config use-context KSSH00301
@@ -280,7 +280,7 @@ kubectl get networkpolicy -n dev-team
 ```
 
 # 10. Trivy扫描镜像安全漏洞
-参考文档：[Trivy](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+参考文档：[Trivy: https://kubernetes.io/docs/reference/kubectl/cheatsheet/](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 ```shell
 # kubectl config use-context KSSC00401
@@ -311,7 +311,7 @@ exit
 ```
 
 # 11. AppArmor
-参考文档：[AppArmor](https://kubernetes.io/docs/tutorials/security/apparmor/#example)
+参考文档：[AppArmor: https://kubernetes.io/docs/tutorials/security/apparmor/#example](https://kubernetes.io/docs/tutorials/security/apparmor/#example)
 
 ```shell
 kubectl config use-context KSSH00401
@@ -351,7 +351,7 @@ kubectl exec podx -- cat /proc/1/attr/current
 ```
 
 # 12. Sysdig & falco
-参考文档：[Sysdig](https://falco.org/docs/reference/rules/supported-fields/)
+参考文档：[Sysdig: https://falco.org/docs/reference/rules/supported-fields/](https://falco.org/docs/reference/rules/supported-fields/)
 
 ```shell
 kubectl config use-context KSSC00401
@@ -378,7 +378,7 @@ exit
 ```
 
 # 13. Container安全上下文
-参考文档：[SecurityContext](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
+参考文档：[SecurityContext: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/)
 
 ```shell
 kubectl config use-context KSMV00102
@@ -390,7 +390,7 @@ kubectl -n sec-ns edit deployment secdep
 ![](../images/certificates/cks/13-2.png)
 
 # 14 TLS安全配置
-参考文档：[kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
+参考文档：[kube-apiserver: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
 ```shell
 # 1. 切换到Master的root下
@@ -430,7 +430,7 @@ exit
 ```
 
 # 15 启用API servicer认证
-参考文档：[kube-apiserver](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
+参考文档：[kube-apiserver: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
 ```shell
 # 1. 切换到Master的root下
@@ -473,8 +473,8 @@ less /etc/kubernetes/manifets/kube-apiserver.yaml
 ```
 
 # 16. ImagePolicyWebhook容器镜像扫描
-参考文档：[Adminssion Controllers](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
-参考文档：[ImagePolicyWebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
+参考文档：[Adminssion Controllers: https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/)
+参考文档：[ImagePolicyWebhook: https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#imagepolicywebhook)
 
 ```shell
 # 1. 切换到Master的root下
