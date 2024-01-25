@@ -435,6 +435,8 @@ exit
 ssh master01
 sudo -i
 
+sh api.sh
+
 # 2. 确保只有认证并且授权过的 REST 请求才被允许
 # 编辑/etc/kubernetes/manifests/kube-apiserver.yaml，修改下面内容
 - --authorization-mode=AlwaysAllow
