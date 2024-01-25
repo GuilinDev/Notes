@@ -126,6 +126,8 @@ kubectl config use-context KSCH00601
 ssh master01
 sudo -i
 
+sh log-audit.sh
+
 # 2. 配置审计策略
 # 先备份配置文件
 # 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
