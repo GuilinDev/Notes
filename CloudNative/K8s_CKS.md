@@ -23,13 +23,6 @@ kube-bench master
 # 检查 kubelet 配置文件位置。
 systemctl status kubelet
 
-# cat /etc/systemd/system/kubelet.service.d/10-kubeadm.conf 中也会看到 Environment="KUBELET_CONFIG_ARGS=--config=/var/lib/kubelet/config.yaml"。
-# 所以去修改这个文件
-# 修改之前，备份一下配置文件。
-# 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
-cp /var/lib/kubelet/config.yaml /tmp
-vim /var/lib/kubelet/config.yaml
-
 #修改
 ```
 ![](../images/certificates/cks/1-2.png)
