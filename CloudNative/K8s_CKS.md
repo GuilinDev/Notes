@@ -18,7 +18,7 @@ kube-bench master
 
 ```shell
 # 3. 修改 kubelet
-
+![](../images/certificates/cks/1-2.png)
 # 修复
 # 检查 kubelet 配置文件位置。
 systemctl status kubelet
@@ -37,7 +37,7 @@ vim /var/lib/kubelet/config.yaml
 # 可以使用这条命令查。可以不查的，直接按照考试题目里的要求做就行。
 kube-bench
 ```
-![](../images/certificates/cks/1-2.png)
+![](../images/certificates/cks/1-3.png)
 
 ## 2. Pod 指定 ServiceAccount
 参考文档：[ServiceAccount](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
