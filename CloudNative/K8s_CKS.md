@@ -126,6 +126,8 @@ kubectl config use-context KSCH00601
 ssh master01
 sudo -i
 
+sh log-audit.sh
+
 # 2. 配置审计策略
 # 先备份配置文件
 # 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
@@ -434,6 +436,8 @@ exit
 # 1. 切换到Master的root下
 ssh master01
 sudo -i
+
+sh api.sh
 
 # 2. 确保只有认证并且授权过的 REST 请求才被允许
 # 编辑/etc/kubernetes/manifests/kube-apiserver.yaml，修改下面内容
