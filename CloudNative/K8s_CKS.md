@@ -490,7 +490,7 @@ vim /etc/kubernetes/epconfig/admission_configuration.json
 "defaultAllow": false #将 true 改为 false
 ……
 
-# 3. 编辑/etc/kubernetes/epconfig/kubeconfig.yaml, 添加webhook server地址
+# 3. 编辑/etc/kubernetes/epconfig/kubeconfig.yml, 添加webhook server地址
 # 操作前，先备份配置文件
 # 千万不要在/etc/kubernetes/下备份，可能会导致异常，可以备份到/tmp 目录下。
 cp /etc/kubernetes/epconfig/kubeconfig.yml /tmp
