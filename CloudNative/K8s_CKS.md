@@ -482,7 +482,7 @@ ssh master01
 sudo -i
 
 # 2. 编辑 admission_configuration.json（题目会给这个目录），修改 defaultAllow 为 false
-vim /etc/kubernetes/admission_configuration.json
+vim /etc/kubernetes/epconfig/admission_configuration.json
 
 ……
 "denyTTL": 50,
