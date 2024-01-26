@@ -429,7 +429,7 @@ exit
 exit
 ```
 
-# 15 启用API servicer认证
+# 15 启用API server认证
 参考文档：[kube-apiserver: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
 
 ```shell
