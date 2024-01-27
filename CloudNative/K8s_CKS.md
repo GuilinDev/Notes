@@ -481,6 +481,8 @@ less /etc/kubernetes/manifets/kube-apiserver.yaml
 ssh master01
 sudo -i
 
+sh imagePolicy.sh
+
 # 2. 编辑 admission_configuration.json（题目会给这个目录），修改 defaultAllow 为 false
 vim /etc/kubernetes/epconfig/admission_configuration.json
 
