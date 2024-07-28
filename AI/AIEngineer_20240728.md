@@ -13,9 +13,9 @@
 
 ### 1.2 新的需求催生新的岗位
 * 不同于 Prompt Engineer 成为各岗位兼具的基础技能，AI Engineer 必须是全职岗位，因为要处理的挑战又多又关键：
-  * ① 测评源源不断的开/闭源大模型，
-  * ② 尝试最新的技术框架和技术产品，
-  * ③ 紧跟论文/融资/产品/活动等行业动态……
+  * 测评源源不断的开/闭源大模型，
+  * 尝试最新的技术框架和技术产品，
+  * 紧跟论文/融资/产品/活动等行业动态……
 
 * AI Engineer 正在将AI的进步，转化为数百人可以使用的产品。他们可能是独立开发者，可能是一个小型创业团队，可能在知名创业公司 (比如 HeyGen、Figma、Notion)，也可能身在微软、谷歌等科技巨头。
 
@@ -79,23 +79,23 @@
   * 模型评估是最有挑战性且至关重要的核心技能。
   * 与业界分享经验。积极参与大型活动并争取发言机会，并借此结识更多同行者。
 * 必学清单：
-  * 1. 坚定职业选择的信心
+  * 坚定职业选择的信心
     * [我如何成为一名机器学习从业者](https://blog.gregbrockman.com/how-i-became-a-machine-learning-practitioner)
     * [是时候成为一名机器学习工程师了](https://blog.gregbrockman.com/its-time-to-become-an-ml-engineer)
-  * 2. 理解机器学习基本概念
+  * 理解机器学习基本概念
     * [百页机器学习](https://www.amazon.co.uk/Hundred-Page-Machine-Learning-Book/dp/199957950X)
     * [线性代数的本质](https://www.youtube.com/watch？v=kjBOesZCoqc&list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)
-  * 3. LLM爆发带来的机会
+  * LLM爆发带来的机会
     * [文本是通用接口](https://scale.com/blog/text-universal-interface)
     * [LLM应用的新兴架构](https://a16z.com/emerging-architectures-for-llm-applications)
-  * 4. LLMs及其工作原理介绍
+  * LLMs及其工作原理介绍
     * [图解 Transformer](https://jalammar.github.io/illustrated-transformer)
     * [Attention Is All You Need](https://arxiv.org/pdf/1706.03762)
     * [Andrej Karpathy Youtube](https://www.youtube.com/@AndrejKarpathy/videos)
     * [What Is ChatGPT Doing … and Why Does It Work](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work)
-  * 5. Fine-tuning LLMs
+  * Fine-tuning LLMs
     * [Fine Tuning](https://adamfallon.com/2024/01/30/experiments-in-llms-episode-1-fine-tuning)
-  * 6. Vector DB + Embedding
+  * Vector DB + Embedding
     * [Memory - Vector DBs and Embedding](https://adamfallon.com/2024/01/30/experiments-in-llms-episode-2-memory-vector-dbs-and-embeddings)
 
 ## 4 The AI Engineer Skillset
