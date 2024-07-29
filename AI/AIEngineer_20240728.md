@@ -71,7 +71,7 @@
   * 大量的实际编程工作，包括后端和前端开发，将创意变为产品功能。
 
 * 一年时间里，作者做了以下这些事情： 
-  * 创建 Proof of Concepts (概念验证，可以理解为 Demo)，并勇敢对外分享。比如参加黑客松比赛。
+  * 创建 Proof of Concepts (概念验证，可以理解为 Demo)，并勇敢对外分享。比如参加Hacker比赛。
   * 积极分享，参与并引导主题讨论。比如，在 Slack 创建相关频道并分享不错的文章、论文，或者分享在GitHub 和 Hugging Face 上制作小原型。
   * 与决策者沟通对话，提供有价值的见解和可行方案。比如，借鉴某产品的AI功能实现方式，或者引入新的AI框架或者开发工具，并帮助他们理解如何应用新技术。
   * 快速行动，积极参与产品的构建和发布。作者在公司内部开展了名为 Guide Book 的AI项目，用6周时间突破障碍并最终发布，取得了非常不错的成绩。
@@ -84,7 +84,7 @@
     * [是时候成为一名机器学习工程师了](https://blog.gregbrockman.com/its-time-to-become-an-ml-engineer)
   * 理解机器学习基本概念
     * [百页机器学习](https://www.amazon.co.uk/Hundred-Page-Machine-Learning-Book/dp/199957950X)
-    * [线性代数的本质](https://www.youtube.com/watch？v=kjBOesZCoqc&list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)
+    * [线性代数的本质](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)
   * LLM爆发带来的机会
     * [文本是通用接口](https://scale.com/blog/text-universal-interface)
     * [LLM应用的新兴架构](https://a16z.com/emerging-architectures-for-llm-applications)
