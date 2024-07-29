@@ -1,5 +1,5 @@
 ## 1 The Rise of the AI Engineer
-[](https://www.latent.space/p/ai-engineer)
+[The Rise of the AI Engineer](https://www.latent.space/p/ai-engineer)
 2013年，完成一个AI任务需要耗费整个研究团队5年的时间。而时间来到撰写这篇文章的2023年，你只需要一份 API 文档和一个空闲的下午。
 
 ### 1.1 The AI Engineer's Spectrum
@@ -22,7 +22,7 @@
 * AI Engineer 是软件工程衍生出的新分支，专门研究AI的应用并有效运用新兴的技术栈。新岗位的出现，源自平台转换带来的代际变革，曾经的 DevOps 工程师、数据工程师等也是这样。
 
 ## 2 Swyx坚信 AI Engineer 是未来十年需求最旺盛的工程师岗位
-[](https://www.latent.space/p/high-agency)
+[high-agency channel](https://www.latent.space/p/high-agency)
 
 ### 2.1 AI Engineer vs. ML Engineer
 * AI Engineer 更多处于0到1的阶段，而 ML Engineer 更多处于1到N的阶段。
@@ -49,7 +49,7 @@
 
 ## 3 How to become to AI Engineer
 ### 3.1 AI Engineer 转型
-[](https://scale.com/blog/text-universal-interfac)
+[转型](https://scale.com/blog/text-universal-interfac)
 
 * 生成式AI正在迫使软件工程师去贴近产品开发。
 
@@ -58,7 +58,7 @@
 * 如果这个预测成真，那么技能栈越广泛的工程师，将越受欢迎。
 
 ### 3.2 AI Engineer 上岸
-[](https://adamfallon.com/2024/07/10/so-you-want-to-become-an-ai-engineer)
+[上岸](https://adamfallon.com/2024/07/10/so-you-want-to-become-an-ai-engineer)
 
 * 如果用一句话概括 AI Engineer 的工作内容，那就是：探索如何把AI融入到产品中。
 
