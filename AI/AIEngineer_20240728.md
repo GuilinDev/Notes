@@ -49,7 +49,7 @@
 
 ## 3 How to become to AI Engineer
 ### 3.1 AI Engineer 转型
-[转型](https://scale.com/blog/text-universal-interfac)
+[转型](https://scale.com/blog/text-universal-interface)
 
 * 生成式AI正在迫使软件工程师去贴近产品开发。
 
@@ -60,7 +60,7 @@
 ### 3.2 AI Engineer 上岸
 [上岸](https://adamfallon.com/2024/07/10/so-you-want-to-become-an-ai-engineer)
 
-* 如果用一句话概括 AI Engineer 的工作内容，那就是：探索如何把AI融入到产品中。
+* 如果用一句话概括 AI Engineer 的工作内容，那就是：***探索如何把AI融入到产品中***。
 
 * 如果想向进一步了解 AI Engineer 的日常工作和所需技能，可以从这个清单开始：
   * 围绕大语言模型 (LLM) 构建系统和功能。理解和使用大语言模型，并绕过遇到的各种限制，把相关上下文有效地融入到发送给 LLM 的消息中。
