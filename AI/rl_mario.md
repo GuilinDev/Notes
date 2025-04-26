@@ -19,7 +19,7 @@ numpy==1.24.4
 shimmy>=2.0
 stable_baselines3==1.6.0
 ```
-> ** Important **: other versions may not work!
+> Important: other versions may not work!
 
 ## 2. Training Model
 ```python
@@ -133,3 +133,12 @@ if __name__ == '__main__':
     main()
 
 ```
+
+
+## Monitor the training progress
+
+![image](https://github.com/user-attachments/assets/ae7d5958-ae02-469a-9b91-5ed40a954726)
+
+![image](https://github.com/user-attachments/assets/c8e88a93-9ab3-4bd3-94ea-1d29e8d28a2c)
+
+
